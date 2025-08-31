@@ -3,5 +3,5 @@
 --------------------------
 
 BYU Idaho 2nd Term (September-November)
->.</
+^^/
 
