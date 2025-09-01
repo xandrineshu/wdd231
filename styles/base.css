@@ -5,8 +5,8 @@
 1) #008DDA
 2) #41C9E2
 3) #ACE2E1
-4) #F7EEDD
-5) #ddd
+4) #ddd
+5) #F7EEDD
 
 */
 
@@ -40,6 +40,10 @@ header span {
     font-size: 25px;
     font-weight: 700;
     color: #008DDA;
+}
+
+h1 {
+    margin: 1rem 10px;
 }
 
 
@@ -96,7 +100,35 @@ header span {
 }
 
 
+/*****************     Footer     *******************/
 
-h1 {
-    margin-left: 10px;
+footer {
+    background-color: #ACE2E1;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: black solid 1px;
+    border-radius: 25px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.social a:hover {
+    background-color: white;
 }
