@@ -9,25 +9,37 @@
 
     <link rel="stylesheet" href="styles/melodyhub-large.css">
     <link rel="stylesheet" href="styles/melodyhub-small.css">
-    <script src="scripts/melodyhub.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <img src="images/logo.svg" alt="MelodyHub logo" width="512" height="512">
         <span> MelodyHub </span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">News & Events</a></li>
+            <li class="current"><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
-            <h2>Welcome to MelodyHub</h2>
-            <p>Your hub for discovering and sharing music.</p>
-        </section>
+        <h1>Dedicated Temples</h1>
     </main>
 
     <footer>
         <p>&copy; 2025 MelodyHub. All rights reserved.</p>
     </footer>
+
+    <script src="scripts/melodyhub.js"></script>
 </body>
 </html>
