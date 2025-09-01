@@ -1,0 +1,12 @@
+header {
+    display: grid;
+    grid-template-columns: 48px auto 48px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
