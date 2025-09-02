@@ -2,11 +2,10 @@
 
 /* Light Blue Theme
 
-1) #3A0519
-2) #670D2F
-3) #A53860
-4) #EF88AD
-5) ##636363
+1) #670D2F
+2) #A53860
+3) #EF88AD
+4) ##636363
 
 */
 
@@ -39,7 +38,7 @@ header img {
 header span {
     font-size: 25px;
     font-weight: 700;
-    color: #3A0519;
+    color: #670D2F;
 }
 
 h1 {
@@ -52,7 +51,7 @@ h1 {
 .hamburger {
     background: none;
     border: none;
-    color: #3A0519;
+    color: #670D2F;
     cursor: pointer;
     font-size: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -86,7 +85,7 @@ h1 {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    color: #3A0519;
+    color: #670D2F;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -120,7 +119,7 @@ footer {
     align-items: center;
     width: 48px;
     height: 48px;
-    border: #3A0519 solid 1px;
+    border: #670D2F solid 1px;
     border-radius: 25px;
 }
 
