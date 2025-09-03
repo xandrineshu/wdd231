@@ -39,36 +39,38 @@
     <main>
         <h1> Home </h1>
 
-        <section class="about-me">
-            <h2> About Me </h2>
-            <p> 
-                Hello! My name is Jelina Alexnandrine Concha, but you can call me Alex.
-                I am from the Philippines, a beautiful country in Southeast Asia known
-                for its stunning beaches, vibrant culture, and warm hospitality.
-                I am excited to be part of the WDD231 course and look forward to
-                learning and growing with all of you!
-            </p>
-        </section>
-
-        <section class="student-photo">
-            <h2> Student Photo </h2>
-            <img src="images/student-photo.jpg" alt="student photo" width="300" height="300">
-        </section>
-
-        <section class="certificate-box">
-            <h2>Web and Computer Programming certificate</h2>
-
-            <div class="boxButton">
-                <button class="courseButton" value="all" title="Filter button">All</button>
-                <button class="courseButton" value="cse" title="Filter button">CSE</button>
-                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
-            </div>
-
-            <div class="boxcertificate01 boxCourse"></div>
-            <dialog id="courses-details"></dialog>
-            <p id="totalCreditsCert01"></p>
-        </section>
+        <div class="grid">
+            <section class="about-me">
+                <h2> About Me </h2>
+                <p>
+                    Hello! My name is Jelina Alexnandrine Concha, but you can call me Alex.
+                    I am from the Philippines, a beautiful country in Southeast Asia known
+                    for its stunning beaches, vibrant culture, and warm hospitality.
+                    I am excited to be part of the WDD231 course and look forward to
+                    learning and growing with all of you!
+                </p>
+            </section>
             
+            <section class="student-photo">
+                <h2> Student Photo </h2>
+                <img src="images/student-photo.jpg" alt="student photo" width="300" height="300">
+            </section>
+            
+            <section class="certificate-box">
+                <h2>Web and Computer Programming Certificate</h2>
+            
+                <div class="boxButton">
+                    <button class="courseButton" value="all" title="Filter button">All</button>
+                    <button class="courseButton" value="cse" title="Filter button">CSE</button>
+                    <button class="courseButton" value="wdd" title="Filter button">WDD</button>
+                </div>
+            
+                <div class="boxcertificate boxCourse"></div>
+                <dialog id="courses-details"></dialog>
+
+                <p id="totalCredits"></p>
+            </section>
+        </div>
     </main>
 
     <footer>

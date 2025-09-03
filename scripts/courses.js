@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function output(courses) {
         const certificates = {
             "Web and Computer Programming": {
-                container: document.querySelector(".boxcertificate01"),
+                container: document.querySelector(".boxcertificate"),
                 totalCredits: 0,
                 totalCreditsElement:
-                    document.getElementById("totalCreditsCert01"),
+                    document.getElementById("totalCredits"),
             },
         };
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         document.getElementById(
-            "totalCreditsCert01"
+            "totalCredits"
         ).innerHTML = `<strong>The total credits for course listed above is</strong> ${totalCredits}`;
     }
 
@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayCourseDetails(course) {
         courseDetails.innerHTML = `
             <button id="closeModal">X</button>
-            <h2>${course.subject} ${course.number}</h2>
-            <h3>${course.title}</h3>
+            <h3>${course.subject} ${course.number}</h2>
+            <h4>${course.title}</h3>
             <p><strong>Credits</strong>: ${course.credits}</p>
             <p>${course.description}</p>
             <p><strong>Technologies</strong>: ${course.technology.join(
