@@ -53,24 +53,25 @@
             
             <section class="student-photo">
                 <h2> Student Photo </h2>
-                <img src="images/student-photo.jpg" alt="student photo" width="300" height="300">
-            </section>
-            
-            <section class="certificate-box">
-                <h2>Web and Computer Programming Certificate</h2>
-            
-                <div class="boxButton">
-                    <button class="courseButton" value="all" title="Filter button">All</button>
-                    <button class="courseButton" value="cse" title="Filter button">CSE</button>
-                    <button class="courseButton" value="wdd" title="Filter button">WDD</button>
-                </div>
-            
-                <div class="boxcertificate boxCourse"></div>
-                <dialog id="courses-details"></dialog>
-
-                <p id="totalCredits"></p>
+                <img src="images/student-photo.jpeg" alt="student photo" width="300" height="300">
             </section>
         </div>
+            
+        <section class="certificate-box">
+            <h2>Web and Computer Programming Certificate</h2>
+        
+            <div class="boxButton">
+                <button class="courseButton" value="all" title="Filter button">All</button>
+                <button class="courseButton" value="cse" title="Filter button">CSE</button>
+                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
+            </div>
+        
+            <div class="boxcertificate boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+        
+            <p id="totalCredits"></p>
+        </section>
+        
     </main>
 
     <footer>
@@ -83,8 +84,10 @@
                     alt="facebook" width="16" height="16"></a>
         </div>
 
-        <p>&copy;<span id="currentyear">2025</span> - Jelina Alexandrine Concha - Philippines</p>
-        <p id="lastModified"></p>
+        <div class="info">
+            <p>&copy;<span id="currentyear">2025</span> - Jelina Alexandrine Concha - Philippines</p>
+            <p id="lastModified"></p>
+        </div>   
     </footer>
 
     <script src="scripts/main.js"></script>
