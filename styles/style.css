@@ -224,6 +224,17 @@ main h1 {
     margin-top: 15px;
 }
 
+#closeButton {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#closeButton:hover {
+    cursor: pointer;
+    background-color: #ffed4f;
+}
+
 
 /*****************     Footer     *******************/
 

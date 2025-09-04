@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayCourseDetails(course) {
         courseDetails.innerHTML = `
-            <button id="closeModal">X</button>
+            <button id="closeButton">X</button>
             <h3> °˖❀ ${course.subject} ${course.number} ❀˖° </h2>
             <h4>${course.title}</h3>
             <p><strong>Credits</strong>: ${course.credits}</p>
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
         courseDetails.showModal();
-        document.getElementById("closeModal").addEventListener("click", () => {
+        document.getElementById("closeButton").addEventListener("click", () => {
             courseDetails.close();
         });
     }
