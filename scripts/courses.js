@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             courseDiv.setAttribute("data-credits", course.credits);
 
             const courseTitle = document.createElement("h3");
-            courseTitle.textContent = `${course.subject} ${course.number}`;
+            courseTitle.textContent = `°˖❀  ${course.subject} ${course.number} ❀˖°`;
             courseDiv.appendChild(courseTitle);
 
             const certificate = certificates[course.certificate];
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function displayCourseDetails(course) {
         courseDetails.innerHTML = `
             <button id="closeModal">X</button>
-            <h3>${course.subject} ${course.number}</h2>
+            <h3> °˖❀ ${course.subject} ${course.number} ❀˖° </h2>
             <h4>${course.title}</h3>
             <p><strong>Credits</strong>: ${course.credits}</p>
             <p>${course.description}</p>
