@@ -201,7 +201,7 @@ main h1 {
 /*****************     Course Details     *******************/
 
 #courses-details {
-    margin: auto 6rem;
+    margin: auto 2rem;
     padding: 20px;
     justify-content: center;
 }
@@ -249,6 +249,7 @@ footer {
 
 .info p {
     font-size: 20px;
+    font-weight: bold;
     line-height: 1.5;
 }
 
@@ -276,4 +277,9 @@ footer {
 
 .social a:hover {
     background-color: #ffed4f;
+}
+
+#lastModified {
+    font-weight: 600;
+    font-style: italic;
 }
