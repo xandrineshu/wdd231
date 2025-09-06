@@ -27,9 +27,17 @@
     .grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        gap: 30px;
-        margin-bottom: 30px;
         justify-content: center;
+        grid-column-gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-me, .student-photo, .certificate-box {
+        margin: 0;
+    }
+
+    .certificate-box {
+        margin-bottom: 30px;
     }
 
     #courses-details {
