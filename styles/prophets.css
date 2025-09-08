@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header, footer {
+    background-color: #83c1ff;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+footer {
+    padding: 2rem;
+    font-size: 40px;
+}
+
+main {
+    padding: 2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px #00000034;
+    text-align: center;
+    background-color: #d6ebff;
+    border: solid 3px #83c1ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: solid 3px #83c1ff;
+    margin-block: 20px;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 25px;
+    color: #2290ff;
+    font-weight: bold;
+}
+
+p {
+    margin: 0.1rem;
+    font-size: 20px;
+}
