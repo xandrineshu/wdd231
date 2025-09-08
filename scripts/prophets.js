@@ -23,8 +23,8 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Retrato de ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '350');
-        portrait.setAttribute('height', '450');
+        portrait.setAttribute('width', '250');
+        portrait.setAttribute('height', '350');
 
         card.appendChild(fullName);
         card.appendChild(birthdate);
