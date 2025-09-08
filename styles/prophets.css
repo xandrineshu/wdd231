@@ -37,14 +37,15 @@ section {
     padding: 1rem;
     text-align: center;
     background-color: #d6bcff;
+    border: #7a28ff solid 1px;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: #757575b0 5px 5px 5px;
+    box-shadow: #757575c5 5px 5px 5px;
     margin-block: 20px;
+    height: 350px;
 }
 
 h2 {
