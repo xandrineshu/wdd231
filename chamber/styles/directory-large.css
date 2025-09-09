@@ -1,22 +1,25 @@
 @media only screen and (min-width: 900px) {
-
     header, main, nav, footer {
-        max-width: 60rem;
+        max-width: 80rem;
         margin: 0 auto;
     }
 
+    /* Nav & Hamburger */
+
     header {
-        display: grid;
-        grid-template-columns: 48px auto;
+        align-items: center;
     }
 
     .hamburger {
         display: none;
     }
 
+    nav {
+        margin: 20px
+    }
+
     .navigation {
         display: block;
-        border-bottom: solid 1px #ddd;
         font-size: 20px;
     }
 
@@ -25,11 +28,22 @@
         list-style: none;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        justify-content: center;
-        grid-column-gap: 30px;
-        padding-bottom: 30px;
+    .navigation li {
+        padding-inline: 15px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .info-1 p, .info-2 p {
+        padding-inline: 20px;
     }
 }
