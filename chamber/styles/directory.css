@@ -1,0 +1,164 @@
+/*****************     Color Palette     *******************/
+
+/*
+
+1) #
+2) #
+3) #
+4) #
+
+*/
+
+
+/*****************     Overall     *******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*****************     Header     *******************/
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48px auto 48px;
+    padding: 5px 0 8px 10px;
+    align-items: end;
+    border-bottom: solid 1px #636363;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #670D2F;
+}
+
+main h1 {
+    margin: 2rem 10px;
+}
+
+
+/*****************     Hamburger     *******************/
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #670D2F;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/*****************     Navigation     *******************/
+
+.navigation {
+    background-color: #EF88AD;
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+.navigation a:hover {
+    background-color: #ffed4f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*****************     Main Content     *******************/
+
+
+
+
+/*****************     Footer     *******************/
+
+footer {
+    background-color: #EF88AD;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.info {
+    margin-block: 15px;
+}
+
+.info p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: #A53860 solid 1px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+}
+
+.social a:hover {
+    background-color: #ffed4f;
+}
+
+#lastModified {
+    font-weight: 600;
+    font-style: italic;
+}

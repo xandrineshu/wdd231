@@ -9,9 +9,10 @@
 
     <title>Chamber of Commerce - Directory Page</title>
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <script src="scripts/directory.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -22,12 +23,16 @@
         content="https://store-images.s-microsoft.com/image/apps.35093.9007199266245907.bb486e48-50ee-459a-a4ab-079602cdeaa1.8a3caf66-7e40-4d13-bdb2-1cb91e4a08a1?h=1280">
     <meta property="og:url" content="https://www.facebook.com/">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/" alt="home-logo" width="512" height="512">
-        <span> Chamber </span>
+        <img src="images/ph-chamber-logo.png" alt="home-logo" width="512" height="512">
+        <span> Philippines - Chamber of Commerce </span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
 
@@ -41,29 +46,35 @@
     </nav>
 
     <main>
+        <div class="view">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
 
+        <section id="members-container" class="grid-view"></section>
     </main>
 
     <footer>
         <div class="info-1">
-            <p>Chamber of Commerce</p>
-            <p>(address)</p>
-            <p>(email)</p>
-            <p>(phone number)</p>
+            <p>Philippines - Chamber of Commerce</p>
+            <p>Marilao, Bulacan, Philippines</p>
+            <p>jconcha1@byupathway.edu</p>
+            <p>+63901234567</p>
         </div>
     
         <div class="social">
-            <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img src="#" alt="linkedin"
-                    width="16" height="16"></a>
-            <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="#" alt="facebook" width="16"
+            <a href="https://github.com/xandrineshu" target="_blank"><img src="images/github.svg" alt="facebook" width="16"
                     height="16"></a>
-            <a href="" target="_blank"><img src="#" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                    width="16" height="16"></a>
         </div>
     
         <div class="info-2">
             <p>WDD231 Class Project</p>
             <p>Jelina Alexandrine Concha</p>
-            <p>&copy;<span id="currentyear">2025</span> - Chamber of Commerce</p>
+            <p>&copy;<span id="currentyear">2025</span> - PH Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
     </footer>
