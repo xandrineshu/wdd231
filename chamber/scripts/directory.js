@@ -37,9 +37,11 @@ function displayMembers(members, viewType) {
         memberElement.innerHTML = `
                 <img src="${member.image}" alt="${member.name}">
                 <h2>${member.name}</h2>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
+                <div class="business-info">
+                    <p> > Adress: ${member.address}</p>
+                    <p> > Number: ${member.phone}</p>
+                    <a href="${member.website}" target="_blank">Visit Website</a>
+                </div>
             `;
 
         membersContainer.appendChild(memberElement);

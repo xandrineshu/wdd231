@@ -111,7 +111,8 @@ header {
 /*****************     Main Content     *******************/
 
 main h1 {
-    margin: 2rem 20px;
+    font-weight: 600;
+    margin: 1.5rem 20px;
 }
 
 .view {
@@ -139,6 +140,98 @@ main h1 {
 }
 
 
+/*****************     Businesses Directory     *******************/
+
+/* Grid View */
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.grid-view .member {
+    width: 350px;
+    border: #222a75 solid 2px;
+    box-shadow: #686868 5px 5px 8px;
+}
+
+.grid-view .member h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.grid-view .member .business-info {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.grid-view .member img {
+    width: 200px;
+    height: 200px;
+    margin: auto 70px;
+}
+
+.grid-view .member a {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.grid-view .member a:hover {
+    color: #eec22d;
+}
+
+
+/* List View */
+
+.list-view {
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-view .member {
+    border: #222a75 solid 2px;
+    box-shadow: #686868 5px 5px 8px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-inline: 20px;
+}
+
+.list-view .member img {
+    display: none;
+}
+
+.list-view .member h2 {
+    font-size: 25px;
+    font-weight: 700;;
+    padding-inline-end: 20px;
+}
+
+.list-view .member p {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.list-view .member a {
+    font-size: 18px;
+}
+
+.list-view .member a:hover {
+   color: #eec22d;
+}
+
+
 /*****************     Footer     *******************/
 
 footer {
@@ -148,7 +241,7 @@ footer {
 }
 
 .info-1, .info-2 {
-    margin-block: 15px;
+    margin-block: 30px;
 }
 
 .info-1 p, .info-2 p {
