@@ -35,7 +35,7 @@ function displayMembers(members, viewType) {
         memberElement.classList.add('member', viewType);
 
         memberElement.innerHTML = `
-                <img src="${member.image}" alt="${member.name}" loading="lazy" width="500" height="500">
+                <img src="${member.image}" alt="${member.name}" loading="lazy" width="600" height="600">
                 <h2>${member.name}</h2>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
