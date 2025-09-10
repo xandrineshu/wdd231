@@ -257,11 +257,11 @@ footer {
     text-align: center;
 }
 
-.info-1, .info-2 {
+.info-left, .info-right {
     margin-block: 30px;
 }
 
-.info-1 p, .info-2 p {
+.info-left p, .info-right p {
     text-align: left;
     font-size: 20px;
     color: white;

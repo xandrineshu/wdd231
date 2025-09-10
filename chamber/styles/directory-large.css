@@ -51,7 +51,7 @@
 
     /* Footer */
 
-    footer {
+    .footer-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,7 +59,7 @@
         padding: 0 20px;
     }
 
-    .info-1 p, .info-2 p {
+    .info-left p, .info-right p {
         padding-inline: 20px;
     }
 }

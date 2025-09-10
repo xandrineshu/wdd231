@@ -9,6 +9,7 @@
 
     <title>Chamber of Commerce - Directory Page</title>
 
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <script src="scripts/directory.js" defer></script>
@@ -31,7 +32,7 @@
 <body>
     <header>
         <div class="title">
-            <img src="images/ph-chamber-logo.webp" alt="home-logo" width="512" height="512">
+            <img src="images/ph-chamber-logo.webp" alt="home-logo" loading="lazy" width="512" height="512">
             <span> Philippines - Chamber of Commerce </span>
         </div>
 
@@ -60,27 +61,29 @@
     </main>
 
     <footer>
-        <div class="info-1">
-            <p>Contact Information</p>
-            <p>Location: Marilao, Bulacan, Philippines</p>
-            <p>Email: jconcha1@byupathway.edu</p>
-            <p>Number: +63901234567</p>
-        </div>
-    
-        <div class="social">
-            <a href="https://github.com/xandrineshu" target="_blank"><img src="images/github.svg" alt="facebook" width="16"
-                    height="16"></a>
-            <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img src="images/linkedin.svg"
-                    alt="linkedin" width="16" height="16"></a>
-            <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="images/facebook.svg" alt="facebook"
-                    width="16" height="16"></a>
-        </div>
-    
-        <div class="info-2">
-            <p>WDD231 Class Project</p>
-            <p>By Jelina Alexandrine Concha</p>
-            <p>&copy;<span id="currentyear">2025</span> - PH Chamber of Commerce</p>
-            <p id="lastModified"></p>
+        <div class="footer-info">
+            <div class="info-left">
+                <p>Contact Information</p>
+                <p>Location: Marilao, Bulacan, Philippines</p>
+                <p>Email: jconcha1@byupathway.edu</p>
+                <p>Number: +63901234567</p>
+            </div>
+            
+            <div class="social">
+                <a href="https://github.com/xandrineshu" target="_blank"><img src="images/github.svg" loading="lazy" alt="facebook"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img src="images/linkedin.svg"
+                        loading="lazy" alt="linkedin" width="16" height="16"></a>
+                <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                        loading="lazy" width="16" height="16"></a>
+            </div>
+            
+            <div class="info-right">
+                <p>WDD231 Class Project</p>
+                <p>By Jelina Alexandrine Concha</p>
+                <p>&copy;<span id="currentyear">2025</span> - PH Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
         </div>
     </footer>
 </body>
