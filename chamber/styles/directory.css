@@ -157,12 +157,19 @@ main h1 {
     width: 350px;
     border: #222a75 solid 2px;
     box-shadow: #686868 5px 5px 8px;
+    padding: 20px;
 }
 
 .grid-view .member h2 {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
+    padding-block: 10px;
+}
+
+.grid-view .member p {
+    text-align: center;
+    line-height: 1.6;
 }
 
 .grid-view .member .business-info {
@@ -171,16 +178,28 @@ main h1 {
 }
 
 .grid-view .member img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
     width: 200px;
-    height: 200px;
-    margin: auto 70px;
+    height: auto;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .grid-view .member a {
     font-size: 20px;
     display: block;
     text-align: center;
-    padding-block: 10px;
 }
 
 .grid-view .member a:hover {
@@ -198,14 +217,10 @@ main h1 {
 .list-view .member {
     border: #222a75 solid 2px;
     box-shadow: #686868 5px 5px 8px;
-    width: 100%;
     margin: auto;
     margin-bottom: 30px;
-    max-width: 50rem;
-    display: flex;
-    flex-direction: row;
+    max-width: 25rem;
     padding: 20px;
-    padding-inline: 20px;
 }
 
 .list-view .member img {
@@ -214,13 +229,15 @@ main h1 {
 
 .list-view .member h2 {
     font-size: 25px;
-    font-weight: 700;;
-    padding-inline-end: 20px;
+    font-weight: 700;
+    padding-block: 10px;
+    color: #222a75;
 }
 
 .list-view .member p {
     font-size: 15px;
     line-height: 1.2;
+    padding-block: 5px;
 }
 
 .list-view .member a {

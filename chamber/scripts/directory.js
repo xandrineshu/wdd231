@@ -35,13 +35,12 @@ function displayMembers(members, viewType) {
         memberElement.classList.add('member', viewType);
 
         memberElement.innerHTML = `
-                <img src="${member.image}" alt="${member.name}">
+                <img src="${member.image}" alt="${member.name}" loading="lazy" width="500" height="500">
                 <h2>${member.name}</h2>
-                <div class="business-info">
-                    <p> > Adress: ${member.address}</p>
-                    <p> > Number: ${member.phone}</p>
-                    <a href="${member.website}" target="_blank">Visit Website</a>
-                </div>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p>Membership Level: ${member.membershipLevel}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
             `;
 
         membersContainer.appendChild(memberElement);

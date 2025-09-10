@@ -1,61 +1,43 @@
 [
     {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
+        "name": "SM Investments Corporation",
+        "address": "10th Flr, Harbor Drive, Mall of Asia Complex, Pasay City, Metro Manila",
+        "phone": "(632) 8857-0100",
+        "email": "ir@sminvestments.com",
+        "website": "http://www.sminvestments.com",
+        "image": "images/sm_investment_logo.webp",
+        "membershipLevel": "Gold"
     },
 
     {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
+        "name": "San Miguel Corporation",
+        "address": "40 San Miguel Avenue, Mandaluyong City 1550 Metro Manila",
+        "phone": "(632) 632-3000",
+        "email": "",
+        "website": "https://www.sanmiguel.com.ph/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/San_Miguel_Corporation_logo.svg/160px-San_Miguel_Corporation_logo.svg.png",
+        "membershipLevel": "Gold"
     },
 
     {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
+        "name": "Jollibee Foods Corporation",
+        "address": "10th Flr, Jollibee Plaza, 10 F Ortigas Jr. Rd, Ortigas Center, Pasig, 1605 Metro Manila",
+        "phone": "(632) 8634-1111",
+        "email": "ir@jollibee.com.ph",
+        "website": "https://www.jollibeegroup.com/",
+        "image": "images/jollibee_group.webp",
+        "membershipLevel": "Silver"
     },
 
     {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
-    },
-
-    {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
-    },
-
-    {
-        "name": "SM Supermalls",
-        "address": "7th Floor, MOA Square, Marina Way, Seashell Lane, cor Coral Way, Mall of Asia Complex, Pasay City, Philippines",
-        "phone": "(02) 8876 1111",
-        "email": "customercare@smsupermalls.com",
-        "website": "https://www.smsupermalls.com/",
-        "image": "https://awards.brandingforum.org/wp-content/uploads/2016/11/SM-Supermalls-Logo-1-1024x1024.jpg",
-        "membershipLevel": 3
+        "name": "Philippine Airlines",
+        "address": "8th Floor, PNB Financial Center, President Diosdado Macapagal Ave., CCP Complex, Pasay City, Philippines",
+        "phone": "+63 (02) 8816 - 3453",
+        "email": "palholdingsinc.info@gmail.com",
+        "website": "https://phi.com.ph/",
+        "image": "https://phi.com.ph/wp-content/uploads/2021/01/PAL-LOGO.png",
+        "membershipLevel": "Silver"
     }
+
 ]
+

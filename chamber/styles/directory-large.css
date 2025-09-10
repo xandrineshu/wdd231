@@ -32,6 +32,22 @@
         padding-inline: 15px;
     }
 
+    /* Directory List View */
+
+    .list-view .member {
+        display: flex;
+        flex-direction: row;
+        max-width: 70rem;
+    }
+
+    .list-view .member h2 {
+        padding-inline: 10px;
+    }
+
+    .list-view .member p {
+        padding-inline: 20px;
+    }
+
 
     /* Footer */
 
