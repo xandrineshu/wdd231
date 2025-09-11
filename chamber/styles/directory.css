@@ -180,8 +180,8 @@ main h1 {
     display: block;
     margin: 0 auto;
     padding: 20px;
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 150px;
     animation: fade 10s;
 }
 
