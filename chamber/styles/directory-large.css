@@ -32,11 +32,18 @@
         padding-inline: 15px;
     }
 
+    .view button {
+        margin-bottom: 20px;
+    }
+
     /* Directory List View */
 
     .list-view .member {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px;
         max-width: 70rem;
     }
 
@@ -50,6 +57,10 @@
 
 
     /* Footer */
+
+    footer {
+        margin-top: 20px;
+    }
 
     .footer-info {
         display: flex;
