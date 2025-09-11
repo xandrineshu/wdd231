@@ -148,8 +148,7 @@ main h1 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     justify-items: center;
-    gap: 30px;
-    margin-block: 40px;
+    gap: 20px;
 }
 
 .grid-view .member {
@@ -157,23 +156,19 @@ main h1 {
     border: #222a75 solid 2px;
     box-shadow: #686868 5px 5px 8px;
     padding: 20px;
+    font-size: 15px;
 }
 
 .grid-view .member h2 {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    padding-block: 10px;
+    padding-block: 15px;
 }
 
 .grid-view .member p {
     text-align: center;
     line-height: 1.6;
-}
-
-.grid-view .member {
-    padding: 20px;
-    font-size: 15px;
 }
 
 .grid-view .member img {
@@ -183,6 +178,8 @@ main h1 {
     width: auto;
     height: 150px;
     animation: fade 10s;
+    border: #686868 1px solid;
+    box-shadow: 0 0 1rem #686868;
 }
 
 @keyframes fade {
@@ -253,8 +250,9 @@ main h1 {
 
 footer {
     background-color: #222a75;
-    padding: 1rem 10px;
+    padding: 1rem 30px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .info-left, .info-right {
