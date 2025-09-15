@@ -8,6 +8,9 @@ navButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
+
+///////////////////////////////////////////////////////////////////////////////
+
 // weather
 
 const weatherContainer = document.querySelector('.weatherContainer');
@@ -115,6 +118,62 @@ function capitalizeWords(str) {
 }
 
 
+///////////////////////////////////////////////////////////////////////////////
+
+// Spotlight
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadSpotlights();
+});
+
+async function loadSpotlights() {
+    try {
+        const response = await fetch('./data/members.json');
+        if (!response.ok) throw new Error('Could not load members.json');
+        const members = await response.json();
+
+        // Filter for Silver (2) and Gold (3) members
+        const goldSilver = members.filter(member => member.membershipLevel === 2 || member.membershipLevel === 3);
+        const selected = [];
+
+        // Randomly select up to 3 unique members
+        while (selected.length < 3 && goldSilver.length > 0) {
+            const randIndex = Math.floor(Math.random() * goldSilver.length);
+            selected.push(goldSilver.splice(randIndex, 1)[0]);
+        }
+
+        const container = document.querySelector('.spotlight-container');
+        if (!container) return; // Exit if container is missing
+        container.innerHTML = "";
+
+        selected.forEach(member => {
+            const card = document.createElement('div');
+            card.classList.add('member-card');
+            card.innerHTML = `
+                <h3>${member.name}</h3>
+                <p>${member.tagline}</p>
+                <div class="member-info">
+                    <img src="${member.image}" alt="${member.name} logo">
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">Website</a>
+                    <p class="membership">${member.membershipLevel === 3 ? 'Gold' : 'Silver'} Member</p>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Spotlight error:', error);
+        const container = document.querySelector('.spotlight-container');
+        if (container) {
+            container.innerHTML = "<p>Unable to load member spotlights at this time.</p>";
+        }
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
 // Footer
 
 document.getElementById("currentyear").textContent =
@@ -122,4 +181,3 @@ document.getElementById("currentyear").textContent =
 document.getElementById(
     "lastModified"
 ).textContent = `Last Modified: ${document.lastModified}`;
-

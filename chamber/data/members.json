@@ -6,7 +6,8 @@
         "email": "ir@sminvestments.com",
         "website": "http://www.sminvestments.com",
         "image": "images/sm_logo.webp",
-        "membershipLevel": "Gold"
+        "tagline": "We've Got it All For You",
+        "membershipLevel": 3
     },
 
     {
@@ -16,7 +17,8 @@
         "email": "smcl@sanmiguel.com.ph",
         "website": "http://www.sanmiguel.com.ph/",
         "image": "images/san_miguel_logo.webp",
-        "membershipLevel": "Gold"
+        "tagline": "Your World Made Better",
+        "membershipLevel": 3
     },
 
     {
@@ -26,7 +28,8 @@
         "email": "ir@jollibee.com.ph",
         "website": "https://www.jollibeegroup.com/",
         "image": "images/jollibee_logo.webp",
-        "membershipLevel": "Silver"
+        "tagline": "Bida ang Saya!",
+        "membershipLevel": 2
     },
 
     {
@@ -36,7 +39,8 @@
         "email": "palholdingsinc.info@gmail.com",
         "website": "https://phi.com.ph/",
         "image": "images/pal_logo.webp",
-        "membershipLevel": "Silver"
+        "tagline": "The Heart of the Filipino",
+        "membershipLevel": 2
     },
 
     {
@@ -46,7 +50,8 @@
         "email": "investor.relations@meralco.com.ph",
         "website": "http://www.meralco.com.ph",
         "image": "images/meralco_logo.webp",
-        "membershipLevel": "Silver"
+        "tagline": "Ang Liwanag ng Bukas",
+        "membershipLevel": 1
     },
 
     {
@@ -56,7 +61,8 @@
         "email": "help@bpi.com.ph",
         "website": "https://www.bpi.com.ph/",
         "image": "images/bpi_logo.webp",
-        "membershipLevel": "Silver"
+        "tagline": "Do More with BPI",
+        "membershipLevel": 1
     },
 
     {
@@ -66,7 +72,8 @@
         "email": "ir@globetel.com.ph",
         "website": "http://www.globe.com.ph",
         "image": "images/globe_logo.webp",
-        "membershipLevel": "Silver"
+        "tagline": "Go Forward Together",
+        "membershipLevel": 1
     },
 
     {
@@ -76,7 +83,8 @@
         "email": "IR@urc.com.ph",
         "website": "https://www.urc.com.ph/",
         "image": "images/urc_logo.webp",
-        "membershipLevel": "Bronze"
+        "tagline": "Passion To Win",
+        "membershipLevel": 1
     },
 
     {
@@ -86,7 +94,8 @@
         "email": "PLDT_IR_Center@pldt.com.ph",
         "website": "https://main.pldt.com",
         "image": "images/pldt_logo.webp",
-        "membershipLevel": "Bronze"
+        "tagline": "Leading & inspiring Filipinos to create a better tomorrow",
+        "membershipLevel": 1
     }
 
 ]

@@ -39,6 +39,10 @@
         height: 30rem;
     }
 
+    .hero a {
+        left: 79%;
+    }
+
     /* Footer */
 
     footer {

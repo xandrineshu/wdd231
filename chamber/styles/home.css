@@ -134,12 +134,11 @@ main h1 {
 }
 
 .hero a:hover {
-    background-color: #222a75;
+    background-color: white;
     font-weight: 700;
-    color: white;
+    color: #222a75;
     cursor: pointer;
 }
-
 
 
 /*****************     Footer     *******************/
