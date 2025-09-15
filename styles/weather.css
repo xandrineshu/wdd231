@@ -1,0 +1,24 @@
+main {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h1, p, footer, figcaption, figure {
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+figure {
+    width: auto ;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
