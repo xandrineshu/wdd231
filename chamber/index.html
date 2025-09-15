@@ -7,64 +7,117 @@
     <meta name="description" content="Chamber Home Page - WDD231 course">
     <meta name="author" content="Jelina Alexandrine Concha">
 
-    <title>Chamber of Commerce - Home Page</title>
+    <title>Philippines Chamber of Commerce</title>
+
+    <meta property="og:title" content="Philippines - Chamber of Commerce">
+    <meta property="og:description" content="Website to promote filipino businesses">
+    <meta property="og:image"
+        content="https://github.com/xandrineshu/wdd231/blob/main/chamber/images/ph-chamber-logo.webp">
+    <meta property="og:url" content="https://xandrineshu.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/">
-    <script src="scripts/" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <script src="scripts/home.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
-
-    <meta property="og:title" content="Homepage - Facebook">
-    <meta property="og:description"
-        content="Facebook is a social media platform that allows users to create a free profile, connect with others, and share content like photos, videos, and personal updates.">
-    <meta property="og:image"
-        content="https://store-images.s-microsoft.com/image/apps.35093.9007199266245907.bb486e48-50ee-459a-a4ab-079602cdeaa1.8a3caf66-7e40-4d13-bdb2-1cb91e4a08a1?h=1280">
-    <meta property="og:url" content="https://www.facebook.com/">
-
 </head>
 
 <body>
     <header>
-        <img src="images/" alt="home-logo" width="512" height="512">
-        <span> Chamber </span>
+        <div class="title">
+            <img src="images/ph-chamber-logo.webp" alt="home-logo" loading="lazy" width="512" height="512">
+            <span> Philippines - Chamber of Commerce </span>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html"> Home </a></li>
+                <li><a href="directory.html"> Directory </a></li>
+                <li><a href="join.html"> Join </a></li>
+                <li><a href="discover.html"> Discover </a></li>
+            </ul>
+        </nav>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
 
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="current"><a href="#"> Home </a></li>
-            <li><a href="#"> Directory </a></li>
-            <li><a href="#"> Join </a></li>
-            <li><a href="#"> Discover </a></li>
-        </ul>
-    </nav>
-
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-image.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Mania Temple, Philippines" width="500" height="250">
+            </picture>
+
+            <a href="join.html">Become a Member Now!</a>
+        </div>
+
+        <h1> Home ☀️ </h1>
+        <div class="main-content">
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                
+                <h3>Peñalolén Business Expo - Saturday, March 29th</h3>
+                <p>Showcase your business and network with local entrepreneurs.</p>
+                
+                <h3>Small Business Workshop - Tuesday, April 1st</h3>
+                <p>Learn about funding, marketing, and scaling your business.</p>
+                
+                <h3>Monthly Chamber Member Luncheon - Saturday, April 12th</h3>
+                <p>Meet fellow business owners and discuss economic trends.</p>
+            </section>
+                
+            <section>
+                <h2>Weather Today</h2>
+                
+                <div class="weatherContainer">
+                    <!-- js -->
+                </div>
+            </section>
+    
+            <section>
+                <h2>Forecast</h2>
+                
+                <div class="forecastContainer">
+                    <!-- js -->
+                </div>
+            </section>
+        </div>
         
+        <div class="spotlights">
+            <!-- js -->
+        </div>
     </main>
 
     <footer>
-        <div class="info-1">
-            <p>Chamber of Commerce</p>
-            <p>(address)</p>
-            <p>(email)</p>
-            <p>(phone number)</p>
-        </div>
+        <div class="footer-info">
+            <div class="info-left">
+                <p><bold> Philippines Chamber of Commerce</p>
+                <p>Marilao, Bulacan, Philippines</p>
+                <p>jconcha1@byupathway.edu</p>
+                <p>+63901234567</p>
+            </div>
     
-        <div class="social">
-            <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img src="#" alt="linkedin"
-                    width="16" height="16"></a>
-            <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="#" alt="facebook" width="16"
-                    height="16"></a>
-            <a href="" target="_blank"><img src="#" alt="facebook" width="16" height="16"></a>
-        </div>
+            <div class="social">
+                <a href="https://github.com/xandrineshu" target="_blank"><img src="images/github.svg" loading="lazy"
+                        alt="facebook" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/in/jelinaalexandrineconcha/" target="_blank"><img
+                        src="images/linkedin.svg" loading="lazy" alt="linkedin" width="16" height="16"></a>
+                <a href="https://www.facebook.com/XandrineShu07" target="_blank"><img src="images/facebook.svg"
+                        alt="facebook" loading="lazy" width="16" height="16"></a>
+            </div>
     
-        <div class="info-2">
-            <p>WDD231 Class Project</p>
-            <p>Jelina Alexandrine Concha</p>
-            <p>&copy;<span id="currentyear">2025</span> - Chamber of Commerce</p>
-            <p id="lastModified"></p>
+            <div class="info-right">
+                <p><bold>WDD231 Class Project</bold></p>
+                <p>By Jelina Alexandrine Concha</p>
+                <p>&copy;<span id="currentyear">2025</span> - PH Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
         </div>
     </footer>
 </body>
