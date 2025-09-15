@@ -1,0 +1,51 @@
+@media only screen and (min-width: 900px) {
+    header, main, nav, footer {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    /* Nav & Hamburger */
+
+    header {
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        margin: 20px
+    }
+
+    .navigation {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .navigation li {
+        padding-inline: 15px;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .info-left p, .info-right p {
+        padding-inline: 20px;
+    }
+}
