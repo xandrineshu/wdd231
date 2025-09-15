@@ -1,93 +1,85 @@
-[
-    {
-        "name": "SM Investments Corporation",
-        "address": "10th Flr, Harbor Drive, Mall of Asia Complex, Pasay City",
-        "phone": "(632) 8857-0100",
-        "email": "ir@sminvestments.com",
-        "website": "http://www.sminvestments.com",
-        "image": "images/sm_logo.webp",
-        "membershipLevel": "Gold"
-    },
-
-    {
-        "name": "San Miguel Corporation",
-        "address": "40 San Miguel Avenue, Mandaluyong City, Metro Manila",
-        "phone": "(632) 8632-3000",
-        "email": "smcl@sanmiguel.com.ph",
-        "website": "http://www.sanmiguel.com.ph/",
-        "image": "images/san_miguel_logo.webp",
-        "membershipLevel": "Gold"
-    },
-
-    {
-        "name": "Jollibee Foods Corporation",
-        "address": "10th Floor, Jollibee Plaza Building, Emerald Ave., Ortigas Center, Pasig City",
-        "phone": "(632) 8634-1111",
-        "email": "ir@jollibee.com.ph",
-        "website": "https://www.jollibeegroup.com/",
-        "image": "images/jollibee_logo.webp",
-        "membershipLevel": "Silver"
-    },
-
-    {
-        "name": "Philippine Airlines",
-        "address": "8th Floor, PNB Financial Center, President Diosdado Macapagal Ave., Pasay City",
-        "phone": "+63 (02) 8816-3453",
-        "email": "palholdingsinc.info@gmail.com",
-        "website": "https://phi.com.ph/",
-        "image": "images/pal_logo.webp",
-        "membershipLevel": "Silver"
-    },
-
-    {
-        "name": "MERALCO",
-        "address": "Ground Floor, Lopez Building, Ortigas Avenue, Brgy. Ugong, Pasig City",
-        "phone": "8632-8771",
-        "email": "investor.relations@meralco.com.ph",
-        "website": "http://www.meralco.com.ph",
-        "image": "images/meralco_logo.webp",
-        "membershipLevel": "Silver"
-    },
-
-    {
-        "name": "Bank of the Philippine Islands (BPI)",
-        "address": "Ayala Triangle Gardens Tower 2, Paseo de Roxas corner Makati Avenue, Makati City",
-        "phone": "(632) 8663-6525 or (632) 8663-6733",
-        "email": "help@bpi.com.ph",
-        "website": "https://www.bpi.com.ph/",
-        "image": "images/bpi_logo.webp",
-        "membershipLevel": "Silver"
-    },
-
-    {
-        "name": "Globe Telecom",
-        "address": "The Globe Tower, 32nd Street corner 7th Avenue, Bonifacio Global City, Taguig",
-        "phone": "(632) 7730-2000",
-        "email": "ir@globetel.com.ph",
-        "website": "http://www.globe.com.ph",
-        "image": "images/globe_logo.webp",
-        "membershipLevel": "Silver"
-    },
-
-    {
-        "name": "Universal Robina Corporation (URC)",
-        "address": "8th Floor, Tera Tower, Bridgetowne, E. Rodriguez, Jr. Avenue (C5 Road), Ugong Norte, Quezon City, Metro Manila",
-        "phone": "(632) 8516-9888",
-        "email": "IR@urc.com.ph",
-        "website": "https://www.urc.com.ph/",
-        "image": "images/urc_logo.webp",
-        "membershipLevel": "Bronze"
-    },
-
-    {
-        "name": "PLDT Inc.",
-        "address": "Ramon Cojuangco Building, Makati Ave. cor Ayala Ave., Legazpi Village, Makati City, Metro Manila",
-        "phone": "+63 (2)88888-171",
-        "email": "PLDT_IR_Center@pldt.com.ph",
-        "website": "https://main.pldt.com",
-        "image": "images/pldt_logo.webp",
-        "membershipLevel": "Bronze"
-    }
-
-]
-
+{
+    "companies": [
+        {
+            "name": "SM Investments Corporation",
+            "address": "10th Flr, Harbor Drive, Mall of Asia Complex, Pasay City",
+            "phone": "(632) 8857-0100",
+            "email": "ir@sminvestments.com",
+            "website": "http://www.sminvestments.com",
+            "image": "images/sm_logo.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "San Miguel Corporation",
+            "address": "40 San Miguel Avenue, Mandaluyong City, Metro Manila",
+            "phone": "(632) 8632-3000",
+            "email": "smcl@sanmiguel.com.ph",
+            "website": "http://www.sanmiguel.com.ph/",
+            "image": "images/san_miguel_logo.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Jollibee Foods Corporation",
+            "address": "10th Floor, Jollibee Plaza Building, Emerald Ave., Ortigas Center, Pasig City",
+            "phone": "(632) 8634-1111",
+            "email": "ir@jollibee.com.ph",
+            "website": "https://www.jollibeegroup.com/",
+            "image": "images/jollibee_logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Philippine Airlines",
+            "address": "8th Floor, PNB Financial Center, President Diosdado Macapagal Ave., Pasay City",
+            "phone": "+63 (02) 8816-3453",
+            "email": "palholdingsinc.info@gmail.com",
+            "website": "https://phi.com.ph/",
+            "image": "images/pal_logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "MERALCO",
+            "address": "Ground Floor, Lopez Building, Ortigas Avenue, Brgy. Ugong, Pasig City",
+            "phone": "8632-8771",
+            "email": "investor.relations@meralco.com.ph",
+            "website": "http://www.meralco.com.ph",
+            "image": "images/meralco_logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Bank of the Philippine Islands (BPI)",
+            "address": "Ayala Triangle Gardens Tower 2, Paseo de Roxas corner Makati Avenue, Makati City",
+            "phone": "(632) 8663-6525 or (632) 8663-6733",
+            "email": "help@bpi.com.ph",
+            "website": "https://www.bpi.com.ph/",
+            "image": "images/bpi_logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Globe Telecom",
+            "address": "The Globe Tower, 32nd Street corner 7th Avenue, Bonifacio Global City, Taguig",
+            "phone": "(632) 7730-2000",
+            "email": "ir@globetel.com.ph",
+            "website": "http://www.globe.com.ph",
+            "image": "images/globe_logo.webp",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Universal Robina Corporation (URC)",
+            "address": "8th Floor, Tera Tower, Bridgetowne, E. Rodriguez, Jr. Avenue (C5 Road), Ugong Norte, Quezon City, Metro Manila",
+            "phone": "(632) 8516-9888",
+            "email": "IR@urc.com.ph",
+            "website": "https://www.urc.com.ph/",
+            "image": "images/urc_logo.webp",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "PLDT Inc.",
+            "address": "Ramon Cojuangco Building, Makati Ave. cor Ayala Ave., Legazpi Village, Makati City, Metro Manila",
+            "phone": "+63 (2)88888-171",
+            "email": "PLDT_IR_Center@pldt.com.ph",
+            "website": "https://main.pldt.com",
+            "image": "images/pldt_logo.webp",
+            "membershipLevel": "Bronze"
+        }
+    ]
+}
