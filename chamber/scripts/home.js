@@ -151,13 +151,18 @@ async function loadSpotlights() {
             card.classList.add('member-card');
             card.innerHTML = `
                 <h3>${member.name}</h3>
-                <p>${member.tagline}</p>
+                <h4>"${member.tagline}"</h4>
                 <div class="member-info">
-                    <img src="${member.image}" alt="${member.name} logo">
-                    <p>${member.address}</p>
-                    <p>${member.phone}</p>
-                    <a href="${member.website}" target="_blank">Website</a>
-                    <p class="membership">${member.membershipLevel === 3 ? 'Gold' : 'Silver'} Member</p>
+                    <section id="logo">
+                        <img src="${member.image}" alt="${member.name} logo">
+                    </section>
+                    
+                    <section id="info">
+                        <p><b>Email: </b>${member.email}</p>
+                        <p><b>Phone: </b>${member.phone}</p>
+                        <p><b>URL: </b><a href="${member.website}">${member.website}</a></p>
+                        <p class="membership"><b>Level: </b>${member.membershipLevel === 3 ? 'Gold' : 'Silver'} Member</p>
+                    </section>
                 </div>
             `;
             container.appendChild(card);

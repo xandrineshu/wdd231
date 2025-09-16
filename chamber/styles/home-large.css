@@ -4,6 +4,7 @@
         margin: 0 auto;
     }
 
+
     /* Nav & Hamburger */
 
     header {
@@ -32,6 +33,7 @@
         padding-inline: 15px;
     }
 
+
     /* Hero Image */
 
     .hero img {
@@ -42,6 +44,28 @@
     .hero a {
         left: 79%;
     }
+
+
+    /* Main Content */
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 3fr 1.4fr 1fr;
+    }
+
+    .events h2, .weather h2, .forecast h2 {
+        text-align: left;
+    }
+    
+    #spotlights .spotlight-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .member-card {
+        margin: 5px;
+        margin-inline: 10px;
+    }
+
 
     /* Footer */
 
