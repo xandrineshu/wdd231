@@ -1,4 +1,4 @@
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 900px) {
     header, main, nav, footer {
         max-width: 80rem;
         margin: 0 auto;
@@ -42,7 +42,7 @@
     }
 
     .slideshow-container a {
-        left: 79%;
+        left: 76%;
         font-size: 20px;
     }
 
