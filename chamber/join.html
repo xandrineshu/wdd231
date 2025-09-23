@@ -21,10 +21,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
 
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -50,6 +50,67 @@
     <main>
         <h1> Join ☀️ </h1>
 
+            <div class="join-layout">
+                <form method="get" action="thankyou.html" onsubmit="setTimestamp()">
+                    <h2> ✨ Membership Application ✨ </h2>
+                    
+                    <label>First Name <input type="text" name="firstName" autocomplete="given-name" title="Enter your first name" required></label>
+                    <label>Last Name <input type="text" name="lastName" autocomplete="family-name" title="Enter your last name" required></label>
+
+                    <label>Organizational Title (optional) <input type="text" name="orgTitle" autocomplete="organization-title" title="Enter your title within your organization" pattern="^[A-Za-z\s\-]{7,}$"></label>
+            
+                    <label>Email Address <input type="email" name="email" autocomplete="email" title="Enter your email address" placeholder="Example: maria@gmail.com" required></label>
+                    <label>Mobile Phone Number <input type="tel" name="phone" autocomplete="tel" title="Enter your phone number" placeholder="Example: 092-918-1939" required></label>
+            
+                    <label>Business/Organization Name <input type="text" name="orgName" autocomplete="organization" title="Enter the name of your business or organization" required></label>
+            
+                    <p> Membership Level </p>
+                    <div class="radio-buttons">
+                        <label><input type="radio" name="membership" value="non-profit" required>Non Profit Membership</label>
+                        <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                    </div>
+            
+                    <label for="org-desc">Business/Organization description (optional) <textarea id="org-desc" name="orgDesc" title="Enter a description for your business or organization"></textarea></label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+            
+                    <input type="submit" value="Apply Now">
+                </form>
+
+                <section>
+                    <h2> Membership Levels 🏆 </h2>
+                    <div class="level-options">
+                        <section class="np-member">
+                            <h3> 0. Non-Profit Membership 🎖️ </h3>
+                            <button id="openButton0">Learn More</button>
+                        </section>
+
+                        <section class="bronze">
+                            <h3> 1. Bronze Membership 🥉 </h3>
+                            <button id="openButton1">Learn More</button>
+                        </section>
+
+                        <section class="silver">
+                            <h3> 2. Silver Membership 🥈 </h3>
+                            <button id="openButton2">Learn More</button>
+                        </section>
+
+                        <section class="gold">
+                            <h3> 3. Gold Membership 🥇 </h3>
+                            <button id="openButton3">Learn More</button>
+                        </section>
+                    </div>
+                </section>
+
+                <dialog id="dialogBox">
+                    <button id="closeButton"> ✖ </button>
+                    <div>
+                        <!-- js -->
+                    </div>
+                </dialog>
+            </div>
+        </form>
     </main>
 
     <footer>

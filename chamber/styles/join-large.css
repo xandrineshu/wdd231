@@ -1,0 +1,86 @@
+@media only screen and (min-width: 900px) {
+    header, main, nav, footer {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+
+    /* Nav & Hamburger */
+
+    header {
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        margin: 20px
+    }
+
+    .navigation {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .navigation li {
+        padding-inline: 15px;
+    }
+
+
+    /* form */
+    
+    .join-layout {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    form {
+        width: 90%;
+    }
+    
+    /* membership levels */
+    .level-options {
+        gap: 1rem;
+    }
+    
+    .level-options section {
+        width: 400px;
+    }
+    
+    /* Dialog */
+    dialog {
+        width: 50%;
+        height: 80%;
+        top: 10%;
+    }
+    
+    /* results */
+    #results {
+        width: 70%;
+    }
+
+
+    /* Footer */
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .info-left p, .info-right p {
+        padding-inline: 20px;
+    }
+}
