@@ -111,13 +111,13 @@ function setTimestamp() {
     return true;
 }
 
-console.log(myInfo.get("firstName"));
-console.log(myInfo.get("lastName"));
-console.log(myInfo.get("email"));
-console.log(myInfo.get("tel"));
-console.log(myInfo.get("orgName"));
-console.log(myInfo.get("membership"));
-console.log(myInfo.get("timestamp"));
+// console.log(myInfo.get("firstName"));
+// console.log(myInfo.get("lastName"));
+// console.log(myInfo.get("email"));
+// console.log(myInfo.get("tel"));
+// console.log(myInfo.get("orgName"));
+// console.log(myInfo.get("membership"));
+// console.log(myInfo.get("timestamp"));
 
 document.querySelector("#results").innerHTML = `
     <p><strong>${myInfo.get("firstName")} ${myInfo.get("lastName")}</strong>, Thank you for completing the application form for the
