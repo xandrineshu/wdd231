@@ -121,7 +121,9 @@ function setTimestamp() {
 
 document.querySelector("#results").innerHTML = `
     <p><strong>${myInfo.get("firstName")} ${myInfo.get("lastName")}</strong>, Thank you for completing the application form for the
-    Philippines Chamber of Commerce Membership, your application will be reviewed and you will be contacted shortly.</p>
+    Philippines Chamber of Commerce Membership, your application will be reviewed and you will be contacted shortly.
+    Our team will review your application and get back to you shortly. In the meantime, feel free to explore our page! ^^
+    </p>
     
     <h2><strong>Application details:</strong></h2>
     <p><strong>Business/Organization Name:</strong> ${myInfo.get("orgName")}</p>
@@ -129,9 +131,6 @@ document.querySelector("#results").innerHTML = `
     <p><strong>Phone Number:</strong> ${myInfo.get("tel")}</p>
     <p><strong>Membership Level Acquired:</strong> ${myInfo.get("membership")}</p>
     <p><strong>Application Submitted:</strong> ${myInfo.get("timestamp")}</p>
-
-    <p>Our team will review your application and get back to you shortly.
-    In the meantime, feel free to explore our page! ^^</p>
 `;
 
 
