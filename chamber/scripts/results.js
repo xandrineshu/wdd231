@@ -19,7 +19,7 @@ document.querySelector("#results").innerHTML = `
     <ul>
         <li><p><strong>Business/Organization Name:</strong> ${myInfo.get("orgName") || ""}</p></li>
         <li><p><strong>Email Address:</strong> ${myInfo.get("email") || ""}</p></li>
-        <li><p><strong>Phone Number:</strong> ${myInfo.get("tel") || ""}</p></li>
+        <li><p><strong>Phone Number:</strong> ${myInfo.get("phone") || ""}</p></li>
         <li><p><strong>Membership Level Acquired:</strong> ${myInfo.get("membership") || ""}</p></li>
         <li><p><strong>Application Submitted:</strong> ${timestamp}</p></li>
 `;
