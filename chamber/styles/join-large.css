@@ -44,7 +44,12 @@
     form {
         width: 90%;
     }
+
+    form input[type="submit"] {
+        width: 25%;
+    }
     
+
     /* membership levels */
     .level-options {
         gap: 1rem;
