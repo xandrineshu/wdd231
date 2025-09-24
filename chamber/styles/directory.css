@@ -215,7 +215,7 @@ main h1 {
     box-shadow: #686868 5px 5px 8px;
     margin: auto;
     margin-bottom: 30px;
-    max-width: 25rem;
+    width: 25rem;
     padding: 20px;
 }
 

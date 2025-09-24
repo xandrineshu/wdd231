@@ -31,7 +31,18 @@
     .navigation li {
         padding-inline: 15px;
     }
+    
 
+    /* Directory Grid View */
+
+    .grid-view .member {
+        width: 22rem;
+        height: 25rem;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    
 
     /* Directory List View */
 
@@ -41,7 +52,7 @@
         margin: 0;
         margin-bottom: 20px;
         padding: 10px;
-        max-width: 70rem;
+        width: 70rem;
     }
 
     .list-view .member h2 {
