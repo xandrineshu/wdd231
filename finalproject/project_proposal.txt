@@ -3,6 +3,7 @@ W04 Project: Proposal
 .
 .
 
+(Draft)
 Project Subject
 
 Horror Games club?? "Terror Tested" "The Fear Review"
@@ -19,7 +20,6 @@ The site's purpose is to provide in-depth critical analysis
 and a searchable database to help both casual players and
 dedicated fans discover their next terrifying experience.
 
-
 =====================================================
 
 Project Reason and Purpose
@@ -35,10 +35,39 @@ resource for enthusiasts seeking a curated guide to the genre.
 
 =====================================================
 
+(final)
 
+W04 Project: Proposal
+
+
+1. Project Subject
+"Fear File"
+
+2. Project Description
+Fear File is a review website that explores the depths of horror gaming.
+It goes beyond simple ratings to provide in-depth reviews, 
+helping both casual players and dedicated fans discover new games.
+Additionally, our community offers exclusive content and
+premium resources for members who want to dive deeper into the world of horror.
+
+3. Project Reason and Purpose
+To provide a valuable resource to the horror gaming community
+and to act as my comprehensive portfolio piece.
+It is also to merge my interest for
+horror games with my newly acquired skills,
+resulting in a product that is both functional
+and a powerful testament to my capabilities.
+
+
+=====================================================
+
+(draft)
 Mission: To connect players with high-quality horror games, 
 provide comprehensive reviews and news, and build a vibrant community for fans of the genre. 
 
 Vision: To become the ultimate online resource for horror gaming, 
 offering a diverse library of titles, in-depth analysis, 
 and interactive features that enhance the gaming experience. 
+.
+.
+.
