@@ -125,7 +125,7 @@ main h1 {
 .join-layout h2 {
     margin-block: 1rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -276,8 +276,8 @@ form input[type="submit"]:hover {
 
 dialog {
     margin: 10px auto;
-    height: 90%;
-    top: 5%;
+    height: 70%;
+    top: 10%;
 }
 
 dialog h3 {

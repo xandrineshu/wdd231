@@ -13,7 +13,7 @@ navButton.addEventListener('click', () => {
 
 // Modals
 
-const openButton = document.querySelector("#openButton");
+const openButton0 = document.querySelector("#openButton0");
 const dialogBox = document.querySelector("#dialogBox");
 const closeButton = document.querySelector("#closeButton");
 const dialogBoxText = document.querySelector("#dialogBox div");

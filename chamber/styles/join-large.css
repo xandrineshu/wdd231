@@ -40,7 +40,7 @@
         display: flex;
         justify-content: space-around;
     }
-    
+
     form {
         width: 90%;
     }
@@ -62,8 +62,8 @@
     /* Dialog */
     dialog {
         width: 50%;
-        height: 80%;
-        top: 10%;
+        height: 70%;
+        top: 15%;
     }
     
     /* results */
