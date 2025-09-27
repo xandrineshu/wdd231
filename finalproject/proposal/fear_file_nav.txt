@@ -1,0 +1,53 @@
+
+<  Fear File Navigation Page  >
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Home Page:
+- Hero Image
+- Club Events
+- Weather
+- Forecast
+- Horror Video Game Spotlight (depending club tier level)
+
+
+=====================================================================================================================================================================
+
+Review Page:
+- grid/list view
+- day/night mode
+- fallen spooky emojis animation
+- 9 or more video games reivew (name, year, rated, etc.)
+
+
+=====================================================================================================================================================================
+
+Discover Page:
+- discover players/youtubers who played horror games 
+- video games sites where you can play these games
+
+
+=====================================================================================================================================================================
+
+Join Page:
+- club application for "The Locked Dossier" 
+(Implies members have the clearance to view 
+highly restricted files.)
+- club tier info:
+Tier Level	        Tier Name	         Concept Based on Files/Clearance
+Tier 1 (Entry)	        Case Notes	         Simple access—the initial reports and basic, unclassified information.
+Tier 2 (Core)	        The Cipher Keys 🔑	 Members who can start decoding more content and gaining deeper access.
+Tier 3 (Premium)        Section REDACTED ⬛	 Grants access to the most exclusive files that are censored for the public eye.
+Tier 4 (Elite)	        Alpha Clearance	         A military/intelligence term for the highest level of trust and access to the full archive.
+Tier 5 (VIP)	        The Master File 💾	 The ultimate tier, holding all secrets and the complete, unrestricted collection of reviews and content.
+
+
+=====================================================================================================================================================================
+
+About Us Page:
+- how to contact us
+- socials for Fear File
+
+
+
+
