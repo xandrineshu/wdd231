@@ -1,0 +1,101 @@
+/* palette
+
+#12121e
+#B01124
+#040406
+
+*/
+
+body {
+    margin: 0 auto;
+    background-color: #12121e;
+    font-family: "Grenze Gotisch", serif;
+    font-weight: 400;
+}
+
+.content {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: #B01124 5px 5px 15px 15px;
+}
+
+h2, h3 {
+    color: #B01124;
+    border-bottom: #040406 3px solid;
+    margin-inline-end: 0.5rem;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #040406;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+h3 {
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h4 {
+    margin-left: 1.5rem;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 0.5;
+}
+
+p {
+    margin-inline: 1.5rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #040406;
+}
+
+ul {
+    margin-left: 1rem;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: "👻 ";
+    line-height: 2;
+}
+
+section {
+    margin: 2rem;
+    line-height: 1;
+}
+
+img {
+    width: 40%;
+    margin-left: 1rem;
+    border: #B01124 3px solid;
+}
+
+.primary, .secondary {
+    margin-inline: 2rem;
+}
+
+.primary {
+    background-color: #B01124;
+    color: #ffffe9;
+    padding: 15px;
+}
+
+.secondary {
+    background-color: #12121e; 
+    color: #fff; 
+    padding: 15px;
+}
+
