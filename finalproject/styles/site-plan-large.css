@@ -36,4 +36,9 @@
         margin-inline: 4rem;
         margin-inline-end: 7rem;
     }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
 }

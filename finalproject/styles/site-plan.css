@@ -99,3 +99,33 @@ img {
     padding: 15px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.grid img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.grid section {
+    margin: 0;
+}
+
+.grid h4 {
+    margin: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer p {
+    margin-top: 3rem;
+    font-size: 20px;
+    text-align: center;
+}
+
