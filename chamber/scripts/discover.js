@@ -9,7 +9,45 @@ navButton.addEventListener('click', () => {
 });
 
 
-// Main
+// User Info
+
+function getDaysBetween(date1, date2) {
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
+    const diffInMs = Math.abs(date1 - date2);
+    return Math.floor(diffInMs / millisecondsPerDay);
+}
+
+const messageDiv = document.getElementById("visit-message");
+const lastVisit = localStorage.getItem("lastVisit");
+const now = Date.now();
+
+let message = "";
+
+if (!lastVisit) {
+    message = " Welcome! Let us know if you have any questions. •ᴗ• ";
+} 
+
+else {
+    const daysPassed = getDaysBetween(now, parseInt(lastVisit));
+
+    if (daysPassed < 1) {
+        message = " Back so soon! Awesome! ( ˶ˆᗜˆ˵ ) ";
+    } 
+    
+    else if (daysPassed === 1) {
+        message = " You last visited 1 day ago. (˶ᵔ ᵕ ᵔ˶) ";
+    } 
+    
+    else {
+        message = ` You last visited ${daysPassed} days ago. (..◜ᴗ◝..) `;
+    }
+}
+
+messageDiv.textContent = message;
+localStorage.setItem("lastVisit", now.toString());
+
+
+// All places Cards
 
 import {places} from '../data/places.mjs'
 console.log(places)
@@ -24,6 +62,7 @@ function displayItems(places) {
         thephoto.src = `images/${x.photo_url}`
         thephoto.alt = x.name
         thecard.appendChild(thephoto)
+        thephoto.setAttribute("loading", "lazy");
 
         const thetitle = document.createElement('h2')
         thetitle.innerText = x.name
@@ -37,12 +76,15 @@ function displayItems(places) {
         thedesc.innerText = x.description
         thecard.appendChild(thedesc)
 
+        const learnmore = document.createElement('button')
+        learnmore.textContent = "Learn More"
+        thecard.appendChild(learnmore)
+
         showHere.appendChild(thecard)
     })
 }
 
 displayItems (places)
-
 
 
 // Footer
