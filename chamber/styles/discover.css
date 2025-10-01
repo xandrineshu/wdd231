@@ -113,135 +113,40 @@ main h1 {
     margin: 1.5rem 20px;
 }
 
-.view {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
+
+/*****************     Grid     *******************/
+
+#allplaces div {
+    margin: 1rem 8px;
+    border: 1px solid #222a75;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photo"
+    "description"
+    "address" ;
 }
 
-.view button {
-    background-color: #222a75;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 15px;
-    cursor: pointer;
+#allplaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#allplaces div img {
+    width: 100%;
+    grid-area: photo;
     border-radius: 10px;
 }
 
-.view button:hover {
-    background-color: #eec22d;
-    color: black;
-    font-weight: bolder;
-    font-style: italic;
+#allplaces div p {
+    margin: 1rem 10px;
+    grid-area: description;
 }
 
-
-/*****************     Businesses Directory     *******************/
-
-/* Grid View */
-
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
-}
-
-.grid-view .member {
-    width: 350px;
-    border: #222a75 solid 2px;
-    box-shadow: #686868 5px 5px 8px;
-    padding: 20px;
-    font-size: 15px;
-}
-
-.grid-view .member h2 {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    padding-block: 15px;
-}
-
-.grid-view .member p {
-    text-align: center;
-    line-height: 1.6;
-}
-
-.grid-view .member img {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    width: auto;
-    height: 150px;
-    animation: fade 10s;
-    border: #686868 1px solid;
-    box-shadow: 0 0 1rem #686868;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.grid-view .member a {
-    font-size: 20px;
-    display: block;
-    text-align: center;
-}
-
-.grid-view .member a:hover {
-    color: #eec22d;
-}
-
-
-/* List View */
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.list-view .member {
-    border: #222a75 solid 2px;
-    box-shadow: #686868 5px 5px 8px;
-    margin: auto;
-    margin-bottom: 30px;
-    width: 25rem;
-    padding: 20px;
-}
-
-.list-view .member img {
-    display: none;
-}
-
-.list-view .member h2 {
-    font-size: 25px;
-    font-weight: 700;
-    padding-block: 10px;
-    color: #222a75;
-}
-
-.list-view .member p {
-    font-size: 15px;
-    line-height: 1.2;
-    padding-block: 5px;
-}
-
-.list-view .member a {
-    font-size: 18px;
-}
-
-.list-view .member a:hover {
-   color: #eec22d;
+#allplaces div address {
+    margin: 1rem 10px;
+    grid-area: address;
 }
 
 
