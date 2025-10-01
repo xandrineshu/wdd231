@@ -1,6 +1,6 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
     .content {
-        max-width: 900px;
+        max-width: 850px;
     }
 
     h2 {
