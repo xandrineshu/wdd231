@@ -69,7 +69,8 @@ ul {
 
 li {
     list-style-type: "👻 ";
-    line-height: 2;
+    line-height: 1.2;
+    padding-block: 10px;
 }
 
 section {
