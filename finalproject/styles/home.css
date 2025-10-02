@@ -1,0 +1,17 @@
+.terminal-window {
+    background-color: #111;
+    border: 2px solid #00ff00;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+}
+
+.fear-report {
+    color: #00ff00;
+    /* Neon Green */
+    white-space: pre-wrap;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
