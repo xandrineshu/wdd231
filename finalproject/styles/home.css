@@ -1,17 +1,130 @@
-.terminal-window {
-    background-color: #111;
-    border: 2px solid #00ff00;
-    padding: 15px;
-    font-family: 'Courier New', monospace;
+body {
+    background-color: #12121e;
+    color: #B01124;
+    padding: 20px;
 }
 
-.fear-report {
-    color: #00ff00;
-    /* Neon Green */
+.main-container {
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #ff0000;
+    /* Red border */
+    padding: 15px;
+    box-shadow: 0 0 10px #ff0000;
+    /* Red glow */
+    transition: box-shadow 0.3s ease-in-out;
+    /* Subtle transition for main box */
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0 0 5px #ff0000;
+    /* Red text shadow */
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ff0000;
+    /* Red dashed line */
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    /* Magenta for section titles (kept for contrast) */
+}
+
+.weatherContainer,
+.forecastContainer {
+    min-height: 150px;
     white-space: pre-wrap;
+    /* Preserve formatting of the report text */
+    padding: 10px 0;
+}
+
+.loading-message {
+    color: #ffff00;
+    /* Yellow for loading */
+    font-size: 1.2rem;
+    /* Subtler iteration (0.05s) and text-shadow applied for glitch effect */
+    animation: blink 1s infinite, glitch 0.05s infinite alternate;
+    text-shadow: 0 0 5px currentColor;
 }
 
 .error-message {
-    color: red;
-    font-weight: bold;
+    color: #ff8888;
+    /* Slightly lighter red for error text contrast */
+}
+
+.current-report {
+    border: 1px solid #ff0000;
+    /* Red border */
+    padding: 15px;
+    line-height: 1.4;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.forecast-item {
+    background-color: rgba(255, 0, 0, 0.05);
+    /* Transparent red background */
+    border: 1px dashed #ff0000;
+    /* Red dashed border */
+    padding: 10px;
+    line-height: 1.2;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    /* Subtle hover transition */
+}
+
+.forecast-item:hover {
+    /* Added hover effect for interaction */
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.forecast-item strong {
+    color: #ff00ff;
+    /* Magenta for emphasis */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* SUBTLE GLITCH ANIMATION: Reduced movement for a less aggressive, more shaky/flickering effect */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+        text-shadow: 1px 1px 0 #ff00ff, -1px -1px 0 #00ffff;
+        /* Smaller shadow offset */
+    }
+
+    25% {
+        transform: translate(2px, -2px);
+        /* Smaller movement */
+        text-shadow: -2px 2px 0 #ff0000, 2px -2px 0 #00ff00;
+    }
+
+    50% {
+        transform: translate(-1px, 1px);
+        text-shadow: 0 0 4px #ffff00;
+        /* Slight glow */
+    }
+
+    75% {
+        transform: translate(1px, 2px);
+        text-shadow: 2px 1px 0 #ff00ff, -2px -1px 0 #00ffff;
+    }
+
+    100% {
+        transform: translate(-2px, -1px);
+        text-shadow: 0 0 4px #ffff00;
+    }
 }
