@@ -117,36 +117,61 @@ main h1 {
 /*****************     Grid     *******************/
 
 #allplaces div {
-    margin: 1rem 8px;
-    border: 1px solid #222a75;
+    margin: 2rem 20px;
+    border: 3px solid #222a75;
     border-radius: 10px;
     display: grid;
     grid-template-areas:
     "name"
     "photo"
     "description"
-    "address" ;
+    "address"
+    "button" ;
 }
 
 #allplaces div h2 {
-    margin: 1rem 10px;
+    margin: 0;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    background-color: #222a75;
+    text-align: center;
     grid-area: name;
 }
 
 #allplaces div img {
     width: 100%;
     grid-area: photo;
-    border-radius: 10px;
 }
 
 #allplaces div p {
-    margin: 1rem 10px;
+    margin: 1rem 20px;
+    font-weight: 500;
+    font-size: 20px;
     grid-area: description;
 }
 
 #allplaces div address {
-    margin: 1rem 10px;
+    margin: 1rem 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
     grid-area: address;
+}
+
+#allplaces div button {
+    margin: 1rem 10px;
+    grid-area: button;
+    border-radius: 10px;
+    padding: 10px;
+    margin-inline: 20px;
+}
+
+#allplaces div button:hover {
+    background-color: #eec22d;
+    font-weight: 800;
+    font-style: italic ;
 }
 
 

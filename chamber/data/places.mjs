@@ -1,7 +1,7 @@
 export const places = [
     {
         "name": "Intramuros (Walled City District)",
-        "address": "Bonifacio Dr & Padre Burgos St, Manila, Metro Manila 1002, Philippines",
+        "address": "Bonifacio Dr & Padre Burgos St, Manila, Metro Manila 1002",
         "cost": "Free to enter district; attractions inside have separate fees",
         "description": "The historic core of Manila with Spanish colonial walls, cobblestone streets, plazas, churches, and museums.",
         "photo_url": "Intramuros_Manila.webp"
@@ -9,7 +9,7 @@ export const places = [
 
     {
         "name": "Fort Santiago",
-        "address": "Inside Intramuros, Manila, Philippines",
+        "address": "Inside Intramuros, Manila",
         "cost": "₱75 regular, ₱50 discounted",
         "description": "Historic citadel where national hero José Rizal was imprisoned. Features dungeons, gardens, and Spanish-era walls.",
         "photo_url": "Fort_Santiago_Gate_Manila.webp"
@@ -25,7 +25,7 @@ export const places = [
 
     {
         "name": "National Museum of the Philippines",
-        "address": "P. Burgos Drive, Rizal Park, Manila, Philippines",
+        "address": "P. Burgos Drive, Rizal Park, Manila",
         "cost": "Free",
         "description": "Composed of Fine Arts, Anthropology, and Natural History museums. Houses masterpieces like Juan Luna’s Spoliarium.",
         "photo_url": "National_Museum_of_the_Philippines_Manila.webp"

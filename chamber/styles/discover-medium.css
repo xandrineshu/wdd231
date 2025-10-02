@@ -3,11 +3,39 @@
         grid-template-areas:
         "photo name"       
         "photo description"
-        "photo address";
+        "photo address"
+        "photo button";
+    }
+
+    #allplaces div h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    #allplaces div p {
+        margin: 0 20px;
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    
+    #allplaces div address {
+        margin: 1rem 20px;
+        font-size: 15px;
+    }
+    
+    #allplaces div button {
+        margin: 0 20px;
+        height: 40px;
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 
     #allplaces div img {
         width: 300px;
+        height: 205px;
+        border-radius: 6px;
+        display: block;
+        margin: auto;
     }
     
     #allplaces div img:hover {

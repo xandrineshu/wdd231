@@ -40,8 +40,29 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #allplaces div {
+        grid-template-areas:
+        "name name"
+        "photo description"
+        "photo address"
+        "photo button";
+    }
+
+    #allplaces div h2 {
+        margin: 0;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        background-color: #222a75;
+    }
+
     #allplaces div img:hover {
         box-shadow: 0 0 50px #333;
+    }
+
+    #allplaces div p {
+        padding-top: 15px;
     }
 
 
