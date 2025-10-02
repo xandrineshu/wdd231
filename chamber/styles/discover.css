@@ -113,8 +113,15 @@ main h1 {
     margin: 1.5rem 20px;
 }
 
+.visit-message {
+    margin: 0 20px;
+    font-size: 20px;
+    background-color: #eec22d;
+    padding: 15px;
+    /* border-left: 5px solid #686868; */
+}
 
-/*****************     Grid     *******************/
+/*****************     Places Cards     *******************/
 
 #allplaces div {
     margin: 2rem 20px;
