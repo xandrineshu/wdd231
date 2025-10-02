@@ -9,7 +9,7 @@ navButton.addEventListener('click', () => {
 });
 
 
-// User Info
+// User Visit Info
 
 function getDaysBetween(date1, date2) {
     const millisecondsPerDay = 1000 * 60 * 60 * 24;

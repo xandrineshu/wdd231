@@ -116,9 +116,9 @@ main h1 {
 .visit-message {
     margin: 0 20px;
     font-size: 20px;
-    background-color: #eec22d;
+    background-color: #eec12db2;
     padding: 15px;
-    /* border-left: 5px solid #686868; */
+    border-left: 10px solid #eec22d; */
 }
 
 /*****************     Places Cards     *******************/
