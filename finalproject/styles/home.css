@@ -1,29 +1,40 @@
+/* ======================= Palette ======================= */
+/*
+    Red:    #B01124
+    Black:  #12121e
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grenze Gotisch", serif;
+}
+
 body {
     background-color: #12121e;
     color: #B01124;
     padding: 20px;
 }
 
+/* ======================= Weather ======================= */
+
 .main-container {
     width: 100%;
     max-width: 900px;
     border: 2px solid #ff0000;
-    /* Red border */
     padding: 15px;
     box-shadow: 0 0 10px #ff0000;
-    /* Red glow */
     transition: box-shadow 0.3s ease-in-out;
-    /* Subtle transition for main box */
 }
 
 h1 {
     font-size: 2.5rem;
     text-align: center;
     text-shadow: 0 0 5px #ff0000;
-    /* Red text shadow */
     margin-bottom: 20px;
     border-bottom: 1px dashed #ff0000;
-    /* Red dashed line */
     padding-bottom: 10px;
 }
 
@@ -32,34 +43,27 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #ff00ff;
-    /* Magenta for section titles (kept for contrast) */
 }
 
-.weatherContainer,
-.forecastContainer {
+.weatherContainer, .forecastContainer {
     min-height: 150px;
     white-space: pre-wrap;
-    /* Preserve formatting of the report text */
     padding: 10px 0;
 }
 
 .loading-message {
     color: #ffff00;
-    /* Yellow for loading */
     font-size: 1.2rem;
-    /* Subtler iteration (0.05s) and text-shadow applied for glitch effect */
     animation: blink 1s infinite, glitch 0.05s infinite alternate;
     text-shadow: 0 0 5px currentColor;
 }
 
 .error-message {
     color: #ff8888;
-    /* Slightly lighter red for error text contrast */
 }
 
 .current-report {
     border: 1px solid #ff0000;
-    /* Red border */
     padding: 15px;
     line-height: 1.4;
 }
@@ -71,25 +75,20 @@ h2 {
 }
 
 .forecast-item {
-    background-color: rgba(255, 0, 0, 0.05);
-    /* Transparent red background */
+    background-color: #ff00000d;
     border: 1px dashed #ff0000;
-    /* Red dashed border */
     padding: 10px;
     line-height: 1.2;
     font-size: 0.9rem;
     transition: background-color 0.2s;
-    /* Subtle hover transition */
 }
 
 .forecast-item:hover {
-    /* Added hover effect for interaction */
-    background-color: rgba(255, 0, 0, 0.2);
+    background-color: #ff000033;
 }
 
 .forecast-item strong {
     color: #ff00ff;
-    /* Magenta for emphasis */
 }
 
 @keyframes blink {
@@ -98,7 +97,7 @@ h2 {
     }
 }
 
-/* SUBTLE GLITCH ANIMATION: Reduced movement for a less aggressive, more shaky/flickering effect */
+/* GLITCH ANIMATION */
 @keyframes glitch {
     0% {
         transform: translate(0);

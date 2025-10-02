@@ -36,7 +36,7 @@ async function fetchFearWeather() {
         const [currentData, forecastData] = await Promise.all([
             currentFetchPromise,
             forecastFetchPromise,
-            minDisplayTimePromise // Ensures the glitch runs for at least 3.5s
+            minDisplayTimePromise
         ]);
 
         // Process and display the data after the minimum time has elapsed
