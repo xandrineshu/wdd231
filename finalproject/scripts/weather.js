@@ -41,7 +41,7 @@ async function fetchFearWeather() {
 
         // Process and display the data after the minimum time has elapsed
         const currentReport = generateCurrentWeatherReport(currentData);
-        CURRENT_ELEMENT.innerHTML = `<pre class="current-report">${currentReport}</pre>`;
+        CURRENT_ELEMENT.innerHTML = `<div class="current-report">${currentReport}</pre>`;
 
         const forecastHtml = generateForecastReport(forecastData);
         FORECAST_ELEMENT.innerHTML = `<div class="forecast-grid">${forecastHtml}</div>`;
@@ -100,16 +100,16 @@ function generateCurrentWeatherReport(weatherData) {
 
     // --- Final Report Assembly ---
     return `
-// LOCATION: ${weatherData.name.toUpperCase()}
-// TIME STAMP: ${new Date().toLocaleTimeString()}
+<p>// LOCATION: ${weatherData.name.toUpperCase()}</p>
+<p>// TIME STAMP: ${new Date().toLocaleTimeString()}</p>
 
-[FILE STATUS]: ${statusMessage}
+<p>[FILE STATUS]: ${statusMessage}</p>
 
-[AMBIENT TEMP]: ${tempWarning}
+<p>[AMBIENT TEMP]: ${tempWarning}</p>
 
-[THREAT VECTOR]: ${windWarning}
+<p>[THREAT VECTOR]: ${windWarning}</p>
 
-// ACTION REQUIRED: MAINTAIN CIPHER KEYS (HIGH SECURITY PROTOCOL).
+<p>// ACTION REQUIRED: MAINTAIN CIPHER KEYS (HIGH SECURITY PROTOCOL).</p>
 `;
 }
 
@@ -180,7 +180,7 @@ function generateForecastReport(forecastData) {
         htmlItems.push(`
                     <div class="forecast-item">
                         <p><strong>DAY: ${dayName}</strong> (${key.split('/').slice(0, 2).join('/')})</p>
-                        <p class="text-3xl mt-1 mb-2">${icon}</p>
+                        <p class="emoji">${icon}</p>
                         <p><strong>ALERT:</strong> ${projection}</p>
                         <p><strong>TEMP:</strong> ${temp}°C</p>
                     </div>

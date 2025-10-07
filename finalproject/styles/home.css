@@ -1,9 +1,12 @@
-/* ======================= Palette ======================= */
-/*
+/*****************     Palette     *******************/
+/* (palette had to be changed from original colors due to contrast issues)
+
     Red:    #B01124
     Black:  #12121e
 
 */
+
+/*****************     Overall     *******************/
 
 * {
     margin: 0;
@@ -14,45 +17,253 @@
 
 body {
     background-color: #12121e;
-    color: #B01124;
-    padding: 20px;
 }
 
-/* ======================= Weather ======================= */
+
+/*****************     Header     *******************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #12121e;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    padding-inline: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #B01124;
+    text-shadow: 0 0 4px #ff0000;
+}
+
+header button {
+    background-color: #12121e;
+    border: none;
+    font-size: 30px;
+}
+
+
+/*****************     Navigation/Hamburger    *******************/
+
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2rem 0.5rem;
+    color: #B01124;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: #B01124;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/***************     Hero Image     *******************/
+
+.hero-image img {
+    width: 100%;
+}
+
+#cta {
+    position: relative;
+    bottom: 3.5rem;
+    left: 1.5rem;
+    background-color: #B01124;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#cta:hover {
+    background-color: #ffff00;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+/***************** Welcome Message *****************/
+
+main h1 {
+    color: #B01124;
+    text-shadow: 0 0 6px #ff0000;
+    text-align: center;
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+main p {
+    margin-inline: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/***************** Main *****************/
+
+.app-container {
+    max-width: 90%;
+    width: 800px;
+    background-color: black;
+    border: 2px solid #B01124;
+    box-shadow: 0 0 20px #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.app-header {
+    background-color: #B01124;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -20px -20px 20px -20px;
+}
+
+.app-header span {
+    font-size: 15px;
+}
+
+/***************** CLub Events *****************/
+
+#club-events h2, #weather h2 {
+    color: #B01124;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #B01124;
+    padding-bottom: 10px;
+}
+
+.log-card {
+    position: relative;
+    background-color: #250a0a;
+    color: #ffcccc;
+    border: 1px solid #B01124;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px #ff000066;
+    transition: all 0.2s ease-in-out;
+}
+
+.log-card:hover {
+    border-color: #ffff00;
+    box-shadow: 0 0 15px #ffff0099;
+    transform: scale(1.00);
+}
+
+.log-card::before {
+    content: attr(data-tab);
+    position: absolute;
+    top: -21px;
+    left: 15px;
+    padding: 5px 15px;
+    background-color: #440000;
+    color: #ffff00;
+    border: 1px solid #ff0000;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.card-title {
+    font-size: 25px;
+    color: #ff0000;
+    border-bottom: 1px dashed #440000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.log-card p {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/*****************     Weather     *******************/
 
 .main-container {
     width: 100%;
-    max-width: 900px;
     border: 2px solid #ff0000;
-    padding: 15px;
     box-shadow: 0 0 10px #ff0000;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    text-shadow: 0 0 5px #ff0000;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed #ff0000;
-    padding-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-top: 20px;
+#weather h3 {
+    font-size: 20px;
     margin-bottom: 10px;
-    color: #ff00ff;
-}
-
-.weatherContainer, .forecastContainer {
-    min-height: 150px;
-    white-space: pre-wrap;
-    padding: 10px 0;
+    color: #ffff00;
 }
 
 .loading-message {
-    color: #ffff00;
+    color: #ff0000;
     font-size: 1.2rem;
     animation: blink 1s infinite, glitch 0.05s infinite alternate;
     text-shadow: 0 0 5px currentColor;
@@ -65,7 +276,16 @@ h2 {
 .current-report {
     border: 1px solid #ff0000;
     padding: 15px;
-    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+.current-report p {
+    color: white;
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding-block: 10px;
 }
 
 .forecast-grid {
@@ -76,11 +296,24 @@ h2 {
 
 .forecast-item {
     background-color: #ff00000d;
-    border: 1px dashed #ff0000;
+    border: 1px solid #ff0000;
     padding: 10px;
-    line-height: 1.2;
-    font-size: 0.9rem;
-    transition: background-color 0.2s;
+    line-height: 1;
+    font-size: 15px;
+    transition: background-color 0.5s;
+}
+
+.forecast-item p {
+    color: white;
+    margin: 0px;
+    font-size: 15px;
+    text-align: left;
+    padding-block: 10px;
+}
+
+.forecast-item .emoji {
+    font-size: 40px;
+    text-align: center;
 }
 
 .forecast-item:hover {
@@ -88,7 +321,17 @@ h2 {
 }
 
 .forecast-item strong {
-    color: #ff00ff;
+    color: #ff0000;
+}
+
+.forecastContainer {
+    margin-bottom: 20px;
+}
+
+.warning p {
+    font-size: 10px;
+    color: gray;
+    margin: 0;
 }
 
 @keyframes blink {

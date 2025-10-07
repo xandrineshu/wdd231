@@ -31,63 +31,128 @@
 
 <body>
     <header>
-        <div class="title">
+        <div class="logo">
             <img src="images/Fear_File_Logo.webp" alt="home-logo" loading="lazy" width="512" height="512">
-            <span> Fear File </span>
         </div>
 
-        <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="index.html"> Home </a></li>
-                <li><a href="review.html"> Review </a></li>
-                <li><a href="discover.html"> Discover </a></li>
-                <li><a href="join.html"> Join </a></li>
-                <li><a href="about-us.html"> About Us </a></li>
-            </ul>
-        </nav>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <h1> Fear File </h1>
+
+        <button id="darkMode" onclick="darkMode()">🌗</button>
+        <a id="menu" href="#"></a>
     </header>
+
+    <nav>
+        <ul class="navigation">
+            <li class="current"><a href="index.html"> Home </a></li>
+            <li><a href="review.html"> Review </a></li>
+            <li><a href="discover.html"> Discover </a></li>
+            <li><a href="join.html"> Join </a></li>
+            <li><a href="about-us.html"> About Us </a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="hero-image">
-            <a id="cta" href="join.html">Become a Member Now!</a>
+            <picture>
+                <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-image.webp" alt="Hero Image, Folder Romm, under Surveillance Camera" width="500" height="250">
+            </picture>
+            
+            <a id="cta" href="join.html">Confirm Membership</a>
         </div>
 
-        <h1> Welcome! </h1>
+        <h1> Welcome </h1>
+        <p>
+            You have been granted access for the Fear File main terminal. This is your gateway to the most comprehensive 
+            and up-to-date archive of horror game intelligence, event logs, classified weather anomalies
+            and more. Navigate with caution... some files require elevated clearance. Stay vigilant, user.
+        </p>
 
-        <div class="main-content">
-            <section class="events">
-                <h2> Club Events </h2>
-
-            </section>
-
-            <div class="main-container">
-                <h1>FEAR FILE V2.1: ARCHIVE SECURITY STATUS</h1>
-            
-                <!-- Container for Current Weather -->
-                <h2>> CURRENT SECTOR STATUS: MANILA</h2>
-                <div class="weatherContainer">
-                    <p class="loading-message">[INITIATING DATA EXCHANGE: CURRENT STATUS...]</p>
+            <div id="app" class="app-container">
+                <div class="app-header">
+                    <span>// FEAR FILE PROTOCOL v4.1 - CONSOLIDATED VIEW</span>
+                    <span id="current-time"></span>
                 </div>
             
-                <!-- Container for Weather Forecast -->
-                <h2>> CLASSIFIED FORECAST: THREAT PROJECTION (3-DAY)</h2>
-                <div class="forecastContainer">
-                    <p class="loading-message">[FETCHING THREAT PROJECTION FILES...]</p>
+                <div id="grid">
+                    <section id="club-events">
+                        <h2>// ARCHIVED CLUB EVENTS</h2>
+                        <div class="log-card" data-tab="CLASSIFIED">
+                            <div class="card-title">The Silent Protocol</div>
+                            <p>This isn't a meeting; it's a data exchange. Attendees must arrive in dark clothing
+                                with zero electronic devices. The objective is to swap encrypted flash drives containing "anomalous
+                                weather observations" at a predetermined dead drop location. Failure to comply with the silence rule
+                                results in immediate de-authorization.</p>
+                            <p>:: LOCATION: Dead Drop Gamma. TIME: 03:00 HRS. ACCESS: R_1.</p>
+                        </div>
+                        
+                        <div class="log-card" data-tab="URGENT">
+                            <div class="card-title">Node Calibration [Redacted]</div>
+                            <p>A mandatory session focusing on the analysis of high-intensity atmospheric
+                                disturbances that exceed normal parameters. We will review corrupted satellite imagery and practice
+                                isolating data streams to filter out deliberate signal jamming. Bring your strongest coffee and your
+                                most paranoid theories.</p>
+                            <p>:: LOCATION: Sub-Level B4. TIME: 20:00 HRS. ACCESS: R_2.</p>
+                        </div>
+                        
+                        <div class="log-card" data-tab="SIGNAL">
+                            <div class="card-title">3.8 kHz (The Fading Signal)</div>
+                            <p class="text-sm">A listening party dedicated to tracking mysterious, low-frequency radio bursts
+                                detected over major metropolitan areas. We hypothesize these signals precede severe "unforeseen"
+                                events. Participants will use dedicated receivers to locate the signal's source before it phases
+                                out. Headsets are required.</p>
+                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: Tower 7 Rooftop. TIME: 01:00 HRS. ACCESS: R_1.</p>
+                        </div>
+                        
+                        <div class="log-card" data-tab="TOP SECRET">
+                            <div class="card-title">Archive Dive: Project Chimera</div>
+                            <p class="text-sm">An all-night session in a secure, ventilated space reviewing hard copies and archived
+                                documents related to a government project codenamed 'Chimera'—believed to be the origin of the
+                                current weather manipulation cycle. Access to the physical archive is highly restricted; only
+                                verified members of the inner circle are permitted.</p>
+                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: Secure Vault Z. TIME: 22:30 HRS. ACCESS: R_3.</p>
+                        </div>
+                        
+                        <div class="log-card" data-tab="TEST">
+                            <div class="card-title">The Backup Loop (Emergency Test)</div>
+                            <p class="text-sm">A timed exercise where members must collaboratively construct a redundant, off-grid
+                                power and communication network using only analog tools and salvaged components. The scenario: a
+                                massive electromagnetic pulse (EMP) has wiped out all digital infrastructure. Success is measured by
+                                how quickly we re-establish contact.</p>
+                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: The Quarry. TIME: 10:00 HRS. ACCESS: R_2.</p>
+                        </div>
+                    </section>
+
+                    <section id="weather">
+                        <h2>// ARCHIVE SECURITY STATUS</h2>
+                    
+                        <!-- Container for Current Weather -->
+                        <h3>> CURRENT SECTOR STATUS: MANILA</h3>
+                        <div class="weatherContainer">
+                            <p class="loading-message">[INITIATING DATA EXCHANGE: CURRENT STATUS...]</p>
+                        </div>
+                    
+                        <!-- Container for Weather Forecast -->
+                        <h3>> CLASSIFIED FORECAST: THREAT PROJECTION (3-DAY)</h3>
+                        <div class="forecastContainer">
+                            <p class="loading-message">[FETCHING THREAT PROJECTION FILES...]</p>
+                        </div>
+
+                        <div class="warning">
+                            <p> // WARNING: THIS DATA IS FOR ALPHA CLEARANCE PERSONNEL ONLY. //</p>
+                            <p>TERMINAL LOCK INITIATED AT 2400H.</p>
+                        </div>
+                    </section>
+
+                    <section id="spotlights">
+                        <h2> --- Spotlights </h2>
+                    
+                        <div class="spotlight-container">
+                            <!-- Spotlight Members will appear here with js -->
+                        </div>
+                    </section>
                 </div>
-            
-                <p class="text-sm mt-8 text-center text-gray-700">// WARNING: THIS DATA IS FOR ALPHA CLEARANCE PERSONNEL ONLY. //
-                    TERMINAL LOCK INITIATED AT 2400H.</p>
             </div>
-        </div>
-
-        <section id="spotlights">
-            <h2> --- Spotlights </h2>
-
-            <div class="spotlight-container">
-                <!-- Spotlight Members will appear here with js -->
-            </div>
-        </section>
     </main>
 
     <footer>
