@@ -100,6 +100,10 @@ nav {
     background-color: black;
 }
 
+.navigation li.current {
+    text-decoration: underline;
+}
+
 .show li {
     display: block;
 }
