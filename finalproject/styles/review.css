@@ -1,0 +1,152 @@
+/*****************     Palette     *******************/
+/*
+
+    Red:    #B01124
+    Black:  #12121e
+
+*/
+
+/*****************     Overall     *******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Grenze Gotisch", serif;
+}
+
+body {
+    background-color: #12121e;
+}
+
+
+/*****************     Header     *******************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #12121e;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+header h1 {
+    padding-inline: 10px;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px #B01124;
+}
+
+header button {
+    background-color: #12121e;
+    color: white;
+    border: none;
+    font-size: 30px;
+}
+
+
+/*****************     Navigation/Hamburger    *******************/
+
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 2rem 0.5rem;
+    color: white;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: #B01124;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation a:hover, .navigation a:active {
+    color: black;
+    background-color: white;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+    color: white;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/***************     <>     *******************/
+
+
+
+/*****************     Footer     *******************/
+
+.footer-info {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    background-color: #B01124;
+    color: white;
+    padding: 20px 30px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    margin-inline: 5px;
+}
+
+.social img {
+    border-radius: 35px;
+    width: 35px;
+    height: 35px;
+}
