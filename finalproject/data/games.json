@@ -1,0 +1,419 @@
+[
+    {
+        "title": "Until Dawn",
+        "description": "Interactive horror drama where eight friends are trapped on a mountain and must survive until dawn, with choices determining who lives or dies.",
+        "developer": "Supermassive Games",
+        "platforms": [
+            "PlayStation 4",
+            "PlayStation 5",
+            "Windows"
+        ],
+        "release_date": "2015-08-25",
+        "genres": [
+            "Survival horror",
+            "Interactive drama"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Until_Dawn.webp",
+        "link_to_game": "https://store.steampowered.com/app/2172010/Until_Dawn/",
+        "club_entry": "CONFIG",
+        "personal_review": "This one nailed the 'cabin in the woods' teen horror movie feel; the butterfly effect mechanic makes every choice feel genuinely terrifying."
+    },
+    
+    {
+        "title": "The Quarry",
+        "description": "Cinematic teen horror game where players control nine camp counselors as their summer night turns into a blood-soaked nightmare.",
+        "developer": "Supermassive Games",
+        "platforms": [
+            "PlayStation 4",
+            "PlayStation 5",
+            "Xbox One",
+            "Xbox Series X|S",
+            "Windows"
+        ],
+        "release_date": "2022-06-10",
+        "genres": [
+            "Survival horror",
+            "Interactive drama"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "The_Quarry.webp",
+        "link_to_game": "https://quarrygame.2k.com/",
+        "club_entry": "CONFIG",
+        "personal_review": "A spiritual successor that perfectly captures the summer camp slasher vibe with gorgeous graphics, though the ending felt a little less impactful than its predecessor."
+    },
+    {
+        "title": "Silent Hill",
+        "description": "Psychological survival horror franchise centered around the haunted town of Silent Hill, blending disturbing visuals with psychological terror.",
+        "developer": "Team Silent (Konami Computer Entertainment Tokyo)",
+        "platforms": [
+            "PlayStation",
+            "PC",
+            "Xbox",
+            "Nintendo consoles (varies by title)"
+        ],
+        "release_date": "1999-02-23",
+        "genres": [
+            "Psychological horror",
+            "Survival horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Silent_Hill.webp",
+        "link_to_game": "https://www.konami.com/games/silenthill/",
+        "club_entry": "PURGE",
+        "personal_review": "The master of atmosphere. Nothing captures psychological dread and existential decay quite like exploring that iconic, fog-choked town."
+    },
+    {
+        "title": "Resident Evil",
+        "description": "Long-running horror franchise featuring viral outbreaks, zombie survival, and intense action-horror gameplay.",
+        "developer": "Capcom",
+        "platforms": [
+            "PlayStation",
+            "Xbox",
+            "Nintendo Switch",
+            "Windows",
+            "Mobile"
+        ],
+        "release_date": "1996-03-22",
+        "genres": [
+            "Survival horror",
+            "Action horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Resident_Evil.webp",
+        "link_to_game": "https://www.residentevil.com/",
+        "club_entry": "PURGE",
+        "personal_review": "The absolute foundation of survival horror. The original fixed-camera tension and the later action-horror evolution are all essential horror gaming history."
+    },
+    {
+        "title": "Outlast",
+        "description": "First-person survival horror where players navigate an asylum using only a camcorder for light while evading monstrous inmates.",
+        "developer": "Red Barrels",
+        "platforms": [
+            "Windows",
+            "PlayStation 4",
+            "Xbox One",
+            "Nintendo Switch"
+        ],
+        "release_date": "2013-09-04",
+        "genres": [
+            "Survival horror",
+            "Psychological horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Outlast.webp",
+        "link_to_game": "https://redbarrelsgames.com/games/outlast/",
+        "club_entry": "VAULT",
+        "personal_review": "Pure, unadulterated found-footage panic. The lack of combat forces you into some of the most frantic and helpless stealth sequences in the genre."
+    },
+    {
+        "title": "Five Nights at Freddy's",
+        "description": "Point-and-click survival horror where players must survive nights guarding a haunted pizza restaurant with killer animatronics.",
+        "developer": "Scott Cawthon",
+        "platforms": [
+            "Windows",
+            "Mobile",
+            "PlayStation",
+            "Xbox",
+            "Nintendo Switch"
+        ],
+        "release_date": "2014-08-08",
+        "genres": [
+            "Survival horror",
+            "Point-and-click"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Five_Nights_at_Freddy.webp",
+        "link_to_game": "https://www.five-nights-at-freddys.com/",
+        "club_entry": "VAULT",
+        "personal_review": "A brilliantly simple concept that created a cultural phenomenon. It proves that jumpscares, when timed perfectly, are still effective horror tools."
+    },
+    {
+        "title": "Dead by Daylight",
+        "description": "Multiplayer survival horror where four survivors try to escape from one killer in an asymmetric 4v1 match.",
+        "developer": "Behaviour Interactive",
+        "platforms": [
+            "Windows",
+            "PlayStation",
+            "Xbox",
+            "Nintendo Switch",
+            "Mobile"
+        ],
+        "release_date": "2016-06-14",
+        "genres": [
+            "Asymmetric multiplayer",
+            "Survival horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Dead_by_Daylight.webp",
+        "link_to_game": "https://deadbydaylight.com/",
+        "club_entry": "PURGE",
+        "personal_review": "The definitive asymmetrical horror experience. The thrill of trying to outsmart an iconic killer with three friends never gets old—pure adrenaline."
+    },
+    {
+        "title": "Little Nightmares",
+        "description": "Puzzle-platformer set in a surreal world filled with monstrous adults; a small child must escape horrifying environments.",
+        "developer": "Tarsier Studios",
+        "platforms": [
+            "Windows",
+            "PlayStation 4",
+            "Xbox One",
+            "Nintendo Switch"
+        ],
+        "release_date": "2017-04-28",
+        "genres": [
+            "Puzzle-platformer",
+            "Atmospheric horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Little_Nightmares.webp",
+        "link_to_game": "https://en.bandainamcoent.eu/little-nightmares/little-nightmares",
+        "club_entry": "INDEX",
+        "personal_review": "A beautifully grotesque puzzle-platformer. It uses scale and surreal art direction to make you feel tiny, vulnerable, and constantly unsettled."
+    },
+    {
+        "title": "Phasmophobia",
+        "description": "Co-op ghost-hunting simulator where players investigate haunted locations to identify paranormal entities using equipment.",
+        "developer": "Kinetic Games",
+        "platforms": [
+            "Windows (VR supported)"
+        ],
+        "release_date": "2020-09-18",
+        "genres": [
+            "Co-op horror",
+            "Simulation"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Phasmophobia.webp",
+        "link_to_game": "https://store.steampowered.com/app/739630/Phasmophobia/",
+        "club_entry": "CONFIG",
+        "personal_review": "The best co-op fear generator out there. Shouting at ghosts through your mic is hilarious until the lights go out and the hunt begins—then it's pure terror."
+    },
+    {
+        "title": "Backrooms",
+        "description": "Exploration-based horror inspired by the 'liminal space' internet myth, where players must escape endless office-like rooms.",
+        "developer": "Fancy Games (based on Kane Pixels mythos)",
+        "platforms": [
+            "Windows"
+        ],
+        "release_date": "2023-01-20",
+        "genres": [
+            "Exploration horror",
+            "Psychological horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Backrooms.webp",
+        "link_to_game": "https://store.steampowered.com/app/2291650/Backrooms/",
+        "club_entry": "INDEX",
+        "personal_review": "Captures the liminal space dread perfectly. It's an unnerving descent into the uncanny, relying heavily on isolation and sound design for its scares."
+    },
+    {
+        "title": "Bendy and the Ink Machine",
+        "description": "First-person puzzle horror game where players uncover dark secrets in a haunted cartoon animation studio.",
+        "developer": "Joey Drew Studios Inc.",
+        "platforms": [
+            "Windows",
+            "PlayStation 4",
+            "Xbox One",
+            "Nintendo Switch"
+        ],
+        "release_date": "2017-02-10",
+        "genres": [
+            "Puzzle-horror",
+            "First-person adventure"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Bendy_and_the_Ink_Machine.webp",
+        "link_to_game": "https://bendy.game/",
+        "club_entry": "INDEX",
+        "personal_review": "A charmingly creepy take on cartoon horror with a great vintage aesthetic. It blends puzzles and chases into a unique, ink-soaked adventure."
+    },
+    {
+        "title": "Pumpkin Panic",
+        "description": "Cozy horror farming and survival indie game where players farm, fish, and fend off strange nighttime visitors.",
+        "developer": "HachikoDev",
+        "platforms": [
+            "Windows",
+            "Itch.io"
+        ],
+        "release_date": "2023-10-25",
+        "genres": [
+            "Farming sim",
+            "Cozy horror",
+            "Survival"
+        ],
+        "free_or_paid": "Free",
+        "image_url": "Pumpkin_Panic.webp",
+        "link_to_game": "https://hachikodev.itch.io/pumpkin-panic",
+        "club_entry": "INDEX",
+        "personal_review": "Surprisingly tense for a farming sim! The pressure of managing your cozy farm while the horrors descend at night is a unique, addictive blend of genres."
+    },
+    {
+        "title": "Sally Face",
+        "description": "Episodic dark adventure following a boy with a prosthetic face unraveling mysteries in a haunted apartment complex.",
+        "developer": "Steve Gabry (Portable Moose)",
+        "platforms": [
+            "Windows",
+            "PlayStation",
+            "Xbox",
+            "Nintendo Switch"
+        ],
+        "release_date": "2016-12-14",
+        "genres": [
+            "Adventure",
+            "Psychological horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Sally_Face.webp",
+        "link_to_game": "https://portablemoose.com/",
+        "club_entry": "INDEX",
+        "personal_review": "The story is incredibly dark, poignant, and expertly told through the unique art style. It's a gripping narrative adventure about trauma and friendship."
+    },
+    {
+        "title": "Fran Bow",
+        "description": "Point-and-click psychological horror about a young girl escaping an asylum while uncovering surreal horrors.",
+        "developer": "Killmonday Games",
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Mobile"
+        ],
+        "release_date": "2015-08-27",
+        "genres": [
+            "Adventure",
+            "Psychological horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Fran_Bow.webp",
+        "link_to_game": "https://killmondaygames.com/games/fran-bow/",
+        "club_entry": "INDEX",
+        "personal_review": "A wildly imaginative journey through madness. This game is visually disturbing and narratively complex—a true trip down the rabbit hole."
+    },
+    {
+        "title": "Little Misfortune",
+        "description": "Darkly whimsical adventure following a curious girl exploring a dangerous world filled with misfortune.",
+        "developer": "Killmonday Games",
+        "platforms": [
+            "Windows",
+            "macOS",
+            "Linux",
+            "Consoles"
+        ],
+        "release_date": "2019-09-18",
+        "genres": [
+            "Adventure",
+            "Narrative"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Little_Misfortune.webp",
+        "link_to_game": "https://killmondaygames.com/games/little-misfortune/",
+        "club_entry": "INDEX",
+        "personal_review": "While lighter on traditional scares than Fran Bow, its dark fairy-tale tone and unforgettable narrator make it a tragically sweet and heartbreaking experience."
+    },
+    {
+        "title": "Devotion",
+        "description": "First-person psychological horror game set in 1980s Taiwan, exploring family, culture, and mental torment.",
+        "developer": "Red Candle Games",
+        "platforms": [
+            "Windows",
+            "macOS"
+        ],
+        "release_date": "2019-02-19",
+        "genres": [
+            "Psychological horror",
+            "Narrative adventure"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Devotion.webp",
+        "link_to_game": "https://redcandlegames.com/en/games/devotion/",
+        "club_entry": "INDEX",
+        "personal_review": "A masterclass in environmental storytelling, especially for its deep dive into Taiwanese culture and the horrors of religious extremism. It's a powerful narrative piece."
+    },
+    {
+        "title": "Simulacra",
+        "description": "Found-phone horror where players explore a missing woman’s smartphone to uncover clues and sinister secrets.",
+        "developer": "Kaigan Games",
+        "platforms": [
+            "Windows",
+            "iOS",
+            "Android",
+            "Nintendo Switch",
+            "PlayStation",
+            "Xbox"
+        ],
+        "release_date": "2017-10-26",
+        "genres": [
+            "Found-phone horror",
+            "Mystery thriller"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Simulacra.webp",
+        "link_to_game": "https://kaigangames.com/simulacra/",
+        "club_entry": "INDEX",
+        "personal_review": "This 'found phone' genre is so immersive! Poking through someone else's digital life to solve a mystery feels incredibly voyeuristic and effectively creepy."
+    },
+    {
+        "title": "White Day: A Labyrinth Named School",
+        "description": "Korean survival horror set in a haunted high school where players must avoid ghosts and solve puzzles.",
+        "developer": "Sonnori / ROI Games",
+        "platforms": [
+            "Windows",
+            "Mobile",
+            "PlayStation 4",
+            "Nintendo Switch"
+        ],
+        "release_date": "2001-09-01 (original), 2017 (remake)",
+        "genres": [
+            "Survival horror",
+            "Stealth"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "White_Day.webp",
+        "link_to_game": "https://en.wikipedia.org/wiki/White_Day:_A_Labyrinth_Named_School",
+        "club_entry": "INDEX",
+        "personal_review": "A classic Korean horror gem. The relentless, intense stealth gameplay against the janitor is famously terrifying and highly recommended for veteran fans."
+    },
+    {
+        "title": "No, I'm Not Human",
+        "description": "Pixel-style psychological horror RPG where players confront existential dread and distorted identities.",
+        "developer": "Dev. by SelfhatredGames",
+        "platforms": [
+            "Windows",
+            "Itch.io"
+        ],
+        "release_date": "2022-08-14",
+        "genres": [
+            "Psychological horror",
+            "RPG",
+            "Indie"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "No_Im_Not_Human.webp",
+        "link_to_game": "https://selfhatredgames.itch.io/no-im-not-human",
+        "club_entry": "INDEX",
+        "personal_review": "A very distinct, unsettling pixel RPG that delivers on existential dread. It's a thoughtful, if occasionally abstract, piece of psychological horror."
+    },
+    {
+        "title": "Dead Space",
+        "description": "Sci-fi survival horror where engineer Isaac Clarke must survive aboard a derelict spaceship infested with necromorphs.",
+        "developer": "EA Redwood Shores (Visceral Games)",
+        "platforms": [
+            "PlayStation 3",
+            "Xbox 360",
+            "Windows",
+            "PlayStation 5",
+            "Xbox Series X|S"
+        ],
+        "release_date": "2008-10-13 (original), 2023-01-27 (remake)",
+        "genres": [
+            "Survival horror",
+            "Sci-fi horror"
+        ],
+        "free_or_paid": "Paid",
+        "image_url": "Dead_Space.webp",
+        "link_to_game": "https://store.steampowered.com/app/17470/Dead_Space_2008/",
+        "club_entry": "VAULT",
+        "personal_review": "Sci-fi horror perfected. Dismembering Necromorphs with the Plasma Cutter is a uniquely satisfying and visceral form of survival action-horror."
+    }
+]

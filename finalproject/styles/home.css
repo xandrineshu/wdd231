@@ -345,6 +345,13 @@ main p {
     z-index: 10;
 }
 
+.log-card-footer {
+    padding-top: 15px;
+    border-top: 1px dashed #440000;
+    margin-top: 10px;
+    text-align: right;
+}
+
 .card-title {
     font-size: 25px;
     color: #ff0000;
@@ -358,6 +365,23 @@ main p {
     text-align: left;
     padding-bottom: 10px;
     margin: 0;
+}
+
+.log-card[data-tab="PURGE"]::before {
+    background-color: #880000;
+    color: #ff0000;
+    border-color: #ff0000;
+    animation: pulse-red 1.5s infinite alternate;
+}
+
+@keyframes pulse-red {
+    from {
+        box-shadow: 0 0 5px #ff0000;
+    }
+
+    to {
+        box-shadow: 0 0 15px #ff0000;
+    }
 }
 
 

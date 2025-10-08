@@ -77,49 +77,80 @@
                 <div id="grid">
                     <section id="club-events">
                         <h2>// ARCHIVED CLUB EVENTS</h2>
-                        <div class="log-card" data-tab="CLASSIFIED">
-                            <div class="card-title">The Silent Protocol</div>
-                            <p>This isn't a meeting; it's a data exchange. Attendees must arrive in dark clothing
-                                with zero electronic devices. The objective is to swap encrypted flash drives containing "anomalous
-                                weather observations" at a predetermined dead drop location. Failure to comply with the silence rule
-                                results in immediate de-authorization.</p>
-                            <p>:: LOCATION: Dead Drop Gamma. TIME: 03:00 HRS. ACCESS: R_1.</p>
+                        
+                        <!-- LEVEL I: INDEX (OBSERVATION/LOW-RISK) -->
+                        <div class="log-card" data-tab="INDEX">
+                            <div class="card-title">The Silent Protocol (Data Exchange)</div>
+                            <p class="text-sm">
+                                This isn't a meeting; it's a data exchange. Attendees must arrive in dark clothing with zero
+                                electronic devices. The objective is to swap encrypted flash drives containing "anomalous weather observations"
+                                at a predetermined dead drop location. Failure to comply with the silence rule results in immediate
+                                de-authorization.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: Dead Drop Gamma. TIME: 03:00 HRS. ACCESS: INDEX.</p>
+                            </div>
                         </div>
                         
-                        <div class="log-card" data-tab="URGENT">
-                            <div class="card-title">Node Calibration [Redacted]</div>
-                            <p>A mandatory session focusing on the analysis of high-intensity atmospheric
-                                disturbances that exceed normal parameters. We will review corrupted satellite imagery and practice
-                                isolating data streams to filter out deliberate signal jamming. Bring your strongest coffee and your
-                                most paranoid theories.</p>
-                            <p>:: LOCATION: Sub-Level B4. TIME: 20:00 HRS. ACCESS: R_2.</p>
-                        </div>
-                        
-                        <div class="log-card" data-tab="SIGNAL">
+                        <!-- LEVEL I: INDEX (OBSERVATION/LOW-RISK) -->
+                        <div class="log-card" data-tab="INDEX">
                             <div class="card-title">3.8 kHz (The Fading Signal)</div>
-                            <p class="text-sm">A listening party dedicated to tracking mysterious, low-frequency radio bursts
-                                detected over major metropolitan areas. We hypothesize these signals precede severe "unforeseen"
-                                events. Participants will use dedicated receivers to locate the signal's source before it phases
-                                out. Headsets are required.</p>
-                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: Tower 7 Rooftop. TIME: 01:00 HRS. ACCESS: R_1.</p>
+                            <p class="text-sm">
+                                A listening party dedicated to tracking mysterious, low-frequency radio bursts detected over
+                                major metropolitan areas. We hypothesize these signals precede severe "unforeseen" events. Participants will use
+                                dedicated receivers to locate the signal's source before it phases out. Headsets are required.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: Tower 7 Rooftop. TIME: 01:00 HRS. ACCESS: INDEX.</p>
+                            </div>
                         </div>
                         
-                        <div class="log-card" data-tab="TOP SECRET">
-                            <div class="card-title">Archive Dive: Project Chimera</div>
-                            <p class="text-sm">An all-night session in a secure, ventilated space reviewing hard copies and archived
-                                documents related to a government project codenamed 'Chimera'—believed to be the origin of the
-                                current weather manipulation cycle. Access to the physical archive is highly restricted; only
-                                verified members of the inner circle are permitted.</p>
-                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: Secure Vault Z. TIME: 22:30 HRS. ACCESS: R_3.</p>
+                        <!-- LEVEL II: CONFIG (CALIBRATION/MODERATE RISK) -->
+                        <div class="log-card" data-tab="CONFIG">
+                            <div class="card-title">Node Calibration [Redacted] (Technical Review)</div>
+                            <p class="text-sm">
+                                A mandatory session focusing on the analysis of high-intensity atmospheric disturbances that
+                                exceed normal parameters. We will review corrupted satellite imagery and practice isolating data streams to
+                                filter out deliberate signal jamming. Bring your strongest coffee and your most paranoid theories.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: Sub-Level B4. TIME: 20:00 HRS. ACCESS: CONFIG.</p>
+                            </div>
                         </div>
                         
-                        <div class="log-card" data-tab="TEST">
+                        <!-- LEVEL II: CONFIG (CALIBRATION/MODERATE RISK) -->
+                        <div class="log-card" data-tab="CONFIG">
                             <div class="card-title">The Backup Loop (Emergency Test)</div>
-                            <p class="text-sm">A timed exercise where members must collaboratively construct a redundant, off-grid
-                                power and communication network using only analog tools and salvaged components. The scenario: a
-                                massive electromagnetic pulse (EMP) has wiped out all digital infrastructure. Success is measured by
-                                how quickly we re-establish contact.</p>
-                            <p class="text-xs mt-2 text-gray-500">:: LOCATION: The Quarry. TIME: 10:00 HRS. ACCESS: R_2.</p>
+                            <p class="text-sm">
+                                A timed exercise where members must collaboratively construct a redundant, off-grid power and
+                                communication network using only analog tools and salvaged components. The scenario: a massive electromagnetic
+                                pulse (EMP) has wiped out all digital infrastructure. Success is measured by how quickly we re-establish
+                                contact.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: The Quarry. TIME: 10:00 HRS. ACCESS: CONFIG.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- LEVEL III: VAULT (ARCHIVES/HIGH RISK) -->
+                        <div class="log-card" data-tab="VAULT">
+                            <div class="card-title">Archive Dive: Project Chimera (Secure Access)</div>
+                            <p class="text-sm">
+                                An all-night session in a secure, ventilated space reviewing hard copies and archived documents
+                                related to a government project codenamed 'Chimera'—believed to be the origin of the current weather
+                                manipulation cycle. Access to the physical archive is highly restricted; only verified members of the inner
+                                circle are permitted.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: Secure Vault Z. TIME: 22:30 HRS. ACCESS: VAULT.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- LEVEL IV: PURGE (CRITICAL/EXTREME RISK) -->
+                        <div class="log-card" data-tab="PURGE">
+                            <div class="card-title">Containment Breach: Alpha Protocol (CRITICAL)</div>
+                            <p class="text-sm">
+                                IMMEDIATE ATTENTION REQUIRED. A localized temporal anomaly has been detected at the old facility
+                                grounds. All PURGE personnel must deploy immediately with specialized equipment to stabilize the rupture and
+                                prevent causality collapse. This is not a drill. Contact is forbidden until stabilization is confirmed.</p>
+                            <div class="log-card-footer">
+                                <p>:: LOCATION: Facility 12 Anomaly Zone. TIME: IMMEDIATE. ACCESS: PURGE.</p>
+                            </div>
                         </div>
                     </section>
 
@@ -147,8 +178,12 @@
                     <section id="spotlights">
                         <!-- <h2> --- Spotlights </h2> -->
                     
-                        <div class="spotlight-container">
-                            <!-- Spotlight Members will appear here with js -->
+                        <div class="platforms">
+                            <!-- JS will appear here -->
+                        </div>
+
+                        <div class="horror-games">
+                            <!-- JS will appear here -->
                         </div>
                     </section>
                 </div>
