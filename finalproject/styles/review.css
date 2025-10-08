@@ -1,8 +1,10 @@
 /*****************     Palette     *******************/
 /*
 
-    Red:    #B01124
-    Black:  #12121e
+    Red:    #B01124 
+            #ff0000 
+    Black:  #12121e 
+    Yellow: #ffff00
 
 */
 
@@ -116,9 +118,153 @@ nav {
 }
 
 
-/***************     <>     *******************/
+/***************     Review     *******************/
 
+.terminal-header {
+    color: #ff0000;
+}
 
+.dossier-card {
+    position: relative;
+    background-color: #1a1a25;
+    color: #e6e6e6;
+    border: 1px solid #ffffff1a;
+    border-radius: 10px#ffffff1a;
+    box-shadow: 0 4px 10px #0000004d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    padding-top: 40px;
+    padding-bottom: 10px;
+    min-height: 80px;
+}
+
+.dossier-card:hover:not(.open) {
+    background-color: #20202d;
+    box-shadow: 0 6px 15px #00000066;
+}
+
+.dossier-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.dossier-tab {
+    position: absolute;
+    top: 0;
+    height: 40px;
+
+    padding: 0 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.dossier-card:not(.open) .dossier-tab {
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 8px 8px 0 0;
+    clip-path: polygon(0% 0%, 88% 0%, 100% 30%, 100% 100%, 0% 100%);
+}
+
+.dossier-card.open .dossier-tab {
+    width: 100%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #ffffff33;
+    clip-path: none;
+}
+
+.dossier-card.open::before {
+    background-color: #20202d;
+    box-shadow: 0 -2px 5px #00000033;
+}
+
+.tier-purge .dossier-tab {
+    background-color: #B01124;
+}
+
+.tier-vault .dossier-tab {
+    background-color: #ffff00;
+    color: #111;
+}
+
+.tier-config .dossier-tab {
+    background-color: #ff0000;
+}
+
+.tier-index .dossier-tab {
+    background-color: gray;
+}
+
+.tier-tag {
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    border: 1px solid white;
+    color: white;
+    margin-right: 15px;
+}
+
+.tier-vault .tier-tag {
+    border-color: #111;
+    color: #111;
+}
+
+.dossier-content {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px;
+    color: #e6e6e6;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s 0.2s;
+    pointer-events: none;
+}
+
+.dossier-card.open {
+    min-height: auto;
+    padding-bottom: 20px;
+    border-color: #ffffff4d;
+}
+
+.dossier-card .dossier-tab h2,
+.dossier-card.open .dossier-tab h2 {
+    font-size: 1rem;
+}
+
+.dossier-card.open .dossier-content {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 15px 20px 0;
+    pointer-events: auto;
+}
+
+.review-box {
+    background-color: #101018;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ffffff1a;
+}
 
 /*****************     Footer     *******************/
 
