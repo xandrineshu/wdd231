@@ -42,15 +42,16 @@ header {
 
 header h1 {
     padding-inline: 10px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
     text-align: center;
-    color: #B01124;
-    text-shadow: 0 0 4px #ff0000;
+    color: white;
+    text-shadow: 0 0 4px #B01124;
 }
 
 header button {
     background-color: #12121e;
+    color: white;
     border: none;
     font-size: 30px;
 }
@@ -64,7 +65,7 @@ header button {
     font-weight: 700;
     text-decoration: none;
     padding: 2rem 0.5rem;
-    color: #B01124;
+    color: white;
 }
 
 #menu::before {
@@ -90,18 +91,19 @@ nav {
     padding: 15px;
     text-align: left;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 700;
     transition: 0.5s;
 }
 
 .navigation a:hover, .navigation a:active {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 .navigation li.current {
     text-decoration: underline;
+    color: white;
 }
 
 .show li {
@@ -125,8 +127,9 @@ nav {
     bottom: 3.5rem;
     left: 1.5rem;
     background-color: #B01124;
-    color: black;
+    color: white;
     padding: 10px;
+    padding-bottom: 15px;
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -294,17 +297,18 @@ main p {
 }
 
 .app-header span {
+    color: white;
     font-size: 15px;
 }
 
 /***************** CLub Events *****************/
 
 #club-events h2 {
-    color: #B01124;
+    color: #ff0000;
     text-align: left;
     font-size: 30px;
     margin-bottom: 50px;
-    border-bottom: 2px solid #B01124;
+    border-bottom: 2px solid #ff0000;
     padding-bottom: 10px;
 }
 
@@ -369,11 +373,11 @@ main p {
 }
 
 #weather h2 {
-    color: #B01124;
+    color: #ff0000;
     text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #B01124;
+    border-bottom: 2px solid #ff0000;
     padding-bottom: 10px;
 }
 
@@ -442,7 +446,7 @@ main p {
 }
 
 .forecast-item strong {
-    color: #ff0000;
+    color: #ffff00d3;
 }
 
 .forecastContainer {
@@ -451,7 +455,7 @@ main p {
 
 .warning p {
     font-size: 10px;
-    color: gray;
+    color: #d8d7d7;
     margin: 0;
 }
 
@@ -499,6 +503,7 @@ main p {
     font-size: 15px;
     justify-content: space-between;
     background-color: #B01124;
+    color: white;
     padding: 20px 30px;
 }
 
@@ -520,8 +525,4 @@ main p {
     border-radius: 35px;
     width: 35px;
     height: 35px;
-}
-
-.social a:hover {
-    background-color: #ffff00;
 }
