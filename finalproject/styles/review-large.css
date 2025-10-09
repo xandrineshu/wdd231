@@ -11,6 +11,13 @@
     header h1 {
         font-size: 55px;
     }
+    
+    header button {
+        font-size: 40px;
+        position: absolute;
+        right: 3rem;
+        top: 2.5rem;
+    }
 
     .navigation {
         display: flex;
@@ -28,6 +35,72 @@
 
     #menu {
         display: none;
+    }
+    
+    .main-layout {
+        padding-top: 20px;
+        max-width: 70rem;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    
+    .header-box {
+        margin-block: 1px;
+        text-align: center;
+    }
+
+    .header-box h2 {
+        font-size: 35px;
+    }
+
+    .subtitle-text {
+        font-size: 15px;
+    }
+
+    #list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .card.open {
+        grid-column: 1 / -1;
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    
+    .card {
+        margin-bottom: 0;
+    }
+
+    .desc-text {
+        font-size: 25px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .genres {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .genre-text {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+    .desc-text, .meta-box, .review_panel, .link-action {
+        margin-inline: 20px;
+    }
+    
+    .meta-box, .platform-tag, .review_panel h3 {
+        font-size: 20px;
+    }
+
+    .link-action {
+        font-size: 15px;
     }
 
     .footer-info {

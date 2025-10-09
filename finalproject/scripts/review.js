@@ -1,16 +1,33 @@
+// Hamburger
+
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
+
+// Footer
+
+document.getElementById("currentyear").textContent =
+    new Date().getFullYear();
+document.getElementById(
+    "lastModified"
+).textContent = `Last Modified: ${document.lastModified}`;
+
+
+// Review Cards
 function toggleDossier(cardElement) {
     cardElement.classList.toggle('open');
 }
 
-// Global variable to hold the game data
 let games = [];
 
-/**
- * Asynchronous initialization function. Fetches data from data/games.json.
- */
 async function init() {
-    const grid = document.getElementById('game-grid');
-    grid.innerHTML = '<p class="col-span-1 xl:col-span-3 text-center text-gray-500">Loading classified data...</p>';
+    const listElement = document.getElementById('list');
+    // Using existing custom class for loading message text
+    listElement.innerHTML = '<p class="text-center">Loading classified data...</p>';
 
     try {
         // Fetch data from the external file path: data/games.json
@@ -29,85 +46,89 @@ async function init() {
     } catch (error) {
         console.error("Error fetching or initializing game data from data/games.json:", error);
         // Display error to the user
-        grid.innerHTML =
-            '<p class="col-span-1 xl:col-span-3 text-center text-red-500 font-bold">' +
+        listElement.innerHTML =
+            '<p class="text-center">' +
             'ERROR: Could not load game data from data/games.json. Please ensure the file exists in the data/ folder and is valid JSON.' +
             '</p>';
     }
 }
 
-
-/**
- * Renders the review cards based on the data in the 'games' array.
- */
 function renderReviews() {
-    const grid = document.getElementById('game-grid');
-    grid.innerHTML = ''; // Clear the loading/error message
+    const listElement = document.getElementById('list');
+    listElement.innerHTML = '';
 
     games.forEach(game => {
         const clubEntryClass = `tier-${game.club_entry.toLowerCase()}`;
 
-        // Platforms list formatting
         const platformsList = game.platforms.map(p =>
-            `<span class="bg-gray-700 text-xs px-2 py-0.5 rounded-full">${p}</span>`
+            `<span class="platform-tag">${p}</span>`
         ).join(' ');
 
-        // Genres list formatting
         const genresList = game.genres.map(g =>
-            `<span class="text-gray-400 text-xs">${g}</span>`
+            `<span class="genre-text">${g}</span>`
         ).join(' | ');
 
-        // Determine link color based on tier (using direct hex codes)
-        let linkColor = '#ff0000'; // Default: --color-bright-red
+        let linkColor = '#ff0000'; // Default: Bright red
         if (game.club_entry === 'VAULT') {
-            linkColor = '#ffff00'; // --color-yellow
+            linkColor = '#ffff00'; // Yellow
+        } else if (game.club_entry === 'INDEX') {
+            linkColor = '#cccccc'; // Light gray for index links
         }
 
-        // Determine tier tag background (using direct hex codes)
-        let tierTagBg = '#B01124'; // Default: --color-purge
-        if (game.club_entry === 'VAULT') tierTagBg = '#ffff00'; // --color-vault
-        if (game.club_entry === 'CONFIG') tierTagBg = '#ff0000'; // --color-config
-        if (game.club_entry === 'INDEX') tierTagBg = '#ff0000'; // --color-index
+        let tierTagBg = '#B01124'; // Default: Deep red
+        if (game.club_entry === 'VAULT') tierTagBg = '#ffff00'; // Yellow
+        if (game.club_entry === 'CONFIG') tierTagBg = '#ff0000'; // Bright red
+        if (game.club_entry === 'INDEX') tierTagBg = '#4A4A4A'; // Dark Gray (New)
 
+        const imageUrl = game.image_url || `https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING`;
 
         const cardHTML = `
-                    <!-- The parent div that acts as the container and controls the open/closed state -->
-                    <div class="dossier-card ${clubEntryClass}" onclick="toggleDossier(this)">
+                    <div class="card ${clubEntryClass}">
                         
-                        <!-- File Tab (Always visible, absolute positioned over the top right) -->
-                        <div class="dossier-tab">
-                            <!-- Tier Tag and Title are now on the left -->
-                            <span class="tier-tag" style="background-color: ${tierTagBg}">${game.club_entry}</span>
-                            <h2 class="text-base font-bold">${game.title}</h2>
+                        <div class="card-tab">
+                            <span class="tier-label" style="background-color: ${tierTagBg}">${game.club_entry}</span>
+                            <h2 class="text-base">${game.title}</h2>
                         </div>
 
                         <!-- Dossier Content (Hidden/Collapsed when closed) -->
-                        <div class="dossier-content">
-                            <p class="description">${game.description}</p>
-                            
-                            <!-- Metadata -->
-                            <div class="meta-text">
-                                <p><strong class="text-gray-300">Developer:</strong> ${game.developer}</p>
-                                <p><strong class="text-gray-300">Release:</strong> ${game.release_date}</p>
-                                <p><strong class="text-gray-300">Cost:</strong> <span class="${game.free_or_paid === 'Free' ? 'text-green-400' : 'text-orange-400'}">${game.free_or_paid}</span></p>
-                                <div class="flex flex-wrap gap-2 pt-2">${platformsList}</div>
+                        <div class="card-content">
+                            <div class="image-container">
+                                <img src="${imageUrl}" alt="Game art for ${game.title}" class="game-image" onerror="this.onerror=null;this.src='https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING';">
                             </div>
 
-                            <!-- Personal Review -->
-                            <div class="review-box">
+                            <p class="desc-text">${game.description}</p>
+                            <p class="genres">${genresList}</p>
+
+                            <div class="meta-box">
+                                <p><strong class="meta-label">Developer:</strong> ${game.developer}</p>
+                                <p><strong class="meta-label">Release:</strong> ${game.release_date}</p>
+                                <p><strong class="meta-label">Cost:</strong> <span class="${game.free_or_paid === 'Free' ? 'free-cost' : 'paid-cost'}">${game.free_or_paid}</span></p>
+                                <div class="platform-wrapper">${platformsList}</div>
+                            </div>
+
+                            <div class="review_panel">
                                 <h3 class="review-title" style="color:${linkColor}">File Review [LOG]</h3>
                                 <p class="review-text">"${game.personal_review}"</p>
                             </div>
                             
-                            <!-- Link -->
-                            <a href="${game.link_to_game}" target="_blank" class="link"color:${linkColor};" onclick="event.stopPropagation();">
+                            <a href="${game.link_to_game}" target="_blank" class="link-action" style="color:${linkColor};">
                                 >> Access Game Link
                             </a>
                         </div>
 
                     </div>
                 `;
-        grid.innerHTML += cardHTML;
+        listElement.innerHTML += cardHTML;
+    });
+
+    // Attach event listeners to cards after rendering
+    const cards = listElement.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', function (e) {
+            // Prevent toggling when clicking the link
+            if (e.target.closest('.link-action')) return;
+            toggleDossier(card);
+        });
     });
 }
 

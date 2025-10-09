@@ -14,12 +14,11 @@
             "Interactive drama"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Until_Dawn.webp",
+        "image_url": "images/Until_Dawn.webp",
         "link_to_game": "https://store.steampowered.com/app/2172010/Until_Dawn/",
         "club_entry": "CONFIG",
         "personal_review": "This one nailed the 'cabin in the woods' teen horror movie feel; the butterfly effect mechanic makes every choice feel genuinely terrifying."
     },
-    
     {
         "title": "The Quarry",
         "description": "Cinematic teen horror game where players control nine camp counselors as their summer night turns into a blood-soaked nightmare.",
@@ -37,29 +36,28 @@
             "Interactive drama"
         ],
         "free_or_paid": "Paid",
-        "image_url": "The_Quarry.webp",
+        "image_url": "images/The_Quarry.webp",
         "link_to_game": "https://quarrygame.2k.com/",
         "club_entry": "CONFIG",
         "personal_review": "A spiritual successor that perfectly captures the summer camp slasher vibe with gorgeous graphics, though the ending felt a little less impactful than its predecessor."
     },
     {
-        "title": "Silent Hill",
-        "description": "Psychological survival horror franchise centered around the haunted town of Silent Hill, blending disturbing visuals with psychological terror.",
-        "developer": "Team Silent (Konami Computer Entertainment Tokyo)",
+        "title": "Silent Hill f",
+        "description": "A new entry in the Silent Hill franchise set in 1960s Japan, blending psychological horror with haunting visuals and narrative depth.",
+        "developer": "NeoBards Entertainment (published by Konami)",
         "platforms": [
-            "PlayStation",
-            "PC",
-            "Xbox",
-            "Nintendo consoles (varies by title)"
+            "Windows",
+            "PlayStation 5",
+            "Xbox Series X|S"
         ],
-        "release_date": "1999-02-23",
+        "release_date": "2025-09-25",
         "genres": [
             "Psychological horror",
             "Survival horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Silent_Hill.webp",
-        "link_to_game": "https://www.konami.com/games/silenthill/",
+        "image_url": "images/Silent_Hill_f.webp",
+        "link_to_game": "https://www.konami.com/games/silenthill/f/",
         "club_entry": "PURGE",
         "personal_review": "The master of atmosphere. Nothing captures psychological dread and existential decay quite like exploring that iconic, fog-choked town."
     },
@@ -80,7 +78,7 @@
             "Action horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Resident_Evil.webp",
+        "image_url": "images/Resident_Evil.webp",
         "link_to_game": "https://www.residentevil.com/",
         "club_entry": "PURGE",
         "personal_review": "The absolute foundation of survival horror. The original fixed-camera tension and the later action-horror evolution are all essential horror gaming history."
@@ -101,7 +99,7 @@
             "Psychological horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Outlast.webp",
+        "image_url": "images/Outlast.webp",
         "link_to_game": "https://redbarrelsgames.com/games/outlast/",
         "club_entry": "VAULT",
         "personal_review": "Pure, unadulterated found-footage panic. The lack of combat forces you into some of the most frantic and helpless stealth sequences in the genre."
@@ -123,7 +121,7 @@
             "Point-and-click"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Five_Nights_at_Freddy.webp",
+        "image_url": "images/Five_Nights_at_Freddys.webp",
         "link_to_game": "https://www.five-nights-at-freddys.com/",
         "club_entry": "VAULT",
         "personal_review": "A brilliantly simple concept that created a cultural phenomenon. It proves that jumpscares, when timed perfectly, are still effective horror tools."
@@ -145,7 +143,7 @@
             "Survival horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Dead_by_Daylight.webp",
+        "image_url": "images/Dead_by_Daylight.webp",
         "link_to_game": "https://deadbydaylight.com/",
         "club_entry": "PURGE",
         "personal_review": "The definitive asymmetrical horror experience. The thrill of trying to outsmart an iconic killer with three friends never gets old—pure adrenaline."
@@ -166,7 +164,7 @@
             "Atmospheric horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Little_Nightmares.webp",
+        "image_url": "images/Little_Nightmares.webp",
         "link_to_game": "https://en.bandainamcoent.eu/little-nightmares/little-nightmares",
         "club_entry": "INDEX",
         "personal_review": "A beautifully grotesque puzzle-platformer. It uses scale and surreal art direction to make you feel tiny, vulnerable, and constantly unsettled."
@@ -184,7 +182,7 @@
             "Simulation"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Phasmophobia.webp",
+        "image_url": "images/Phasmophobia.webp",
         "link_to_game": "https://store.steampowered.com/app/739630/Phasmophobia/",
         "club_entry": "CONFIG",
         "personal_review": "The best co-op fear generator out there. Shouting at ghosts through your mic is hilarious until the lights go out and the hunt begins—then it's pure terror."
@@ -202,7 +200,7 @@
             "Psychological horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Backrooms.webp",
+        "image_url": "images/Backrooms.webp",
         "link_to_game": "https://store.steampowered.com/app/2291650/Backrooms/",
         "club_entry": "INDEX",
         "personal_review": "Captures the liminal space dread perfectly. It's an unnerving descent into the uncanny, relying heavily on isolation and sound design for its scares."
@@ -223,7 +221,7 @@
             "First-person adventure"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Bendy_and_the_Ink_Machine.webp",
+        "image_url": "images/Bendy_and_The_Ink_Machine.webp",
         "link_to_game": "https://bendy.game/",
         "club_entry": "INDEX",
         "personal_review": "A charmingly creepy take on cartoon horror with a great vintage aesthetic. It blends puzzles and chases into a unique, ink-soaked adventure."
@@ -243,7 +241,7 @@
             "Survival"
         ],
         "free_or_paid": "Free",
-        "image_url": "Pumpkin_Panic.webp",
+        "image_url": "images/Pumpkin_Panic.webp",
         "link_to_game": "https://hachikodev.itch.io/pumpkin-panic",
         "club_entry": "INDEX",
         "personal_review": "Surprisingly tense for a farming sim! The pressure of managing your cozy farm while the horrors descend at night is a unique, addictive blend of genres."
@@ -264,7 +262,7 @@
             "Psychological horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Sally_Face.webp",
+        "image_url": "images/Sally_Face.webp",
         "link_to_game": "https://portablemoose.com/",
         "club_entry": "INDEX",
         "personal_review": "The story is incredibly dark, poignant, and expertly told through the unique art style. It's a gripping narrative adventure about trauma and friendship."
@@ -285,7 +283,7 @@
             "Psychological horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Fran_Bow.webp",
+        "image_url": "images/Fran_Bow.webp",
         "link_to_game": "https://killmondaygames.com/games/fran-bow/",
         "club_entry": "INDEX",
         "personal_review": "A wildly imaginative journey through madness. This game is visually disturbing and narratively complex—a true trip down the rabbit hole."
@@ -306,7 +304,7 @@
             "Narrative"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Little_Misfortune.webp",
+        "image_url": "images/Little_Misfortune.webp",
         "link_to_game": "https://killmondaygames.com/games/little-misfortune/",
         "club_entry": "INDEX",
         "personal_review": "While lighter on traditional scares than Fran Bow, its dark fairy-tale tone and unforgettable narrator make it a tragically sweet and heartbreaking experience."
@@ -325,7 +323,7 @@
             "Narrative adventure"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Devotion.webp",
+        "image_url": "images/Devotion.webp",
         "link_to_game": "https://redcandlegames.com/en/games/devotion/",
         "club_entry": "INDEX",
         "personal_review": "A masterclass in environmental storytelling, especially for its deep dive into Taiwanese culture and the horrors of religious extremism. It's a powerful narrative piece."
@@ -348,7 +346,7 @@
             "Mystery thriller"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Simulacra.webp",
+        "image_url": "images/Simulacra.webp",
         "link_to_game": "https://kaigangames.com/simulacra/",
         "club_entry": "INDEX",
         "personal_review": "This 'found phone' genre is so immersive! Poking through someone else's digital life to solve a mystery feels incredibly voyeuristic and effectively creepy."
@@ -369,7 +367,7 @@
             "Stealth"
         ],
         "free_or_paid": "Paid",
-        "image_url": "White_Day.webp",
+        "image_url": "images/White_Day.webp",
         "link_to_game": "https://en.wikipedia.org/wiki/White_Day:_A_Labyrinth_Named_School",
         "club_entry": "INDEX",
         "personal_review": "A classic Korean horror gem. The relentless, intense stealth gameplay against the janitor is famously terrifying and highly recommended for veteran fans."
@@ -377,7 +375,7 @@
     {
         "title": "No, I'm Not Human",
         "description": "Pixel-style psychological horror RPG where players confront existential dread and distorted identities.",
-        "developer": "Dev. by SelfhatredGames",
+        "developer": "SelfhatredGames",
         "platforms": [
             "Windows",
             "Itch.io"
@@ -388,8 +386,8 @@
             "RPG",
             "Indie"
         ],
-        "free_or_paid": "Paid",
-        "image_url": "No_Im_Not_Human.webp",
+        "free_or_paid": "Free",
+        "image_url": "images/No_Im_Not_Human.webp",
         "link_to_game": "https://selfhatredgames.itch.io/no-im-not-human",
         "club_entry": "INDEX",
         "personal_review": "A very distinct, unsettling pixel RPG that delivers on existential dread. It's a thoughtful, if occasionally abstract, piece of psychological horror."
@@ -411,7 +409,7 @@
             "Sci-fi horror"
         ],
         "free_or_paid": "Paid",
-        "image_url": "Dead_Space.webp",
+        "image_url": "images/Dead_Space.webp",
         "link_to_game": "https://store.steampowered.com/app/17470/Dead_Space_2008/",
         "club_entry": "VAULT",
         "personal_review": "Sci-fi horror perfected. Dismembering Necromorphs with the Plasma Cutter is a uniquely satisfying and visceral form of survival action-horror."

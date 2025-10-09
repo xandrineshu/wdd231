@@ -120,32 +120,139 @@ nav {
 
 /***************     Review     *******************/
 
-.terminal-header {
+.header-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.header-box h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle-text {
+    color: #b0b0b0;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.app-header-title {
     color: #ff0000;
 }
 
-.dossier-card {
+.main-layout {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-style {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.platform-tag {
+    background-color: #333333;
+    font-size: 0.75rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+}
+
+.genre-text {
+    color: #b0b0b0;
+    font-size: 0.75rem;
+}
+
+.desc-text {
+    color: #b0b0b0;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.meta-box {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    border-top: 1px solid #444444;
+    padding-top: 0.75rem;
+}
+
+.meta-label {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.free-cost {
+    color: #84cc16;
+}
+
+.paid-cost {
+    color: #f97316;
+}
+
+.platform-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.review-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.review-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: #e6e6e6;
+}
+
+.link-action {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: opacity 0.2s;
+}
+
+.link-action:hover {
+    opacity: 0.75;
+}
+
+.card {
     position: relative;
     background-color: #1a1a25;
     color: #e6e6e6;
     border: 1px solid #ffffff1a;
-    border-radius: 10px#ffffff1a;
+    border-radius: 8px;
     box-shadow: 0 4px 10px #0000004d;
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
-
     padding-top: 40px;
     padding-bottom: 10px;
     min-height: 80px;
+    margin-bottom: 24px;
 }
 
-.dossier-card:hover:not(.open) {
+.card:hover:not(.open) {
     background-color: #20202d;
     box-shadow: 0 6px 15px #00000066;
 }
 
-.dossier-card::before {
+.card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -158,16 +265,14 @@ nav {
     transition: all 0.3s ease;
 }
 
-.dossier-tab {
+.card-tab {
     position: absolute;
     top: 0;
     height: 40px;
-
     padding: 0 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
-
     justify-content: flex-start;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -177,61 +282,79 @@ nav {
     transition: all 0.3s ease;
 }
 
-.dossier-card:not(.open) .dossier-tab {
+.card:not(.open) .card-tab {
     width: 100%;
     left: 0;
     right: 0;
     border-radius: 8px 8px 0 0;
-    clip-path: polygon(0% 0%, 88% 0%, 100% 30%, 100% 100%, 0% 100%);
 }
 
-.dossier-card.open .dossier-tab {
+.card.open .card-tab {
     width: 100%;
     left: 0;
     right: 0;
     opacity: 1;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
     border-bottom: 1px solid #ffffff33;
     clip-path: none;
 }
 
-.dossier-card.open::before {
+.card.open::before {
     background-color: #20202d;
     box-shadow: 0 -2px 5px #00000033;
 }
 
-.tier-purge .dossier-tab {
+.tier-purge .card-tab {
     background-color: #B01124;
 }
 
-.tier-vault .dossier-tab {
+.tier-vault .card-tab {
     background-color: #ffff00;
     color: #111;
 }
 
-.tier-config .dossier-tab {
+.tier-config .card-tab {
     background-color: #ff0000;
 }
 
-.tier-index .dossier-tab {
-    background-color: gray;
+.tier-index .card-tab {
+    background-color: #4A4A4A;
 }
 
-.tier-tag {
-    padding: 2px 8px;
+.tier-label {
+    padding: 5px 10px;
     border-radius: 2px;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     border: 1px solid white;
     color: white;
     margin-right: 15px;
 }
 
-.tier-vault .tier-tag {
+.tier-label, .text-base {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tier-vault .tier-label {
     border-color: #111;
     color: #111;
 }
 
-.dossier-content {
+.tier-index .tier-label {
+    border-color: white;
+    color: white;
+}
+
+.image-container img {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+.card-content {
     max-height: 0;
     opacity: 0;
     padding: 0 20px;
@@ -240,27 +363,27 @@ nav {
     pointer-events: none;
 }
 
-.dossier-card.open {
+.card.open {
     min-height: auto;
     padding-bottom: 20px;
     border-color: #ffffff4d;
 }
 
-.dossier-card .dossier-tab h2,
-.dossier-card.open .dossier-tab h2 {
+.card .card-tab h2,
+.card.open .card-tab h2 {
     font-size: 1rem;
 }
 
-.dossier-card.open .dossier-content {
+.card.open .card-content {
     max-height: 1000px;
     opacity: 1;
     padding: 15px 20px 0;
     pointer-events: auto;
 }
 
-.review-box {
+.review_panel {
     background-color: #101018;
-    border-radius: 4px;
+    border-radius: 5px;
     padding: 1rem;
     margin-top: 1rem;
     border: 1px solid #ffffff1a;

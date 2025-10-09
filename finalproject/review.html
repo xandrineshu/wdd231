@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="styles/review-large.css">
 
     <script src="scripts/review.js" defer></script>
-    <script src="scripts/base.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -52,19 +51,15 @@
     </nav>
 
     <main>
-        <div id="app" class="container">
-        
-            <!-- Header -->
-            <header>
-                <h1 class="terminal-header">CLASSIFIED DOSSIER // HORROR REVIEWS</h1>
-                <p>
-                    ACCESS GRANTED: Reviewing Game Reviews. 
-                    Click a file to open its contents
-                </p>
+        <div id="container" class="main-layout">
+
+            <header class="header-box">
+                <h2>CLASSIFIED DOSSIER // HORROR REVIEWS</h2>
+                <p class="subtitle-text">ACCESS GRANTED: Reviewing club recommendations. Click a file to open its contents.</p>
             </header>
         
-            <!-- Dynamic Game Grid (1 column on mobile/tablet, 3 columns on desktop) -->
-            <div id="game-grid" class="grid">
+            <!-- Dynamic Game List (No Grid) -->
+            <div id="list">
                 <!-- Game cards will be injected here -->
             </div>
         
