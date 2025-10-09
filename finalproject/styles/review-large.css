@@ -70,13 +70,18 @@
         display: block;
         margin: auto;
     }
+
+    .image-container img {
+        width: 300px;
+        height: 300px;
+    }
     
     .card {
         margin-bottom: 0;
     }
 
     .desc-text {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 1;
         text-align: center;
     }
@@ -87,7 +92,7 @@
     }
 
     .genre-text {
-        font-size: 20px;
+        font-size: 15px;
         margin: 0 10px;
     }
 
