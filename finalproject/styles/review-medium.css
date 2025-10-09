@@ -1,0 +1,23 @@
+@media only screen and (min-width: 35rem) {
+    #list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card.open {
+        grid-column: 1 / -1;
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-container img {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+}
