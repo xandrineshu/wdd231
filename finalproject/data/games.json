@@ -17,8 +17,9 @@
         "image_url": "images/Until_Dawn.webp",
         "link_to_game": "https://store.steampowered.com/app/2172010/Until_Dawn/",
         "club_entry": "CONFIG",
-        "personal_review": "This one nailed the 'cabin in the woods' teen horror movie feel; the butterfly effect mechanic makes every choice feel genuinely terrifying."
+        "personal_review": "Rated 8/10. The game stands out for its compelling narrative and branching storyline, where every decision meaningfully impacts the characters and the ultimate outcome. The depth of characterization adds emotional weight to each choice, enhancing the suspenseful experience. The graphics and sound design are top-notch, creating an immersive horror atmosphere. However, some gameplay mechanics can feel a bit clunky, and the pacing occasionally drags. Overall, it's a thrilling ride for fans of horror and interactive storytelling."
     },
+
     {
         "title": "The Quarry",
         "description": "Cinematic teen horror game where players control nine camp counselors as their summer night turns into a blood-soaked nightmare.",
@@ -39,8 +40,9 @@
         "image_url": "images/The_Quarry.webp",
         "link_to_game": "https://quarrygame.2k.com/",
         "club_entry": "CONFIG",
-        "personal_review": "A spiritual successor that perfectly captures the summer camp slasher vibe with gorgeous graphics, though the ending felt a little less impactful than its predecessor."
+        "personal_review": "Rated 8/10. Much like Until Dawn, this game offers an engaging, choice-driven horror experience with a fresh cast and a new storyline. While it shares similarities in structure, its unique setting and character dynamics give it a distinct identity. The narrative is compelling, and the branching paths ensure high replayability. The graphics and sound design effectively create a tense atmosphere, though some may find the gameplay mechanics familiar. Overall, it's a solid addition to the interactive horror genre that fans of Until Dawn will likely enjoy."
     },
+
     {
         "title": "Silent Hill f",
         "description": "A new entry in the Silent Hill franchise set in 1960s Japan, blending psychological horror with haunting visuals and narrative depth.",
@@ -59,8 +61,9 @@
         "image_url": "images/Silent_Hill_f.webp",
         "link_to_game": "https://www.konami.com/games/silenthill/f/",
         "club_entry": "PURGE",
-        "personal_review": "The master of atmosphere. Nothing captures psychological dread and existential decay quite like exploring that iconic, fog-choked town."
+        "personal_review": "Rated 9/10. This title excels in symbolism, psychological depth, and narrative complexity. Each character embodies their own guilt and trauma, reflecting themes that blur the line between psychological horror and reality, making the experience both haunting and profound. The atmospheric design, from the eerie soundscape to the unsettling visuals, is masterfully executed, creating a deeply immersive experience. While some gameplay elements may feel familiar to fans of the genre, the story's emotional weight and the intricate character development set it apart. Overall, it's a standout entry in the Silent Hill series that offers both scares and substance. This game is a personal favorite of mine because of its story/lore, cultural setting and its message about arranged marriages."
     },
+
     {
         "title": "Resident Evil",
         "description": "Long-running horror franchise featuring viral outbreaks, zombie survival, and intense action-horror gameplay.",
@@ -81,8 +84,9 @@
         "image_url": "images/Resident_Evil.webp",
         "link_to_game": "https://www.residentevil.com/",
         "club_entry": "PURGE",
-        "personal_review": "The absolute foundation of survival horror. The original fixed-camera tension and the later action-horror evolution are all essential horror gaming history."
+        "personal_review": "Rated 8/10. The long-running franchise continues to impress with its gripping storylines and tense survival gameplay. The unpredictability of enemy encounters and the constant sense of dread make each entry a chilling and memorable experience. The series has evolved over time, balancing classic survival horror elements with more action-oriented gameplay, which may not appeal to all fans. However, the atmospheric design, intricate lore, and iconic characters remain strong points. Overall, Resident Evil remains a cornerstone of the horror genre, delivering both scares and excitement."
     },
+
     {
         "title": "Outlast",
         "description": "First-person survival horror where players navigate an asylum using only a camcorder for light while evading monstrous inmates.",
@@ -102,8 +106,9 @@
         "image_url": "images/Outlast.webp",
         "link_to_game": "https://redbarrelsgames.com/games/outlast/",
         "club_entry": "VAULT",
-        "personal_review": "Pure, unadulterated found-footage panic. The lack of combat forces you into some of the most frantic and helpless stealth sequences in the genre."
+        "personal_review": "Rated 9/10. Drawing inspiration from real-world horrors, Outlast delivers a raw and immersive experience through its realistic mechanics and intense atmosphere. Its found-footage style and relentless pacing elevate it into one of the most terrifying horror titles. The asylum setting is claustrophobic and nightmarish, with sound design and visuals that keep players on edge. While the lack of combat may not suit everyone, the emphasis on stealth and evasion creates a unique tension. Overall, Outlast is a standout in the survival horror genre, offering a deeply unsettling experience that lingers long after the game ends."
     },
+
     {
         "title": "Five Nights at Freddy's",
         "description": "Point-and-click survival horror where players must survive nights guarding a haunted pizza restaurant with killer animatronics.",
@@ -124,8 +129,9 @@
         "image_url": "images/Five_Nights_at_Freddys.webp",
         "link_to_game": "https://www.five-nights-at-freddys.com/",
         "club_entry": "VAULT",
-        "personal_review": "A brilliantly simple concept that created a cultural phenomenon. It proves that jumpscares, when timed perfectly, are still effective horror tools."
+        "personal_review": "Rated 7/10. Known for its unique gameplay loop and eerie lore, this game captivates players through tense monitoring mechanics and unsettling character designs that define its haunting charm. The minimalist approach to horror, relying on sound cues and limited resources, creates a nerve-wracking experience. However, the repetitive nature of the gameplay may not appeal to everyone. Despite this, the series has built a dedicated fanbase and remains a significant influence in indie horror gaming. Overall, Five Nights at Freddy's is a memorable and innovative take on the survival horror genre. They have more polished and interesting sequels that expand on the lore and gameplay."
     },
+
     {
         "title": "Dead by Daylight",
         "description": "Multiplayer survival horror where four survivors try to escape from one killer in an asymmetric 4v1 match.",
@@ -146,8 +152,9 @@
         "image_url": "images/Dead_by_Daylight.webp",
         "link_to_game": "https://deadbydaylight.com/",
         "club_entry": "PURGE",
-        "personal_review": "The definitive asymmetrical horror experience. The thrill of trying to outsmart an iconic killer with three friends never gets old—pure adrenaline."
+        "personal_review": "Rated 7/10. A multiplayer survival horror experience centered on asymmetrical gameplay, where players repair generators to escape while evading a deadly killer. The ability to play as both survivor and killer adds variety and replayability. The game features a diverse roster of killers, each with unique abilities, and a variety of maps that keep the gameplay fresh. However, the learning curve can be steep for new players, and balance issues occasionally arise. Overall, Dead by Daylight offers a thrilling and tense multiplayer experience that continues to evolve with regular updates and new content. It's a great game to play with friends or to enjoy the horror genre in a social setting."
     },
+
     {
         "title": "Little Nightmares",
         "description": "Puzzle-platformer set in a surreal world filled with monstrous adults; a small child must escape horrifying environments.",
@@ -167,8 +174,9 @@
         "image_url": "images/Little_Nightmares.webp",
         "link_to_game": "https://en.bandainamcoent.eu/little-nightmares/little-nightmares",
         "club_entry": "INDEX",
-        "personal_review": "A beautifully grotesque puzzle-platformer. It uses scale and surreal art direction to make you feel tiny, vulnerable, and constantly unsettled."
+        "personal_review": "Rated 7/10. Praised for its atmospheric storytelling and symbolic design, the game delivers a hauntingly beautiful experience. Its mechanics, visuals, and characters all contribute to a dark, emotionally resonant narrative. The eerie environments and unsettling sound design create a tense atmosphere that keeps players engaged. While the gameplay is relatively simple, the focus on exploration and puzzle-solving enhances the overall experience. The game's themes of childhood fears and vulnerability are effectively conveyed through its art style and narrative. Overall, Little Nightmares is a captivating and thought-provoking title that stands out in the puzzle-platformer genre."
     },
+
     {
         "title": "Phasmophobia",
         "description": "Co-op ghost-hunting simulator where players investigate haunted locations to identify paranormal entities using equipment.",
@@ -185,8 +193,9 @@
         "image_url": "images/Phasmophobia.webp",
         "link_to_game": "https://store.steampowered.com/app/739630/Phasmophobia/",
         "club_entry": "CONFIG",
-        "personal_review": "The best co-op fear generator out there. Shouting at ghosts through your mic is hilarious until the lights go out and the hunt begins—then it's pure terror."
+        "personal_review": "Rated 7/10. A cooperative ghost-hunting experience that blends realism with supernatural tension. Its mechanics mirror the thrill of paranormal investigation, providing suspenseful yet accessible gameplay. The use of various ghost-hunting tools adds depth to the gameplay, and the VR support enhances immersion. However, the game can become repetitive over time, and the AI behavior may sometimes feel inconsistent. Despite these drawbacks, Phasmophobia offers a unique multiplayer experience that is both thrilling and fun, especially when played with friends. It's a solid choice for those looking to explore the horror genre in a social setting. It's a fun game to play with friends, especially in VR."
     },
+
     {
         "title": "Backrooms",
         "description": "Exploration-based horror inspired by the 'liminal space' internet myth, where players must escape endless office-like rooms.",
@@ -203,8 +212,9 @@
         "image_url": "images/Backrooms.webp",
         "link_to_game": "https://store.steampowered.com/app/2291650/Backrooms/",
         "club_entry": "INDEX",
-        "personal_review": "Captures the liminal space dread perfectly. It's an unnerving descent into the uncanny, relying heavily on isolation and sound design for its scares."
+        "personal_review": "Rated 6/10. Similar in concept to Phasmophobia, this game challenges players to navigate eerie, maze-like environments while evading terrifying entities. Its minimalist design enhances the sense of isolation and fear. The game's atmosphere is its strongest asset, with unsettling sound design and visuals that create a pervasive sense of dread. However, the gameplay can feel repetitive, and the lack of a clear narrative may not appeal to all players. Despite these shortcomings, Backrooms offers a unique take on the horror genre that emphasizes exploration and survival. It's a solid choice for fans of atmospheric horror looking for a different experience."
     },
+
     {
         "title": "Bendy and the Ink Machine",
         "description": "First-person puzzle horror game where players uncover dark secrets in a haunted cartoon animation studio.",
@@ -224,8 +234,9 @@
         "image_url": "images/Bendy_and_The_Ink_Machine.webp",
         "link_to_game": "https://bendy.game/",
         "club_entry": "INDEX",
-        "personal_review": "A charmingly creepy take on cartoon horror with a great vintage aesthetic. It blends puzzles and chases into a unique, ink-soaked adventure."
+        "personal_review": "Rated 8.5/10. Combining a unique art style with an engaging narrative, the game weaves mystery and horror through its vintage animation aesthetic. Its mechanics and storytelling create an immersive and unsettling journey. The game's puzzles are well-integrated into the environment, and the eerie atmosphere is enhanced by its distinctive visual design. The story unfolds in a way that keeps players intrigued, with twists and turns that add depth to the experience. While some may find the gameplay mechanics straightforward, the overall presentation and narrative make it a memorable entry in the horror genre. Overall, Bendy and the Ink Machine is a captivating blend of nostalgia and horror that appeals to both fans of classic animation and modern horror games. I personally love the charming characters, intriguing lore and unique cartoon art style!"
     },
+
     {
         "title": "Pumpkin Panic",
         "description": "Cozy horror farming and survival indie game where players farm, fish, and fend off strange nighttime visitors.",
@@ -244,8 +255,9 @@
         "image_url": "images/Pumpkin_Panic.webp",
         "link_to_game": "https://hachikodev.itch.io/pumpkin-panic",
         "club_entry": "INDEX",
-        "personal_review": "Surprisingly tense for a farming sim! The pressure of managing your cozy farm while the horrors descend at night is a unique, addictive blend of genres."
+        "personal_review": "Rating 6/10. A charming blend of cozy farming simulation and light horror elements, this indie game offers a unique twist on the genre. The gameplay focuses on farming, fishing, and crafting, with a subtle horror undertone that adds intrigue without overwhelming the relaxing atmosphere. The pixel art style is endearing, and the soundtrack complements the game's mood perfectly. While the horror aspects are mild, they provide a nice contrast to the otherwise peaceful gameplay. Overall, Pumpkin Panic is a delightful experience for those looking for a casual game with a hint of spooky fun."
     },
+
     {
         "title": "Sally Face",
         "description": "Episodic dark adventure following a boy with a prosthetic face unraveling mysteries in a haunted apartment complex.",
@@ -265,8 +277,9 @@
         "image_url": "images/Sally_Face.webp",
         "link_to_game": "https://portablemoose.com/",
         "club_entry": "INDEX",
-        "personal_review": "The story is incredibly dark, poignant, and expertly told through the unique art style. It's a gripping narrative adventure about trauma and friendship."
+        "personal_review": "Rated 6/10. A dark and emotional narrative-driven game known for its distinctive art style and complex characters. The combination of exploration, puzzles, and psychological themes makes it deeply impactful. The story tackles heavy subjects with sensitivity, and the voice acting is commendable. However, some gameplay elements may feel dated, and the pacing can be uneven at times. Despite these issues, Sally Face offers a unique and memorable experience that resonates with players who appreciate narrative depth in games."
     },
+
     {
         "title": "Fran Bow",
         "description": "Point-and-click psychological horror about a young girl escaping an asylum while uncovering surreal horrors.",
@@ -286,8 +299,9 @@
         "image_url": "images/Fran_Bow.webp",
         "link_to_game": "https://killmondaygames.com/games/fran-bow/",
         "club_entry": "INDEX",
-        "personal_review": "A wildly imaginative journey through madness. This game is visually disturbing and narratively complex—a true trip down the rabbit hole."
+        "personal_review": "Rated 8/10. Sharing a similar tone to Sally Face, this game excels in storytelling and emotional depth. Its disturbing yet touching narrative explores themes of trauma, imagination, and psychological horror. The hand-drawn art style and eerie soundtrack enhance the unsettling atmosphere. The puzzles are well-designed, though some may find them challenging. Overall, Fran Bow is a compelling adventure that leaves a lasting impression through its unique blend of horror and heartfelt storytelling. The horror level was mild in my opinion, but the story and characters were very memorable."
     },
+
     {
         "title": "Little Misfortune",
         "description": "Darkly whimsical adventure following a curious girl exploring a dangerous world filled with misfortune.",
@@ -307,8 +321,9 @@
         "image_url": "images/Little_Misfortune.webp",
         "link_to_game": "https://killmondaygames.com/games/little-misfortune/",
         "club_entry": "INDEX",
-        "personal_review": "While lighter on traditional scares than Fran Bow, its dark fairy-tale tone and unforgettable narrator make it a tragically sweet and heartbreaking experience."
+        "personal_review": "Rated 7/10. A charming yet dark adventure with a bittersweet tone. The game's endearing protagonist, engaging interactions, and subtle moral undertones make it a compelling companion piece to Fran Bow. The hand-drawn art style and whimsical soundtrack create a unique atmosphere that balances lightheartedness with darker themes. While the gameplay is relatively simple, the narrative depth and character development keep players invested. Overall, Little Misfortune is a memorable experience that explores themes of innocence and adversity in a thoughtful way. In simple words, horror covered in cuteness."
     },
+
     {
         "title": "Devotion",
         "description": "First-person psychological horror game set in 1980s Taiwan, exploring family, culture, and mental torment.",
@@ -324,13 +339,14 @@
         ],
         "free_or_paid": "Paid",
         "image_url": "images/Devotion.webp",
-        "link_to_game": "https://redcandlegames.com/en/games/devotion/",
+        "link_to_game": "https://shop.redcandlegames.com/app/devotion",
         "club_entry": "INDEX",
-        "personal_review": "A masterclass in environmental storytelling, especially for its deep dive into Taiwanese culture and the horrors of religious extremism. It's a powerful narrative piece."
+        "personal_review": "Rating 8/10. Same creators as Detention, this game delves into psychological horror with a focus on family dynamics and cultural elements. Its atmospheric storytelling and immersive environment create a deeply unsettling experience. The game's narrative is rich with symbolism and emotional depth, exploring themes of guilt, faith, and mental health. The sound design and visuals effectively enhance the eerie atmosphere. While some gameplay mechanics may feel dated, the overall experience is compelling and thought-provoking. Devotion is a standout title in the psychological horror genre that offers both scares and substance. It has a sad story with superstitious elements that made the gameplay always on edge."
     },
+
     {
         "title": "Simulacra",
-        "description": "Found-phone horror where players explore a missing woman’s smartphone to uncover clues and sinister secrets.",
+        "description": "Found-phone horror where players explore a missing woman's smartphone to uncover clues and sinister secrets.",
         "developer": "Kaigan Games",
         "platforms": [
             "Windows",
@@ -349,8 +365,9 @@
         "image_url": "images/Simulacra.webp",
         "link_to_game": "https://kaigangames.com/simulacra/",
         "club_entry": "INDEX",
-        "personal_review": "This 'found phone' genre is so immersive! Poking through someone else's digital life to solve a mystery feels incredibly voyeuristic and effectively creepy."
+        "personal_review": "Rating 7/10. An engaging found-phone horror game that immerses players in a chilling narrative through realistic phone interactions. The game's use of multimedia elements, such as texts, calls, and videos, creates a unique and immersive experience. The story is intriguing, with twists and turns that keep players guessing. However, some may find the gameplay mechanics repetitive, and the horror elements may not be as intense as traditional horror games. Despite these minor drawbacks, Simulacra offers a fresh take on the horror genre that is both captivating and unsettling."
     },
+
     {
         "title": "White Day: A Labyrinth Named School",
         "description": "Korean survival horror set in a haunted high school where players must avoid ghosts and solve puzzles.",
@@ -370,8 +387,9 @@
         "image_url": "images/White_Day.webp",
         "link_to_game": "https://en.wikipedia.org/wiki/White_Day:_A_Labyrinth_Named_School",
         "club_entry": "INDEX",
-        "personal_review": "A classic Korean horror gem. The relentless, intense stealth gameplay against the janitor is famously terrifying and highly recommended for veteran fans."
+        "personal_review": "Rating 6/10. Personally, the storyline was a bit confusing at times, but the game had a unique charm with its setting and characters. The horror elements were effective, and the atmosphere was well-crafted, creating a tense experience. The stealth mechanics added an extra layer of challenge, though they could sometimes feel frustrating. Overall, White Day offers a distinctive take on the survival horror genre that may appeal to fans of classic horror games looking for something different."
     },
+
     {
         "title": "No, I'm Not Human",
         "description": "Pixel-style psychological horror RPG where players confront existential dread and distorted identities.",
@@ -389,9 +407,10 @@
         "free_or_paid": "Free",
         "image_url": "images/No_Im_Not_Human.webp",
         "link_to_game": "https://selfhatredgames.itch.io/no-im-not-human",
-        "club_entry": "INDEX",
-        "personal_review": "A very distinct, unsettling pixel RPG that delivers on existential dread. It's a thoughtful, if occasionally abstract, piece of psychological horror."
+        "club_entry": "VAULT",
+        "personal_review": "Rating 9/10. A deeply unsettling psychological horror RPG that explores themes of identity, existence, and mental anguish through its pixel art style and narrative depth. The game's atmosphere is haunting, with a minimalist design that effectively conveys a sense of dread and isolation. The story is thought-provoking, delving into complex emotional and philosophical themes that resonate with players. While the gameplay mechanics are simple, they serve to enhance the overall experience rather than detract from it. Overall, No, I'm Not Human is a standout title in the indie horror genre that offers a unique and impactful experience. The jump scares were minimal, but the overall atmosphere and story were deeply disturbing."
     },
+
     {
         "title": "Dead Space",
         "description": "Sci-fi survival horror where engineer Isaac Clarke must survive aboard a derelict spaceship infested with necromorphs.",
@@ -412,6 +431,6 @@
         "image_url": "images/Dead_Space.webp",
         "link_to_game": "https://store.steampowered.com/app/17470/Dead_Space_2008/",
         "club_entry": "VAULT",
-        "personal_review": "Sci-fi horror perfected. Dismembering Necromorphs with the Plasma Cutter is a uniquely satisfying and visceral form of survival action-horror."
+        "personal_review": "Rated 9/10. A masterclass in sci-fi horror, combining tight gameplay mechanics with an intense atmosphere. Its story, character design, and tension-filled environments create a truly terrifying and cinematic experience. The game's sound design and visual effects are exceptional, enhancing the immersion and fear factor. The strategic dismemberment mechanic adds a unique twist to combat, requiring players to think tactically. While some may find the pacing slow at times, the overall experience is gripping and memorable. The remake successfully modernizes the original while retaining its core elements, making it accessible to both new players and longtime fans. Overall, Dead Space is a standout title in the survival horror genre that continues to influence games today."
     }
 ]
