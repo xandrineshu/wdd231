@@ -61,19 +61,11 @@
     .app-header span {
         font-size: 20px;
     }
-
-    .warning p {
-        font-size: 15px;
+    
+    .spotlight-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
-
-    #spotlight-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .spotlight-section {
-        width: 90%;
-    }   
 
     .footer-info {
         font-size: 20px;
