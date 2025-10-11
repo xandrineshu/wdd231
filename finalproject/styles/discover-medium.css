@@ -1,0 +1,6 @@
+@media only screen and (min-width: 35rem) {
+    #allplatforms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

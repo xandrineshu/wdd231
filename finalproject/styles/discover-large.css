@@ -35,6 +35,38 @@
         display: none;
     }
 
+    #allplatforms {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #allplatforms div {
+        margin: 2rem 20px;
+        display: grid;
+        grid-template-areas:
+        "title"
+        "photo"
+        "description"
+        "price"
+        "link";
+   }
+
+    #allplatforms div h2 {
+        margin: 0;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+
+    #allplatforms div img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    #allplatforms div p {
+        padding-top: 15px;
+    }
+
     .footer-info {
         font-size: 20px;
     }

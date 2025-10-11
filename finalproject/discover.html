@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="styles/discover-medium.css">
     <link rel="stylesheet" href="styles/discover-large.css">
 
-    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+    <script src="scripts/platforms.js" type="module"></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -52,7 +53,21 @@
     </nav>
 
     <main>
-        <h1>Discover</h1>
+        <div id="container" class="main-layout">
+        
+            <!-- Header -->
+            <div class="text-box">
+                <h1 class="glitch-title title-style">PLATFORM DISCOVERY // HORROR FOCUS</h1>
+                <p class="subtitle-text">
+                    A list of recommended platforms for accessing top-tier horror experiences, 
+                    from PC to VR.</p>
+            </div>
+        
+            <div id="allplatforms">
+                <!-- Platform cards will be injected here -->
+            </div>
+        
+        </div>
     </main>
 
     <footer>
