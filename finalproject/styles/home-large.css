@@ -66,6 +66,15 @@
         font-size: 15px;
     }
 
+    #spotlight-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotlight-section {
+        width: 90%;
+    }   
+
     .footer-info {
         font-size: 20px;
     }
