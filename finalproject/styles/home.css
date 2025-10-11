@@ -521,6 +521,13 @@ main p {
 }
 
 
+/*****************     Spotlights     *******************/
+
+#spotlight-container h3 {
+    color: #ff0000;
+    text-align: center;
+}
+
 /*****************     Footer     *******************/
 
 .footer-info {

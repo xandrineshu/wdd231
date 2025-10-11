@@ -25,6 +25,7 @@
 
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/base.js" defer></script>
+    <script src="scripts/spotlights.js" type="module"></script>
 
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -168,24 +169,27 @@
                         <div class="forecastContainer">
                             <p class="loading-message">[FETCHING THREAT PROJECTION FILES...]</p>
                         </div>
-
-                        <div class="warning">
-                            <p> // WARNING: THIS DATA IS FOR ALPHA CLEARANCE PERSONNEL ONLY. //</p>
-                            <p>TERMINAL LOCK INITIATED AT 2400H.</p>
-                        </div>
                     </section>
 
-                    <section id="spotlights">
-                        <!-- <h2> --- Spotlights </h2> -->
+                    <section class="spotlights">
+                        <h2>// ARCHIVED SPOTLIGHTS</h2>
+
+                        <p class="subtitle-text">
+                            ACCESS GRANTED: Randomized top 3 picks from our catalog,
+                            filtered by tier. (Refreshes on page load)
+                        </p>
                     
-                        <div class="platforms">
-                            <!-- JS will appear here -->
-                        </div>
-
-                        <div class="horror-games">
-                            <!-- JS will appear here -->
+                        <div id="spotlight-container">
+                            <div id="game-spotlight" class="spotlight-section"></div>
+                            <div id="youtuber-spotlight" class="spotlight-section"></div>
+                            <div id="platform-spotlight" class="spotlight-section"></div>
                         </div>
                     </section>
+
+                    <div class="warning">
+                        <p> // WARNING: THIS DATA IS FOR ALPHA CLEARANCE PERSONNEL ONLY. //</p>
+                        <p>TERMINAL LOCK INITIATED AT 2400H.</p>
+                    </div>
                 </div>
             </div>
     </main>
