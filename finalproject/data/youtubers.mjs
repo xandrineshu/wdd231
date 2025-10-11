@@ -34,7 +34,7 @@ export const youtubers = [
             "Murder House", 
             "The Mortuary Assistant",
             "Stay Out of the House", 
-            "MADiSON"
+            "Ghost of Tsushima"
         ]
     },
 
@@ -45,7 +45,7 @@ export const youtubers = [
         "image_url": "images/CaseOh.webp",
         "famous_horror_games_played": [
             "Blood Wash", 
-            "The Coffin of Andy and Leyley", 
+            "The Mortuary Assistant", 
             "The Last Monday", 
             "Night Shift"
         ]
@@ -60,7 +60,7 @@ export const youtubers = [
             "Poppy Playtime", 
             "The Joy of Creation", 
             "Bendy and the Ink Machine", 
-            "Murder House"
+            "Killer Frequency"
         ]
     }
 ]
