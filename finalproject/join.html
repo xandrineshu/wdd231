@@ -63,15 +63,15 @@
                 <section class="application-form">
                     <h2> // APPLICATION FORM </h2>
                     
-                    <form id="clubForm" onsubmit="return handleSubmit(event)">
+                    <form id="clubForm">
                         <label>First Name<span>*</span></label>
-                        <input type="text" required />
-            
+                        <input type="text" id="firstName" required />
+                        
                         <label>Last Name<span>*</span></label>
-                        <input type="text" required />
-            
+                        <input type="text" id="lastName" required />
+                        
                         <label>Nickname</label>
-                        <input type="text" />
+                        <input type="text" id="nickname" />
             
                         <label>Email<span>*</span></label>
                         <input type="email" required />

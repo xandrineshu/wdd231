@@ -58,10 +58,25 @@ window.addEventListener("load", () => {
     });
 });
 
+
 // === THANK YOU HTML ===
-function handleSubmit(event) { 
-    event.preventDefault();
-    const name = document.querySelector('input[type="text"]').value || "Applicant";
-    window.location.href = `thankyou.html?name=${encodeURIComponent(name)}`;
-    return false;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('clubForm');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // prevent page refresh
+
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const nickname = document.getElementById('nickname').value.trim();
+
+        // Use nickname if provided, else first + last, else first
+        const displayName = nickname || (firstName + (lastName ? " " + lastName : "")) || firstName;
+
+        // Store in localStorage
+        localStorage.setItem('username', displayName);
+
+        // Redirect to thank you page
+        window.location.href = "thankyou.html";
+    });
+});

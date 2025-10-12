@@ -1,240 +1,228 @@
 body {
-    background: radial-gradient(circle at center, #0b0b0b 0%, #000000 80%);
-    color: #ff4b4b;
-    font-family: 'Courier New', monospace;
     margin: 0;
-    overflow: hidden;
-    height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #12121e;
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-}
-
-.thankyou-container {
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out forwards;
 }
 
-h1 {
-    font-size: 2.2rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 0.8em;
-}
-
-/* Base glitch text styling */
-.glitch-text {
-    position: relative;
-    color: #ff1a1a;
-    text-shadow:
-        2px 0 #00ffff,
-        -2px 0 #ff0000;
-    animation: glitch 2s infinite;
-}
-
-.glitch-text::before,
-.glitch-text::after {
-    content: attr(data-text);
+/* Scanlines overlay */
+body::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
-}
-
-.glitch-text::before {
-    left: 2px;
-    text-shadow: -2px 0 #00ffff;
-    clip: rect(0, 900px, 0, 0);
-    animation: glitchTop 2.5s infinite linear alternate-reverse;
-}
-
-.glitch-text::after {
-    left: -2px;
-    text-shadow: -2px 0 #ff0000;
-    clip: rect(0, 900px, 0, 0);
-    animation: glitchBottom 2.5s infinite linear alternate-reverse;
-}
-
-p {
-    color: #bbb;
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    margin-bottom: 2em;
-}
-
-.return-btn {
-    background: none;
-    border: 2px solid #ff4b4b;
-    color: #ff4b4b;
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    padding: 10px 30px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.return-btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
     height: 100%;
-    background: #ff4b4b;
-    transition: left 0.3s ease;
+    background: repeating-linear-gradient(0deg,
+            #000 0px,
+            #111 1px,
+            #000 2px);
+    animation: scanlines 0.2s infinite;
     z-index: 0;
 }
 
-.return-btn:hover::before {
+/* Subtle horizontal glitch bars */
+.glitch-bar {
+    position: absolute;
     left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    animation: glitch-bar-flash linear infinite;
+    z-index: 0;
 }
 
-.return-btn:hover {
-    color: #000;
+/* Tiny pixel jitter overlay */
+.pixel-jitter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0 0 #fff;
+    animation: pixel-jitter 0.05s infinite;
+    z-index: 0;
+    pointer-events: none;
 }
 
-.return-btn span {
+/* Scanline movement */
+@keyframes scanlines {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 3px;
+    }
+}
+
+/* Horizontal glitch flash bars */
+@keyframes glitch-bar-flash {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    10%,
+    30% {
+        opacity: 0.3;
+    }
+
+    20%,
+    40% {
+        opacity: 0;
+    }
+}
+
+/* Tiny pixel jitter effect */
+@keyframes pixel-jitter {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-1px, 1px);
+    }
+
+    50% {
+        transform: translate(1px, -1px);
+    }
+
+    75% {
+        transform: translate(-1px, 0);
+    }
+
+    100% {
+        transform: translate(0, 1px);
+    }
+}
+
+.thankyou-container {
+    margin: 20px;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
 
-/* === ANIMATIONS === */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.return-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B01124;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
 }
 
-@keyframes glitch {
-    0% {
-        text-shadow: 2px 0 #00ffff, -2px 0 #ff0000;
+.return-btn:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Applicant name glitch effect - inline size */
+.glitch-text {
+    font-size: 1em;
+    /* same as paragraph */
+    color: #ff0000;
+    position: relative;
+    user-select: none;
+    display: inline-block;
+
+    /* Subtle glitch animation */
+    animation:
+        glitch-jitter 3s infinite alternate ease-in-out,
+        glitch-shadow 2s infinite alternate;
+}
+
+.glitch-text:hover {
+    animation:
+        glitch-jitter-fast 0.2s infinite alternate ease-in-out,
+        glitch-shadow-fast 0.15s infinite alternate;
+    cursor: crosshair;
+}
+
+/* Horizontal + vertical jitter */
+@keyframes glitch-jitter {
+
+    0%,
+    50%,
+    100% {
+        transform: translate(0, 0);
     }
 
     20% {
-        text-shadow: -3px 0 #00ffff, 3px 0 #ff0000;
-        transform: skew(1deg);
+        transform: translate(-1px, 1px);
     }
 
     40% {
-        text-shadow: 2px 0 #ff0000, -2px 0 #00ffff;
-        transform: skew(-1deg);
+        transform: translate(1px, -1px);
     }
 
     60% {
-        text-shadow: 0 0 5px #ff0000;
+        transform: translate(-1px, -1px);
     }
 
     80% {
-        text-shadow: 2px 0 #00ffff, -2px 0 #ff0000;
-        transform: scale(1.02);
-    }
-
-    100% {
-        text-shadow: 2px 0 #00ffff, -2px 0 #ff0000;
-        transform: scale(1);
+        transform: translate(1px, 1px);
     }
 }
 
-@keyframes glitchTop {
-    0% {
-        clip: rect(0, 9999px, 0, 0);
-    }
+@keyframes glitch-jitter-fast {
 
-    10% {
-        clip: rect(0, 9999px, 10px, 0);
+    0%,
+    50%,
+    100% {
+        transform: translate(0, 0);
     }
 
     20% {
-        clip: rect(0, 9999px, 4px, 0);
-    }
-
-    30% {
-        clip: rect(0, 9999px, 12px, 0);
+        transform: translate(-2px, 2px) skewX(0.5deg);
     }
 
     40% {
-        clip: rect(0, 9999px, 6px, 0);
+        transform: translate(2px, -2px) skewX(-0.5deg);
+    }
+
+    60% {
+        transform: translate(-2px, -1px) skewX(0.3deg);
+    }
+
+    80% {
+        transform: translate(1px, 2px) skewX(-0.3deg);
+    }
+}
+
+/* RGB shadow flicker */
+@keyframes glitch-shadow {
+
+    0%,
+    100% {
+        text-shadow: 1px 0 #ff00ff, -1px 0 #00ffff;
     }
 
     50% {
-        clip: rect(0, 9999px, 10px, 0);
-    }
-
-    60% {
-        clip: rect(0, 9999px, 8px, 0);
-    }
-
-    70% {
-        clip: rect(0, 9999px, 5px, 0);
-    }
-
-    80% {
-        clip: rect(0, 9999px, 14px, 0);
-    }
-
-    90% {
-        clip: rect(0, 9999px, 9px, 0);
-    }
-
-    100% {
-        clip: rect(0, 9999px, 0, 0);
+        text-shadow: -1px 0 #ff00ff, 1px 0 #00ffff;
     }
 }
 
-@keyframes glitchBottom {
-    0% {
-        clip: rect(0, 9999px, 0, 0);
-    }
+@keyframes glitch-shadow-fast {
 
-    10% {
-        clip: rect(4px, 9999px, 14px, 0);
-    }
-
-    20% {
-        clip: rect(10px, 9999px, 20px, 0);
-    }
-
-    30% {
-        clip: rect(5px, 9999px, 15px, 0);
-    }
-
-    40% {
-        clip: rect(8px, 9999px, 18px, 0);
+    0%,
+    100% {
+        text-shadow: 2px 0 #ff00ff, -2px 0 #00ffff;
     }
 
     50% {
-        clip: rect(3px, 9999px, 13px, 0);
-    }
-
-    60% {
-        clip: rect(10px, 9999px, 17px, 0);
-    }
-
-    70% {
-        clip: rect(6px, 9999px, 16px, 0);
-    }
-
-    80% {
-        clip: rect(12px, 9999px, 22px, 0);
-    }
-
-    90% {
-        clip: rect(5px, 9999px, 12px, 0);
-    }
-
-    100% {
-        clip: rect(0, 9999px, 0, 0);
+        text-shadow: -2px 0 #ff00ff, 2px 0 #00ffff;
     }
 }
