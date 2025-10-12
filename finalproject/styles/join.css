@@ -287,7 +287,7 @@ input, select, textarea {
     font-family: inherit;
 }
 
-button {
+.learn-more, .submit {
     background: #B01124;
     border: none;
     padding: 10px;
@@ -299,7 +299,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+.learn-more:hover, .submit:hover {
     background: #ff0000ff;
     font-weight: 900;
 }
