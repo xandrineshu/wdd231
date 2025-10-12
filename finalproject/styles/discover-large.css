@@ -35,6 +35,11 @@
         display: none;
     }
 
+    .text-box {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
     #allplatforms, #allyoutubers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
