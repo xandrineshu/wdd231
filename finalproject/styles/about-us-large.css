@@ -40,7 +40,13 @@
         margin-bottom: 1rem;
     }
 
-    
+    .base {
+        margin-inline: 15rem;
+    }
+
+    .section-content {
+        font-size: 18px;
+    }
 
     .footer-info {
         font-size: 20px;

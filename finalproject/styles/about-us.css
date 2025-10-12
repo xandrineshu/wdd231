@@ -224,7 +224,7 @@ nav {
 
 .subtitle-text {
     color: #b0b0b0;
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin-inline: 3rem;
 }
 
@@ -234,8 +234,39 @@ nav {
 }
 
 
-/***************     <>     *******************/
+/***************     About Us Content     *******************/
 
+.base {
+    margin-inline: 30px;
+}
+
+.content-card {
+    margin-block: 30px;
+    background-color: #1a1a1a;
+    border: 2px solid #B01124;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ff00004d;
+    color: white;
+    text-align: left;
+}
+
+.section-header {
+    font-size: 25px;
+    color: #ffff00;
+    border-bottom: 2px solid #ffff00;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.section-content {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #d4d4d4;
+    margin-bottom: 30px;
+}
 
 
 /*****************     Footer     *******************/
