@@ -1,6 +1,6 @@
 import { youtubers } from "../data/youtubers.mjs";
 
-function getRandomItems(arr, count = 3) {
+function getRandomItems(arr, count = 5) {
     if (!arr || arr.length === 0) return [];
     const numToSelect = Math.min(count, arr.length);
     const shuffled = [...arr];
@@ -100,11 +100,11 @@ async function animate() {
         ["CONFIG", "VAULT", "PURGE"].includes(game.club_entry?.toUpperCase())
     );
 
-    const spotlightGames = getRandomItems(filteredGames, 3);
-    const spotlightYoutubers = getRandomItems(youtubers, 3);
+    const spotlightGames = getRandomItems(filteredGames, 5);
+    const spotlightYoutubers = getRandomItems(youtubers, 5);
 
-    renderSpotlight("game-spotlight", "> Top 3 Horror Games", spotlightGames);
-    renderSpotlight("youtuber-spotlight", "> Top 3 Horror Gamers", spotlightYoutubers);
+    renderSpotlight("game-spotlight", "> Top 5 Horror Games", spotlightGames);
+    renderSpotlight("youtuber-spotlight", "> Top 5 Horror Gamers", spotlightYoutubers);
 }
 
 document.addEventListener("DOMContentLoaded", animate);
