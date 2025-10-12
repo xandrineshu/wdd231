@@ -1,0 +1,10 @@
+@media only screen and (min-width: 35em) {
+    .spotlight-item {
+        margin-inline: 0;
+    }
+    
+    .spotlight-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}

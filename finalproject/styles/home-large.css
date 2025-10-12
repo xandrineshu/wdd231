@@ -61,9 +61,13 @@
     .app-header span {
         font-size: 20px;
     }
+
+    .spotlight-item {
+        margin-inline: 0;
+    }
     
     .spotlight-list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
     }
 

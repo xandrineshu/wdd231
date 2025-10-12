@@ -554,11 +554,11 @@ main p {
 }
 
 .spotlight-item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #ff00000d;
     border: 1px solid #ff0000;
-    margin-inline: 40px;
+    margin-inline: 50px;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px #2b0000;
@@ -575,12 +575,12 @@ main p {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    height: 250px;
+    height: 200px;
     margin-top: 0.5rem;
 }
 
 .content-area {
-    padding: 1rem;
+    padding-block: 20px;
 }
 
 .item-title {
