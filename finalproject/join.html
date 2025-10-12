@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/join-large.css">
 
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/discover.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
@@ -52,11 +53,87 @@
 
     <main>
         <div class="text-box">
-            <h1 class="glitch-title title-style">JOIN</h1>
+            <h1 class="glitch-title title-style">JOIN THE LOCKED DOSSIER</h1>
             <p class="subtitle-text">
-                ACCESS GRANTED: Reviewing club recommendations.
-                // Click a file to open its contents.
+                :: REQUESTING ACCESS TO THE INNER CIRCLE ::
             </p>
+
+            <div class="join-container">
+                <!-- Left side: Application Form -->
+                <section class="application-form">
+                    <h2> // APPLICATION FORM </h2>
+                    
+                    <form id="clubForm" onsubmit="return handleSubmit(event)">
+                        <label>First Name<span>*</span></label>
+                        <input type="text" required />
+            
+                        <label>Last Name<span>*</span></label>
+                        <input type="text" required />
+            
+                        <label>Nickname</label>
+                        <input type="text" />
+            
+                        <label>Email<span>*</span></label>
+                        <input type="email" required />
+            
+                        <label>Phone Number<span>*</span></label>
+                        <input type="tel" required />
+            
+                        <label>Club Tier Level<span>*</span></label>
+                        <select required>
+                            <option value="">-- Select Tier --</option>
+                            <option value="INDEX">INDEX</option>
+                            <option value="CONFIG">CONFIG</option>
+                            <option value="VAULT">VAULT</option>
+                            <option value="PURGE">PURGE</option>
+                        </select>
+            
+                        <label>Why do you want to join?</label>
+                        <textarea rows="4"></textarea>
+            
+                        <button type="submit">Submit Application</button>
+                    </form>
+                </section>
+            
+                <!-- Right side: Club Tiers -->
+                <section class="club-tiers">
+                    <h2>// Club Tier Benefits</h2>
+            
+                    <div class="tier-grid">
+                        <div class="tier-card" data-tier="INDEX">
+                            <h3>INDEX</h3>
+                            <p>// Access Level 01: Observer Status</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+            
+                        <div class="tier-card" data-tier="CONFIG">
+                            <h3>CONFIG</h3>
+                            <p>// Access Level 02: Resource Contributor</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+            
+                        <div class="tier-card" data-tier="VAULT">
+                            <h3>VAULT</h3>
+                            <p>// Access Level 03: Protected Clearance</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+            
+                        <div class="tier-card" data-tier="PURGE">
+                            <h3>PURGE</h3>
+                            <p>// Access Level 04: Critical Override</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </section>
+
+                <dialog id="tierDialog">
+                    <div class="dialog-content">
+                        <h3 id="dialogTitle"></h3>
+                        <p id="dialogDetails"></p>
+                        <button id="closeDialog">Close File</button>
+                    </div>
+                </dialog>
+            </div>
         </div>
         
     </main>
