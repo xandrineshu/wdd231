@@ -40,6 +40,7 @@ header {
     display: block;
     width: 100px;
     height: 100px;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -266,6 +267,43 @@ nav {
     line-height: 1.5;
     color: #d4d4d4;
     margin-bottom: 30px;
+}
+
+
+/*****************     Light Mode     *******************/
+
+.light-mode {
+    background-color: #ffffff;
+    color: #12121e;
+}
+
+.light-mode header {
+    background-color: #12121e;
+}
+
+.light-mode .logo h1 {
+    color: #12121e;
+    text-shadow: 0 0 4px #ff0000;
+}
+
+.light-mode .subtitle-text {
+    color: #3e3e3e;
+}
+
+.light-mode .content-card {
+    background-color: #f5f5f5;
+    border: 3px solid #ff0000;
+    box-shadow: 0 4px 15px #ffff0066;
+    color: #12121e;
+}
+
+.light-mode .section-header {
+    color: #B01124;
+    border-bottom: 2px solid #ff0000;
+}
+
+.light-mode .section-content {
+    color: #12121e;
 }
 
 
