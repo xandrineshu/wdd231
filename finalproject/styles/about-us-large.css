@@ -1,0 +1,59 @@
+@media only screen and (min-width: 60em) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        margin-bottom: -20px;
+        margin-top: -20px;
+    }
+
+    header h1 {
+        font-size: 55px;
+    }
+
+    header button {
+        font-size: 40px;
+        position: absolute;
+        right: 3rem;
+        top: 2.5rem;
+    }
+
+    .navigation {
+        display: flex;
+        font-size: 20px;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .text-box {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    
+
+    .footer-info {
+        font-size: 20px;
+    }
+
+    .social img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social a {
+        width: 50px;
+        height: 50px;
+        margin-inline: 15px;
+    }
+}
