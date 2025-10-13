@@ -787,38 +787,131 @@ main p {
 
 /*****************     Light Mode     *******************/
 
+/***************** Light Mode - Dossier Palette *******************/
 
-
-/* Transition Effect */
-body {
-    transition:
-        background-color 0.6s ease,
-        color 0.6s ease,
-        filter 0.4s ease;
+body.light-mode {
+    background-color: #fff8e5;
+    /* light paper background */
+    color: #000000;
+    /* default text color */
+    transition: background-color 0.6s ease, color 0.6s ease, filter 0.4s ease;
 }
 
-body.theme-switching {
-    animation: glitch-flash 0.4s ease-in-out;
+body.light-mode header {
+    background-color: #12121E;
+    /* keep header dark */
 }
 
-@keyframes glitch-flash {
+body.light-mode .app-container {
+    background-color: #f4edda;
+    /* dossier panel */
+    color: #000000;
+    border: 2px solid #74562a;
+    box-shadow: 0 0 10px #896b3d70;
+}
+
+body.light-mode .app-header {
+    background-color: #c6b182;
+    color: #000000;
+    border-bottom: 1px solid #74562a;
+}
+
+body.light-mode #club-events h2,
+body.light-mode #weather h2,
+body.light-mode .spotlights h2 {
+    color: #5a421e;
+    border-bottom: 2px solid #74562a;
+}
+
+body.light-mode .section-title {
+    color: #5b431f;
+}
+
+body.light-mode .card-title {
+    border-bottom: 1px dashed #74562a;
+}
+
+body.light-mode .log-card-footer {
+    border-top: 1px dashed #74562a;
+    border-bottom: 1px dashed #74562a;
+}
+
+body.light-mode .glitch-title {
+    color: #000000;
+    text-shadow: 1px 1px 0 #C8A165, -1px -1px 0 #D4B88B;
+}
+
+body.light-mode #welcome-message,
+body.light-mode p,
+body.light-mode .subtitle-text,
+body.light-mode .item-desc,
+body.light-mode #weather h3,
+body.light-mode .app-header span,
+body.light-mode .card-title,
+body.light-mode .item-title,
+body.light-mode .action-link {
+    color: #000000;
+}
+
+body.light-mode .log-card,
+body.light-mode .forecast-item,
+body.light-mode .spotlight-item,
+body.light-mode .text-box {
+    background-color: #FFF8E5;
+    color: #000000;
+    border: 1px solid #74562a;
+    box-shadow: 0 0 5px #C8A16533;
+}
+
+body.light-mode .action-link {
+    color: #69320c;
+}
+
+body.light-mode .action-link:hover {
+    color: #B65E2A;
+}
+
+body.light-mode .forecast-item strong {
+    color: #463317;
+}
+
+body.light-mode footer p {
+    color: white;
+    /* footer remains dark */
+}
+
+body.light-mode .theme-switching {
+    animation: paper-flicker 0.3s steps(2, start) forwards;
+}
+
+@keyframes paper-flicker {
     0% {
-        filter: brightness(0) contrast(1.5);
+        opacity: 1;
+        filter: none;
     }
 
     20% {
-        filter: brightness(3) contrast(1.2);
+        opacity: 0.9;
+        filter: brightness(1.05);
     }
 
     40% {
-        filter: brightness(0.8) contrast(2);
+        opacity: 0.8;
+        filter: brightness(1.1);
     }
 
     60% {
-        filter: brightness(2) contrast(0.8);
+        opacity: 0.95;
+        filter: brightness(1.03);
+    }
+
+    80% {
+        opacity: 1;
+        filter: none;
     }
 
     100% {
-        filter: brightness(1) contrast(1);
+        opacity: 1;
+        filter: none;
     }
 }
