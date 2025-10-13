@@ -1,6 +1,4 @@
 @media only screen and (min-width: 60rem) {
-    /* Review Page */
-
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -57,11 +55,18 @@
         font-size: 15px;
     }
 
-    #list {
+    #list, #allplatforms, #allyoutubers {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        margin-bottom: 50px;
+    }
+
+    #allplatforms, #allyoutubers {
+       margin-bottom: 4rem; 
+    } 
+
+    #list {
+        margin-bottom: 5rem;
     }
 
     .card.open {
@@ -106,6 +111,33 @@
 
     .link-action {
         font-size: 15px;
+    }
+
+    .text-box {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #allplatforms div, #allyoutubers div {
+        margin: 1rem 10px;
+        display: grid;
+        grid-template-areas:
+        "title"
+        "photo"
+        "description"
+        "price"
+        "link";
+   }
+
+    #allplatforms div h2, #allyoutubers div h2 {
+        margin: 0;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #allplatforms div img:hover, #allyoutubers div img:hover {
+        box-shadow: 0 0 50px #333;
     }
 
     .footer-info {

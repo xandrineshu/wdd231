@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="styles/review-large.css">
 
     <script src="scripts/review.js" defer></script>
+    <script src="scripts/platforms.js" type="module"></script>
+    <script src="scripts/youtubers.js" type="module"></script>
     <script src="scripts/light-dark-mode.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico">
@@ -46,28 +48,45 @@
         <ul class="navigation">
             <li><a href="index.html"> Home </a></li>
             <li class="current"><a href="review.html"> Review </a></li>
-            <li><a href="discover.html"> Discover </a></li>
             <li><a href="join.html"> Join </a></li>
-            <li><a href="about-us.html"> About Us </a></li>
         </ul>
     </nav>
 
     <main>
         <div id="container" class="main-layout">
-
             <div class="text-box">
-                <h1 class="glitch-title title-style">CLASSIFIED DOSSIER // HORROR REVIEWS</h1>
+                <h2 class="glitch-title title-style">CLASSIFIED DOSSIER // HORROR REVIEWS</h2>
                 <p class="subtitle-text">
                     ACCESS GRANTED: Reviewing club recommendations.
                     // Click a file to open its contents.
                 </p>
             </div>
         
-            <!-- Dynamic Game List (No Grid) -->
             <div id="list">
                 <!-- Game cards will be injected here -->
             </div>
-        
+
+            <div class="text-box">
+                <h2 class="glitch-title title-style">PLATFORM DISCOVERY // HORROR FOCUS</h2>
+                <p class="subtitle-text">
+                    PERMISSION GRANTED: Reviewing list of recommended platforms
+                    for accessing top-tier horror experiences, from PC to VR.</p>
+            </div>
+            
+            <div id="allplatforms">
+                <!-- Platform cards will be injected here -->
+            </div>
+            
+            <div class="text-box">
+                <h2 class="glitch-title title-style">YOUTUBER DISCOVERY // HORROR FOCUS</h2>
+                <p class="subtitle-text">
+                    PERMISSION GRANTED: Reviewing list of recommended platforms
+                    for accessing top-tier horror experiences, from PC to VR.</p>
+            </div>
+            
+            <div id="allyoutubers">
+                <!-- Youtubers cards will be injected here -->
+            </div>
         </div>
     </main>
 

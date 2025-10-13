@@ -118,13 +118,7 @@ nav {
 }
 
 
-/***************     Review     *******************/
-
-
-.text-box {
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
+/***************     Glitch Title     *******************/
 
 @keyframes glitch-anim {
     0% {
@@ -231,9 +225,18 @@ nav {
 
 .text-box {
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
+
+.title-style {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+/***************     Review     *******************/
 
 .main-layout {
     max-width: 90%;
@@ -241,10 +244,8 @@ nav {
     margin-right: auto;
 }
 
-.title-style {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+#list, #allyoutubers, #allplatforms {
+    margin-bottom: 5rem;
 }
 
 .platform-tag {
@@ -477,6 +478,99 @@ nav {
     padding: 1rem;
     margin-top: 1rem;
     border: 1px solid #ffffff1a;
+}
+
+
+/***************     Platform/Youtubers Cards     *******************/
+
+#allplatforms div, #allyoutubers div {
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 5px 10px #0000004d;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 2rem 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "photo"
+        "description"
+        "price"
+        "link";
+}
+
+#allplatforms div:hover,
+#allyoutubers div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px #ff000033;
+}
+
+#allplatforms div h2,
+#allyoutubers div h2 {
+    margin: 0;
+    padding-block: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    border-bottom: 1px solid #ffffff1a;
+    color: white;
+    text-align: center;
+    grid-area: title;
+    color: #ffff00;
+}
+
+#allplatforms div img,
+#allyoutubers div img {
+    display: block;
+    height: 200px;
+    width: 100%;
+    margin: 1rem 10px;
+    grid-area: photo;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#allyoutubers div img {
+    width: 200px;
+}
+
+#allplatforms div p,
+#allyoutubers div p {
+    margin: 1rem 10px;
+    font-weight: 500;
+    font-size: 20px;
+    grid-area: description;
+    color: white;
+}
+
+#allplatforms div span,
+#allyoutubers div ul {
+    margin: 0 10px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    grid-area: price;
+    color: white;
+}
+
+#allplatforms div a,
+#allyoutubers div a {
+    margin: 2rem 10px;
+    grid-area: link;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #B01124;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-inline: 20px;
+}
+
+#allplatforms div a:hover,
+#allyoutubers div a:hover {
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    font-style: italic;
 }
 
 /*****************     Footer     *******************/
