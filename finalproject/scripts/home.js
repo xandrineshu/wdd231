@@ -38,11 +38,3 @@ welcomeMsgElement.addEventListener('mouseenter', () => {
 welcomeMsgElement.addEventListener('mouseleave', () => {
     welcomeMsgElement.textContent = originalText; // Revert text on mouse leave
 });
-
-// Footer
-
-document.getElementById("currentyear").textContent =
-    new Date().getFullYear();
-document.getElementById(
-    "lastModified"
-).textContent = `Last Modified: ${document.lastModified}`;

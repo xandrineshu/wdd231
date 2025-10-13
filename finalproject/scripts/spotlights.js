@@ -10,6 +10,7 @@ function getRandomItems(arr, count = 5) {
     }
     return shuffled.slice(0, numToSelect);
 }
+
 const tierColors = {
     CONFIG: "#ff0000",
     VAULT: "#ffff00",
@@ -27,7 +28,9 @@ function renderSpotlight(containerId, title, items, isError = false) {
                 ? "Error loading data. Please check the console."
                 : "No eligible items found for this spotlight."
             }</p>`;
-    } else {
+    } 
+    
+    else {
         items.forEach((item) => {
             // Ensure all images are read from "images/" folder
             let imageUrl = item.image_url
@@ -89,13 +92,15 @@ async function animate() {
         if (!response.ok)
             throw new Error(`HTTP error! status: ${response.status}`);
         gamesData = await response.json();
-    } catch (error) {
+    } 
+    
+    catch (error) {
         console.error("Could not load games data from games.json:", error);
         renderSpotlight("game-spotlight", "Top Horror Games", [], true);
+        
         return;
     }
 
-    // ✅ Only include CONFIG, VAULT, PURGE tiers
     const filteredGames = gamesData.filter((game) =>
         ["CONFIG", "VAULT", "PURGE"].includes(game.club_entry?.toUpperCase())
     );

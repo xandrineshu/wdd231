@@ -46,7 +46,9 @@ async function fetchFearWeather() {
         const forecastHtml = generateForecastReport(forecastData);
         FORECAST_ELEMENT.innerHTML = `<div class="forecast-grid">${forecastHtml}</div>`;
 
-    } catch (error) {
+    } 
+    
+    catch (error) {
         const errorMessage = `[ERROR LOG: CONNECTION SEVERED] Could not retrieve data. Code: ${error.message}`;
         CURRENT_ELEMENT.innerHTML = `<p class="error-message">${errorMessage}</p>`;
         FORECAST_ELEMENT.innerHTML = '';
@@ -54,8 +56,8 @@ async function fetchFearWeather() {
     }
 }
 
-// Current Weather
 
+// Current Weather
 function generateCurrentWeatherReport(weatherData) {
     const tempCelsius = weatherData.main.temp;
     const conditionMain = weatherData.weather[0].main;
@@ -79,9 +81,13 @@ function generateCurrentWeatherReport(weatherData) {
     const roundedTemp = Math.round(tempCelsius);
     if (tempCelsius >= 30) {
         tempWarning = `CRITICAL: THERMAL RUNAWAY. System Core Overheating (${roundedTemp}°C). Prepare for Chaotic Failure.`;
-    } else if (tempCelsius >= 20) {
+    } 
+    
+    else if (tempCelsius >= 20) {
         tempWarning = `SYSTEM STABLE. Ambient Temperature is Sustained (${roundedTemp}°C). Threat Level Medium.`;
-    } else {
+    } 
+    
+    else {
         tempWarning = `MILD CHILL. Environment is Conducive to Movement (${roundedTemp}°C). Use Caution.`;
     }
 
@@ -92,9 +98,13 @@ function generateCurrentWeatherReport(weatherData) {
 
     if (speed <= 5) {
         windWarning = "WIND SPEED NEGLIGIBLE. Infection Spread is Localized and Contained.";
-    } else if (speed <= 25) {
+    } 
+    
+    else if (speed <= 25) {
         windWarning = `VECTOR MILD. Anomalous Spread Confirmed to the ${direction} (${speed} km/h). Remain Indoors.`;
-    } else {
+    } 
+    
+    else {
         windWarning = `DREAD HAZARD HIGH. Rapid Infection Expansion Confirmed to the ${direction} (${speed} km/h). Full System Lock Down.`;
     }
 
@@ -113,8 +123,8 @@ function generateCurrentWeatherReport(weatherData) {
 `;
 }
 
-// Forecast 
 
+// Forecast 
 function generateForecastReport(forecastData) {
     const dailyData = {};
     const htmlItems = [];
@@ -200,6 +210,7 @@ function getCardinalDirection(deg) {
     if (deg === undefined) return 'UNKNOWN SECTOR';
     const directions = ['NORTH', 'NORTHEAST', 'EAST', 'SOUTHEAST', 'SOUTH', 'SOUTHWEST', 'WEST', 'NORTHWEST'];
     const index = Math.round(deg / 45) % 8;
+    
     return directions[index];
 }
 
