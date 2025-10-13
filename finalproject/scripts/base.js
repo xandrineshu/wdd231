@@ -1,5 +1,4 @@
 // Hamburger
-
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
 
@@ -8,8 +7,8 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
-// Footer
 
+// Footer
 document.getElementById("currentyear").textContent =
     new Date().getFullYear();
 document.getElementById(
