@@ -1,13 +1,14 @@
 /*****************     Palette     *******************/
-/* (palette had to be changed from original colors due to contrast issues)
+/* 
 
-    Red:    #B01124
-            #ff0000
-    Black:  #12121e
-    Yellow: #ffff00
+        < Dark Theme Palette >
+    --bg-dark: #12121E;
+    --accent-red: #B01124;
+    --accent-light: #FF4655;
+    --text-secondary: #A7A9BA;
+    --text-main: #E6E6E9;
 
 */
-
 
 /*****************     Overall     *******************/
 
@@ -48,15 +49,8 @@ header h1 {
     font-size: 45px;
     font-weight: 800;
     text-align: center;
-    color: white;
-    text-shadow: 0 0 4px #B01124;
-}
-
-header button {
-    background-color: #12121e;
-    color: white;
-    border: none;
-    font-size: 30px;
+    color: #E6E6E9;
+    text-shadow: 0 0 5px #B01124;
 }
 
 
@@ -68,7 +62,7 @@ header button {
     font-weight: 700;
     text-decoration: none;
     padding: 2rem 0.5rem;
-    color: white;
+    color: #E6E6E9;
 }
 
 #menu::before {
@@ -94,19 +88,19 @@ nav {
     padding: 15px;
     text-align: left;
     text-decoration: none;
-    color: white;
+    color: #E6E6E9;
     font-weight: 700;
     transition: 0.5s;
 }
 
 .navigation a:hover, .navigation a:active {
-    color: black;
-    background-color: white;
+    color: #12121E;
+    background-color: #E6E6E9;
 }
 
 .navigation li.current {
     text-decoration: underline;
-    color: white;
+    color: #E6E6E9;
 }
 
 .show li {
@@ -119,19 +113,80 @@ nav {
 }
 
 
+/***************     Light/Dark Mode     *******************/
+
+header button {
+    color: #E6E6E9;
+    border: none;
+    font-size: 30px;
+}
+
+#theme-toggle {
+    background: transparent;
+    text-shadow: 0 0 5px #B01124;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: #FF4655;
+    text-shadow: 0 0 10px #FF4655;
+    border-color: #FF4655;
+}
+
+.glitch-flicker {
+    animation: flicker-glitch 0.3s steps(2, start) forwards;
+}
+
+@keyframes flicker-glitch {
+    0% {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    20% {
+        opacity: 0.3;
+        filter: blur(1px);
+        transform: translateX(-1px);
+    }
+
+    40% {
+        opacity: 0.8;
+        filter: contrast(2);
+        transform: translateX(1px);
+    }
+
+    60% {
+        opacity: 0.5;
+        filter: brightness(2);
+        transform: translateY(1px);
+    }
+
+    80% {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+        filter: none;
+    }
+}
+
+
 /***************     Hero Image     *******************/
 
 .hero-image img {
     width: 100%;
-    margin-bottom: -50px;
 }
 
 #cta {
     position: relative;
-    bottom: 0.5rem;
+    bottom: 3.5rem;
     left: 1.5rem;
     background-color: #B01124;
-    color: white;
+    color: #E6E6E9;
     padding: 10px;
     padding-bottom: 15px;
     font-size: 20px;
@@ -141,21 +196,21 @@ nav {
 }
 
 #cta:hover {
-    background-color: #ffff00;
+    background-color: #FF4655;
     font-weight: 700;
-    color: black;
+    color: #12121E;
     cursor: pointer;
 }
 
 
-/***************** Welcome Message *****************/
+/*****************    Welcome Message    *****************/
 
 main p {
     margin-inline: 3rem;
     margin-bottom: 3rem;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: #E6E6E9;
 }
 
 .glitch-welcome {
@@ -266,14 +321,14 @@ main p {
 }
 
 
-/***************** Main *****************/
+/*****************      Main      *****************/
 
 .app-container {
     max-width: 90%;
     width: 800px;
-    background-color: black;
+    background-color: #12121E;
     border: 2px solid #B01124;
-    box-shadow: 0 0 20px #ff0000;
+    box-shadow: 0 0 20px #B0112433;
     border-radius: 10px;
     padding: 20px;
     margin: auto;
@@ -284,7 +339,7 @@ main p {
 
 .app-header {
     background-color: #B01124;
-    color: #000000;
+    color: #E6E6E9;
     padding: 5px 15px;
     border-radius: 5px 5px 0 0;
     font-weight: bold;
@@ -295,39 +350,38 @@ main p {
 }
 
 .app-header span {
-    color: white;
+    color: #E6E6E9;
     font-size: 15px;
 }
 
 
-/***************** CLub Events *****************/
+/*****************      CLub Events      *****************/
 
 #club-events h2 {
-    color: #ff0000;
+    color: #B01124;
     text-align: left;
     font-size: 30px;
     margin-bottom: 50px;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid #B01124;
     padding-bottom: 10px;
 }
 
 .log-card {
     position: relative;
-    background-color: #250a0a;
-    color: #ffcccc;
+    background-color: #1C1C28;
+    color: #A7A9BA;
     border: 1px solid #B01124;
     border-radius: 5px;
     padding: 20px;
     margin-top: 25px;
     margin-bottom: 50px;
-    box-shadow: 0 0 10px #ff000066;
+    box-shadow: 0 0 10px #B0112433;
     transition: all 0.2s ease-in-out;
 }
 
 .log-card:hover {
-    border-color: #ffff00;
-    box-shadow: 0 0 15px #ffff0099;
-    transform: scale(1.00);
+    border-color: #FF4655;
+    box-shadow: 0 0 15px #FF465566;
 }
 
 .log-card::before {
@@ -336,9 +390,9 @@ main p {
     top: -21px;
     left: 15px;
     padding: 5px 15px;
-    background-color: #440000;
-    color: #ffff00;
-    border: 1px solid #ff0000;
+    background-color: #1C1C28;
+    color: #E6E6E9;
+    border: 1px solid #B01124;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
     font-size: 1rem;
@@ -349,15 +403,15 @@ main p {
 
 .log-card-footer {
     padding-top: 15px;
-    border-top: 1px dashed #440000;
+    border-top: 1px dashed #B01124;
     margin-top: 10px;
     text-align: right;
 }
 
 .card-title {
     font-size: 25px;
-    color: #ff0000;
-    border-bottom: 1px dashed #440000;
+    color: #FF4655;
+    border-bottom: 1px dashed #B01124;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -369,20 +423,87 @@ main p {
     margin: 0;
 }
 
-.log-card[data-tab="PURGE"]::before {
-    background-color: #880000;
-    color: #ff0000;
-    border-color: #ff0000;
-    animation: pulse-red 1.5s infinite alternate;
+/* INDEX - Base Level Access */
+.log-card[data-tab="INDEX"]::before {
+    background-color: #2B2B2B;
+    color: #E5E5E5;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0 0 10px #D9D9D966;
+    text-shadow: 0 0 4px #B3B3B3;
+    animation: staticFlicker 4s infinite ease-in-out;
 }
 
-@keyframes pulse-red {
-    from {
-        box-shadow: 0 0 5px #ff0000;
+/* CONFIG - Classified System */
+.log-card[data-tab="CONFIG"]::before {
+    background-color: #3C3A2E;
+    color: #FFF3C2;
+    border: 1px solid #D2B55B;
+    box-shadow: 0 0 12px #D2B55B66;
+    text-shadow: 0 0 6px #D2B55B;
+    animation: staticFlicker 3s infinite ease-in-out;
+}
+
+/* VAULT - Secure Archives */
+.log-card[data-tab="VAULT"]::before {
+    background-color: #4A3100;
+    color: #FFE4A3;
+    border: 1px solid #FFB84C;
+    box-shadow: 0 0 14px #FFB84C77;
+    text-shadow: 0 0 8px #FFB84C;
+    animation: pulseGold 3s infinite alternate;
+}
+
+/* PURGE - Critical Override */
+.log-card[data-tab="PURGE"]::before {
+    background-color: #2A0000;
+    color: #FFB8B8;
+    border: 1px solid #B01124;
+    box-shadow: 0 0 16px #B0112488;
+    text-shadow: 0 0 10px #B01124;
+    animation: pulseRed 1.8s infinite alternate;
+}
+
+@keyframes staticFlicker {
+
+    0%,
+    100% {
+        opacity: 1;
+        filter: brightness(1);
     }
 
-    to {
-        box-shadow: 0 0 15px #ff0000;
+    45% {
+        opacity: 0.9;
+        filter: brightness(1.2);
+    }
+
+    50% {
+        opacity: 0.7;
+        filter: brightness(1.5);
+    }
+
+    55% {
+        opacity: 0.95;
+        filter: brightness(1.1);
+    }
+}
+
+@keyframes pulseGold {
+    0% {
+        box-shadow: 0 0 10px #FFB84C44;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #FFB84CCC;
+    }
+}
+
+@keyframes pulseRed {
+    0% {
+        box-shadow: 0 0 12px #B0112444;
+    }
+
+    100% {
+        box-shadow: 0 0 22px #B01124CC;
     }
 }
 
@@ -391,45 +512,44 @@ main p {
 
 .main-container {
     width: 100%;
-    border: 2px solid #ff0000;
-    box-shadow: 0 0 10px #ff0000;
-    transition: box-shadow 0.3s ease-in-out;
+    border: 2px solid #B01124;
+    box-shadow: 0 0 10px #B0112433;
 }
 
 #weather h2 {
-    color: #ff0000;
+    color: #B01124;
     text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid #B01124;
     padding-bottom: 10px;
 }
 
 #weather h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ffff00;
+    color: #E6E6E9;
 }
 
 .loading-message {
-    color: #ff0000;
-    font-size: 1.2rem;
+    color: #B01124;
+    font-size: 1.5rem;
     animation: blink 1s infinite, glitch 0.05s infinite alternate;
     text-shadow: 0 0 5px currentColor;
 }
 
 .error-message {
-    color: #ff8888;
+    color: #FF4655;
 }
 
 .current-report {
-    border: 1px solid #ff0000;
+    border: 1px solid #B01124;
     padding: 15px;
     margin-bottom: 3rem;
 }
 
 .current-report p {
-    color: white;
+    color: #E6E6E9;
     margin: 0px;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
@@ -444,8 +564,8 @@ main p {
 }
 
 .forecast-item {
-    background-color: #ff00000d;
-    border: 1px solid #ff0000;
+    background-color: #1C1C28;
+    border: 1px solid #B01124;
     padding: 10px;
     line-height: 1;
     font-size: 15px;
@@ -453,7 +573,7 @@ main p {
 }
 
 .forecast-item p {
-    color: white;
+    color: #E6E6E9;
     margin: 0px;
     font-size: 15px;
     text-align: left;
@@ -466,11 +586,11 @@ main p {
 }
 
 .forecast-item:hover {
-    background-color: #ff000033;
+    background-color: #B0112411;
 }
 
 .forecast-item strong {
-    color: #ffff00d3;
+    color: #FF4655;
 }
 
 .forecastContainer {
@@ -524,17 +644,17 @@ main p {
 /*****************     Spotlights     *******************/
 
 .spotlights h2 {
-    color: #ff0000;
+    color: #B01124;
     text-align: left;
     font-size: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid #B01124;
     padding-bottom: 10px;
 }
 
 .section-title {
-    color: #ffff00;
+    color: #FF4655;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 25px;
@@ -556,12 +676,12 @@ main p {
 .spotlight-item {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #ff00000d;
-    border: 1px solid #ff0000;
+    background-color: #1C1C28;
+    border: 1px solid #B01124;
+    box-shadow: 0 0 10px #B0112433;
     margin-inline: 50px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 0 10px #2b0000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -586,7 +706,7 @@ main p {
 .item-title {
     margin-inline: 30px;
     font-size: 20px;
-    color: #fff;
+    color: #E6E6E9;
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
@@ -597,13 +717,13 @@ main p {
 .item-desc {
     font-size: 15px;
     margin-inline: 30px;
-    color: #d8d7d7;
+    color: #A7A9BA;
     margin-bottom: 1rem;
     line-height: 1;
 }
 
 .action-link {
-    color: #ff4c4c;
+    color: #FF4655;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -613,7 +733,7 @@ main p {
 }
 
 .action-link:hover {
-    color: #ff7a7a;
+    color: #B01124;
 }
 
 
@@ -624,7 +744,7 @@ main p {
     font-size: 15px;
     justify-content: space-between;
     background-color: #B01124;
-    color: white;
+    color: #E6E6E9;
     padding: 20px 30px;
 }
 
@@ -640,10 +760,109 @@ main p {
     height: 35px;
     border-radius: 35px;
     margin-inline: 5px;
+    background-color: #B01124;
 }
 
 .social img {
     border-radius: 35px;
+    filter: brightness(0) invert(1);
     width: 35px;
     height: 35px;
+}
+
+
+/*****************     Light Mode     *******************/
+
+body.light-mode {
+    background-color: #f0ebe1;
+}
+
+body.light-mode p {
+    color: #222222;
+}
+
+body.light-mode footer p {
+    color: #E6E6E9;
+}
+
+/* containers, cards, boxes */
+body.light-mode .app-container,
+body.light-mode .main-container {
+    background-color: #fffaf0;
+    color: #222222;
+    border-color: #b01124;
+    box-shadow: 0 0 20px #b0112488;
+}
+
+body.light-mode .log-card,
+body.light-mode .forecast-item,
+body.light-mode .spotlight-item {
+    background-color: #f9f5ec;
+    color: #222222;
+    border-color: #b01124;
+}
+
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode .card-title {
+    color: #b01124;
+    border-color: #b01124;
+}
+
+body.light-mode .action-link {
+    color: #b01124;
+}
+
+body.light-mode .action-link:hover {
+    color: #7a0e1b;
+}
+
+body.light-mode .item-title {
+    color: #B01124;
+    text-shadow: 0 0 5px #b0112488;
+}
+
+body.light-mode #weather h3 {
+    color: #7a0e1b;
+    font-weight: 700;
+}
+
+body.light-mode .forecast-item:hover {
+    background-color: #f7e7d6;
+    border-color: #B01124;
+    box-shadow: 0 0 10px #b0112433;
+}
+
+/* Transition Effect */
+body {
+    transition:
+        background-color 0.6s ease,
+        color 0.6s ease,
+        filter 0.4s ease;
+}
+
+body.theme-switching {
+    animation: glitch-flash 0.4s ease-in-out;
+}
+
+@keyframes glitch-flash {
+    0% {
+        filter: brightness(0) contrast(1.5);
+    }
+
+    20% {
+        filter: brightness(3) contrast(1.2);
+    }
+
+    40% {
+        filter: brightness(0.8) contrast(2);
+    }
+
+    60% {
+        filter: brightness(2) contrast(0.8);
+    }
+
+    100% {
+        filter: brightness(1) contrast(1);
+    }
 }

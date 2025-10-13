@@ -12,10 +12,12 @@ function getRandomItems(arr, count = 5) {
 }
 
 const tierColors = {
-    CONFIG: "#ff0000",
-    VAULT: "#ffff00",
-    PURGE: "#B01124"   
+    INDEX: "#D9D9D9",
+    CONFIG: "#D2B55B",
+    VAULT: "#FFB84C",
+    PURGE: "#B01124"
 };
+
 
 function renderSpotlight(containerId, title, items, isError = false) {
     const container = document.getElementById(containerId);
