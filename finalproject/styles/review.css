@@ -304,25 +304,25 @@ header button {
 
 .platform-tag {
     background-color: #333333;
-    font-size: 0.75rem;
-    padding: 0.125rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 9999px;
 }
 
 .genre-text {
     color: #b0b0b0;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
 }
 
 .desc-text {
     color: #b0b0b0;
-    font-size: 0.875rem;
-    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.5;
 }
 
 .meta-box {
-    font-size: 0.875rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
     border-top: 1px solid #444444;
@@ -366,7 +366,7 @@ header button {
 .link-action {
     margin-top: 1rem;
     display: inline-block;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -406,7 +406,7 @@ header button {
     width: 100%;
     height: 40px;
     background-color: transparent;
-    border-radius: 8px 8px 0 0;
+    border-radius: 5px 5px 0 0;
     z-index: 1;
     transition: all 0.3s ease;
 }
@@ -432,7 +432,7 @@ header button {
     width: 100%;
     left: 0;
     right: 0;
-    border-radius: 8px 8px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .card.open .card-tab {
@@ -440,7 +440,7 @@ header button {
     left: 0;
     right: 0;
     opacity: 1;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
     border-bottom: 1px solid #ffffff33;
     clip-path: none;
 }
@@ -580,7 +580,7 @@ header button {
 }
 
 #allplatforms div span,
-#allyoutubers div ul {
+#allyoutubers div span {
     margin: 0 10px;
     font-weight: 400;
     font-style: normal;
