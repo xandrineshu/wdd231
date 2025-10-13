@@ -1,10 +1,12 @@
 /*****************     Palette     *******************/
 /*
 
-    Red:    #B01124 
-            #ff0000 
-    Black:  #12121e 
-    Yellow: #ffff00
+        < Dark Theme Palette>
+    --bg-dark: #12121E;
+    --accent-red: #B01124;
+    --accent-light: #FF4655;
+    --text-secondary: #A7A9BA;
+    --text-main: #E6E6E9;
 
 */
 
@@ -47,13 +49,13 @@ header h1 {
     font-size: 45px;
     font-weight: 800;
     text-align: center;
-    color: white;
-    text-shadow: 0 0 4px #B01124;
+    color: #E6E6E9;
+    text-shadow: 0 0 5px #B01124;
 }
 
 header button {
     background-color: #12121e;
-    color: white;
+    color: #E6E6E9;
     border: none;
     font-size: 30px;
 }
@@ -67,7 +69,7 @@ header button {
     font-weight: 700;
     text-decoration: none;
     padding: 2rem 0.5rem;
-    color: white;
+    color: #E6E6E9;
 }
 
 #menu::before {
@@ -93,19 +95,19 @@ nav {
     padding: 15px;
     text-align: left;
     text-decoration: none;
-    color: white;
+    color: #E6E6E9;
     font-weight: 700;
     transition: 0.5s;
 }
 
 .navigation a:hover, .navigation a:active {
-    color: black;
-    background-color: white;
+    color: #12121e;
+    background-color: #E6E6E9;
 }
 
 .navigation li.current {
     text-decoration: underline;
-    color: white;
+    color: #E6E6E9;
 }
 
 .show li {
@@ -236,7 +238,7 @@ nav {
 }
 
 
-/***************     Review     *******************/
+/***************     Review Section     *******************/
 
 .main-layout {
     max-width: 90%;
@@ -325,11 +327,11 @@ nav {
 
 .card {
     position: relative;
-    background-color: #1a1a25;
-    color: #e6e6e6;
+    background-color: #1A1A25;
+    color: #E6E6E9;
     border: 1px solid #ffffff1a;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px #0000004d;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #0000004d;
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
@@ -341,7 +343,7 @@ nav {
 
 .card:hover:not(.open) {
     background-color: #20202d;
-    box-shadow: 0 6px 15px #00000066;
+    box-shadow: 0 5px 15px #00000066;
 }
 
 .card::before {
@@ -394,23 +396,6 @@ nav {
 .card.open::before {
     background-color: #20202d;
     box-shadow: 0 -2px 5px #00000033;
-}
-
-.tier-purge .card-tab {
-    background-color: #B01124;
-}
-
-.tier-vault .card-tab {
-    background-color: #ffff00;
-    color: #111;
-}
-
-.tier-config .card-tab {
-    background-color: #ff0000;
-}
-
-.tier-index .card-tab {
-    background-color: #4A4A4A;
 }
 
 .tier-label {
@@ -478,6 +463,84 @@ nav {
     padding: 1rem;
     margin-top: 1rem;
     border: 1px solid #ffffff1a;
+}
+
+
+/***************     Club Tiers     *******************/
+
+/***************     Club Tiers (Solid + Subtle Glow)     *******************/
+
+/* === PURGE - Critical Override === */
+.tier-purge .card-tab {
+    background-color: #B01124;
+    /* Deep red */
+    color: #FFD6D6;
+    /* Soft light text */
+    border-bottom: 2px solid #B01124;
+    box-shadow: 0 0 10px #B0112477;
+    /* Subtle red glow */
+}
+
+/* === VAULT - Secure Archives === */
+.tier-vault .card-tab {
+    background-color: #FFB84C;
+    /* Amber gold */
+    color: #4A3100;
+    /* Dark brown text */
+    border-bottom: 2px solid #FFB84C;
+    box-shadow: 0 0 10px #FFB84C66;
+    /* Warm golden glow */
+}
+
+/* === CONFIG - Classified System === */
+.tier-config .card-tab {
+    background-color: #D2B55B;
+    /* Gold */
+    color: #3C3A2E;
+    /* Olive dark text */
+    border-bottom: 2px solid #D2B55B;
+    box-shadow: 0 0 10px #D2B55B66;
+    /* Gentle gold shimmer */
+}
+
+/* === INDEX - Default / Base Tier === */
+.tier-index .card-tab {
+    background-color: #E6E6E9;
+    /* Soft gray */
+    color: #12121E;
+    /* Dark text */
+    border-bottom: 2px solid #A7A9BA;
+    box-shadow: 0 0 8px #A7A9BA55;
+    /* Faint neutral glow */
+}
+
+/* === Tier Labels (matching subtle glow effect) === */
+.tier-purge .tier-label {
+    background-color: #2A0000;
+    color: #FFD6D6;
+    border: 1px solid #B01124;
+    box-shadow: 0 0 6px #B0112477;
+}
+
+.tier-vault .tier-label {
+    background-color: #4A3100;
+    color: #FFF2CC;
+    border: 1px solid #FFB84C;
+    box-shadow: 0 0 6px #FFB84C77;
+}
+
+.tier-config .tier-label {
+    background-color: #3C3A2E;
+    color: #FFF8DC;
+    border: 1px solid #D2B55B;
+    box-shadow: 0 0 6px #D2B55B77;
+}
+
+.tier-index .tier-label {
+    background-color: #D9D9D9;
+    color: #12121E;
+    border: 1px solid #A7A9BA;
+    box-shadow: 0 0 4px #A7A9BA66;
 }
 
 
@@ -580,7 +643,7 @@ nav {
     font-size: 15px;
     justify-content: space-between;
     background-color: #B01124;
-    color: white;
+    color: #E6E6E9;
     padding: 20px 30px;
 }
 

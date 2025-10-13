@@ -40,7 +40,9 @@ function displayItems(youtubers) {
 document.addEventListener('DOMContentLoaded', () => {
     if (showHere) {
         displayItems(youtubers);
-    } else {
+    } 
+    
+    else {
         console.error("Target element #allyoutubers not found.");
     }
 });

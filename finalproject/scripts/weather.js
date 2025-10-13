@@ -205,6 +205,7 @@ function generateForecastReport(forecastData) {
     return htmlItems.join('');
 }
 
+
 // --- Helper Function ---
 function getCardinalDirection(deg) {
     if (deg === undefined) return 'UNKNOWN SECTOR';

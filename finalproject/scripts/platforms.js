@@ -40,7 +40,9 @@ function displayItems(platforms) {
 document.addEventListener('DOMContentLoaded', () => {
     if (showHere) {
         displayItems(platforms);
-    } else {
+    } 
+    
+    else {
         console.error("Target element #allplatforms not found.");
     }
 });
