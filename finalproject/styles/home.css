@@ -791,20 +791,16 @@ main p {
 
 body.light-mode {
     background-color: #fff8e5;
-    /* light paper background */
     color: #000000;
-    /* default text color */
     transition: background-color 0.6s ease, color 0.6s ease, filter 0.4s ease;
 }
 
 body.light-mode header {
     background-color: #12121E;
-    /* keep header dark */
 }
 
 body.light-mode .app-container {
     background-color: #f4edda;
-    /* dossier panel */
     color: #000000;
     border: 2px solid #74562a;
     box-shadow: 0 0 10px #896b3d70;
@@ -877,7 +873,6 @@ body.light-mode .forecast-item strong {
 
 body.light-mode footer p {
     color: white;
-    /* footer remains dark */
 }
 
 body.light-mode .theme-switching {
