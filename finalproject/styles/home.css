@@ -20,7 +20,8 @@
 }
 
 body {
-    background-color: #12121e;
+    background-color: #12121E;
+    color: #FAFAFC;
 }
 
 
@@ -29,7 +30,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #12121e;
+    color: #F0F0F4;
+    text-shadow: 0 0 5px #B01124;
     padding: 10px 20px;
 }
 
@@ -62,7 +64,7 @@ header h1 {
     font-weight: 700;
     text-decoration: none;
     padding: 2rem 0.5rem;
-    color: #E6E6E9;
+    color: #F0F0F4;
 }
 
 #menu::before {
@@ -88,14 +90,14 @@ nav {
     padding: 15px;
     text-align: left;
     text-decoration: none;
-    color: #E6E6E9;
+    color: #F0F0F4;
     font-weight: 700;
     transition: 0.5s;
 }
 
 .navigation a:hover, .navigation a:active {
     color: #12121E;
-    background-color: #E6E6E9;
+    background-color: #F0F0F4;
 }
 
 .navigation li.current {
@@ -186,7 +188,7 @@ header button {
     bottom: 3.5rem;
     left: 1.5rem;
     background-color: #B01124;
-    color: #E6E6E9;
+    color: white;
     padding: 10px;
     padding-bottom: 15px;
     font-size: 20px;
@@ -210,24 +212,23 @@ main p {
     margin-bottom: 3rem;
     text-align: center;
     font-size: 20px;
-    color: #E6E6E9;
+    color: #F0F0F4;
 }
 
 .glitch-welcome {
     font-size: 50px;
-    color: #ff0000;
+    color: white;
     position: relative;
     user-select: none;
     padding: 10px;
     text-align: center;
-    border-bottom: 2px solid #ff0000;
     margin-bottom: 10px;
     animation:
         glitch-anim-subtle 5s infinite alternate ease-in-out,
-        glitch-shadow-slow 3s infinite alternate;
 }
 
 .glitch-welcome:hover {
+    color: #FF2424;
     animation:
         glitch-anim-fast 0.15s infinite alternate ease-in-out,
         glitch-shadow-fast 0.2s infinite alternate;
@@ -326,8 +327,9 @@ main p {
 .app-container {
     max-width: 90%;
     width: 800px;
-    background-color: #12121E;
+    background-color: #181822;
     border: 2px solid #B01124;
+    color: white;
     box-shadow: 0 0 20px #B0112433;
     border-radius: 10px;
     padding: 20px;
@@ -339,7 +341,7 @@ main p {
 
 .app-header {
     background-color: #B01124;
-    color: #E6E6E9;
+    color: white;
     padding: 5px 15px;
     border-radius: 5px 5px 0 0;
     font-weight: bold;
@@ -350,7 +352,7 @@ main p {
 }
 
 .app-header span {
-    color: #E6E6E9;
+    color: white;
     font-size: 15px;
 }
 
@@ -358,7 +360,7 @@ main p {
 /*****************      CLub Events      *****************/
 
 #club-events h2 {
-    color: #B01124;
+    color: #ffff00;
     text-align: left;
     font-size: 30px;
     margin-bottom: 50px;
@@ -369,7 +371,7 @@ main p {
 .log-card {
     position: relative;
     background-color: #1C1C28;
-    color: #A7A9BA;
+    color: #C1C3D2;
     border: 1px solid #B01124;
     border-radius: 5px;
     padding: 20px;
@@ -391,7 +393,7 @@ main p {
     left: 15px;
     padding: 5px 15px;
     background-color: #1C1C28;
-    color: #E6E6E9;
+    color: #F0F0F4;
     border: 1px solid #B01124;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
@@ -455,8 +457,8 @@ main p {
 
 /* PURGE - Critical Override */
 .log-card[data-tab="PURGE"]::before {
-    background-color: #2A0000;
-    color: #FFB8B8;
+    background-color: #3a0000;
+    color: #FFD4D4;
     border: 1px solid #B01124;
     box-shadow: 0 0 16px #B0112488;
     text-shadow: 0 0 10px #B01124;
@@ -517,7 +519,7 @@ main p {
 }
 
 #weather h2 {
-    color: #B01124;
+    color: #ffff00;
     text-align: left;
     font-size: 30px;
     margin-bottom: 20px;
@@ -528,7 +530,7 @@ main p {
 #weather h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #E6E6E9;
+    color: #F0F0F4;
 }
 
 .loading-message {
@@ -564,8 +566,9 @@ main p {
 }
 
 .forecast-item {
-    background-color: #1C1C28;
+    background-color: #1E1E2A;
     border: 1px solid #B01124;
+    color: #F0F0F4;
     padding: 10px;
     line-height: 1;
     font-size: 15px;
@@ -573,7 +576,7 @@ main p {
 }
 
 .forecast-item p {
-    color: #E6E6E9;
+    color: #F0F0F4;
     margin: 0px;
     font-size: 15px;
     text-align: left;
@@ -590,7 +593,7 @@ main p {
 }
 
 .forecast-item strong {
-    color: #FF4655;
+    color: #ffff00;
 }
 
 .forecastContainer {
@@ -644,7 +647,7 @@ main p {
 /*****************     Spotlights     *******************/
 
 .spotlights h2 {
-    color: #B01124;
+    color: #ffff00;
     text-align: left;
     font-size: 30px;
     margin-top: 50px;
@@ -676,7 +679,8 @@ main p {
 .spotlight-item {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #1C1C28;
+    background-color: #1E1E2A;
+    color: #C1C3D2;
     border: 1px solid #B01124;
     box-shadow: 0 0 10px #B0112433;
     margin-inline: 50px;
@@ -706,7 +710,7 @@ main p {
 .item-title {
     margin-inline: 30px;
     font-size: 20px;
-    color: #E6E6E9;
+    color: #F0F0F4;
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
@@ -717,13 +721,13 @@ main p {
 .item-desc {
     font-size: 15px;
     margin-inline: 30px;
-    color: #A7A9BA;
+    color: #C1C3D2;
     margin-bottom: 1rem;
     line-height: 1;
 }
 
 .action-link {
-    color: #FF4655;
+    color: #ffff00;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -744,7 +748,7 @@ main p {
     font-size: 15px;
     justify-content: space-between;
     background-color: #B01124;
-    color: #E6E6E9;
+    color: white;
     padding: 20px 30px;
 }
 
@@ -770,68 +774,20 @@ main p {
     height: 35px;
 }
 
+.info a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info a:hover {
+    color: #ffff00;
+}
+
 
 /*****************     Light Mode     *******************/
 
-body.light-mode {
-    background-color: #f0ebe1;
-}
 
-body.light-mode p {
-    color: #222222;
-}
-
-body.light-mode footer p {
-    color: #E6E6E9;
-}
-
-/* containers, cards, boxes */
-body.light-mode .app-container,
-body.light-mode .main-container {
-    background-color: #fffaf0;
-    color: #222222;
-    border-color: #b01124;
-    box-shadow: 0 0 20px #b0112488;
-}
-
-body.light-mode .log-card,
-body.light-mode .forecast-item,
-body.light-mode .spotlight-item {
-    background-color: #f9f5ec;
-    color: #222222;
-    border-color: #b01124;
-}
-
-body.light-mode h2,
-body.light-mode h3,
-body.light-mode .card-title {
-    color: #b01124;
-    border-color: #b01124;
-}
-
-body.light-mode .action-link {
-    color: #b01124;
-}
-
-body.light-mode .action-link:hover {
-    color: #7a0e1b;
-}
-
-body.light-mode .item-title {
-    color: #B01124;
-    text-shadow: 0 0 5px #b0112488;
-}
-
-body.light-mode #weather h3 {
-    color: #7a0e1b;
-    font-weight: 700;
-}
-
-body.light-mode .forecast-item:hover {
-    background-color: #f7e7d6;
-    border-color: #B01124;
-    box-shadow: 0 0 10px #b0112433;
-}
 
 /* Transition Effect */
 body {

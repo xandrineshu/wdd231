@@ -15,7 +15,7 @@ const tierColors = {
     INDEX: "#D9D9D9",
     CONFIG: "#D2B55B",
     VAULT: "#FFB84C",
-    PURGE: "#B01124"
+    PURGE: "#ff5e71ff"
 };
 
 

@@ -636,6 +636,7 @@ nav {
     font-style: italic;
 }
 
+
 /*****************     Footer     *******************/
 
 .footer-info {
@@ -665,4 +666,43 @@ nav {
     border-radius: 35px;
     width: 35px;
     height: 35px;
+}
+
+
+/*****************     Light Mode     *******************/
+
+
+/* Transition */
+
+body {
+    transition:
+        background-color 0.6s ease,
+        color 0.6s ease,
+        filter 0.4s ease;
+}
+
+body.theme-switching {
+    animation: glitch-flash 0.4s ease-in-out;
+}
+
+@keyframes glitch-flash {
+    0% {
+        filter: brightness(0) contrast(1.5);
+    }
+
+    20% {
+        filter: brightness(3) contrast(1.2);
+    }
+
+    40% {
+        filter: brightness(0.8) contrast(2);
+    }
+
+    60% {
+        filter: brightness(2) contrast(0.8);
+    }
+
+    100% {
+        filter: brightness(1) contrast(1);
+    }
 }
