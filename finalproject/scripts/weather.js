@@ -25,7 +25,7 @@ async function fetchFearWeather() {
             return response.json();
         });
 
-        // --- 2. Fetch 5-Day Forecast ---
+        // --- 2. Fetch 3-Day Forecast ---
         const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${CITY_NAME}&units=${UNITS}&appid=${API_KEY}`;
         const forecastFetchPromise = fetch(forecastUrl).then(response => {
             if (!response.ok) throw new Error(`Threat Projection HTTP ${response.status}`);

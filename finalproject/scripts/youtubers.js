@@ -17,6 +17,7 @@ function displayItems(youtubers) {
         thephoto.onerror = function () {
             this.src = `https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING`;
         };
+        
         thecard.appendChild(thephoto);
 
         const thedesc = document.createElement('p');

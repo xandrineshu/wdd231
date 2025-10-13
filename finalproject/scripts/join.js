@@ -29,6 +29,7 @@ const tierDetails = {
   `,
 };
 
+
 // === DIALOG HANDLING ===
 const dialog = document.getElementById("tierDialog");
 const dialogTitle = document.getElementById("dialogTitle");
@@ -47,6 +48,7 @@ document.querySelectorAll(".learn-more").forEach((btn) => {
 closeDialog.addEventListener("click", () => {
     dialog.close();
 });
+
 
 // === GLITCHY SLIDE-IN SEQUENCE ===
 window.addEventListener("load", () => {

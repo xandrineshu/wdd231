@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (savedTheme === 'light') {
             body.classList.add('light-mode');
             themeToggleBtn.textContent = '🌙';
-        } else {
+        } 
+        
+        else {
             body.classList.remove('light-mode');
             themeToggleBtn.textContent = '☀️';
         }
@@ -38,6 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load saved theme on startup
     loadTheme();
 
-    // Use event listener instead of inline onclick
     themeToggleBtn.addEventListener('click', toggleTheme);
 });
