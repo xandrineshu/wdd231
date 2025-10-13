@@ -24,7 +24,7 @@ function displayItems(youtubers) {
         thedesc.innerText = x.description;
         thecard.appendChild(thedesc);
 
-        const thegames = document.createElement('ul');
+        const thegames = document.createElement('span');
         thegames.innerText = `Popular Games Played: ${x.games_played}`;
         thecard.appendChild(thegames);
 

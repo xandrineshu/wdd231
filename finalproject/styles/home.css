@@ -787,8 +787,6 @@ main p {
 
 /*****************     Light Mode     *******************/
 
-/***************** Light Mode - Dossier Palette *******************/
-
 body.light-mode {
     background-color: #fff8e5;
     color: #000000;

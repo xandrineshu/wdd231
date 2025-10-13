@@ -33,30 +33,30 @@ function renderReviews() {
 
     const tierColors = {
         INDEX: {
-            bg: "#D9D9D9",         // light gray
-            text: "#0E0E0E",       // dark text
-            border: "#9192a2ff",     // soft gray border
+            bg: "#D9D9D9",       // light gray background
+            text: "#0E0E0E",     // black text for contrast
+            border: "#545563ff",
             glow: "#E6E6E988"
         },
 
         CONFIG: {
-            bg: "#D2B55B",         // warm gold
-            text: "#1C1B12",       // dark olive
-            border: "#f7e1a1ff",
+            bg: "#D2B55B",       // gold-ish
+            text: "#1E1B0C",     // dark brown for contrast
+            border: "#5a4c20ff",
             glow: "#D2B55B99"
         },
 
         VAULT: {
-            bg: "#FFB84C",         // amber
-            text: "#1C1C1C",       // dark charcoal
-            border: "#ffe4b1ff",
+            bg: "#FFED4C",       // bright yellow
+            text: "#1A1A1A",     // black text
+            border: "#9e824dff",
             glow: "#FFB84C99"
         },
 
         PURGE: {
-            bg: "#B01124",         // blood red
-            text: "#FFD6D6",       // light pink-white
-            border: "#FF4655",
+            bg: "#9e0000ff",       // dark red
+            text: "#FFFFFF",     // white text for contrast
+            border: "#FF99A1",
             glow: "#B0112499"
         }
     };
@@ -66,6 +66,12 @@ function renderReviews() {
         const clubData = tierColors[clubEntry] || tierColors.PURGE;
 
         const clubEntryClass = `tier-${clubEntry.toLowerCase()}`;
+
+        // Determine proper text color for title/review/link based on background
+        let textColor = '#FFFFFF'; // default for dark background
+        if (clubEntry !== 'PURGE') {
+            textColor = '#000000'; // black for lighter tiers
+        }
 
         const platformsList = game.platforms.map(p =>
             `<span class="platform-tag">${p}</span>`
@@ -79,60 +85,61 @@ function renderReviews() {
             `https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING`;
 
         const cardHTML = `
-            <div class="card ${clubEntryClass}">
-                <div class="card-tab" 
-                    style="background-color:${clubData.bg}; color:${clubData.text};">
-                    
-                    <span class="tier-label"
-                        style="
-                            background-color:${clubData.bg};
-                            color:${clubData.text};
-                            border:1.5px solid ${clubData.border};
-                            box-shadow:0 0 12px ${clubData.glow};
-                            padding:4px 10px;
-                            border-radius:4px;
-                            font-weight:700;
-                            letter-spacing:1px;
-                        ">
-                        ${game.club_entry}
-                    </span>
-                    <h2 class="text-base">${game.title}</h2>
-                </div>
+        <div class="card ${clubEntryClass}">
+            <div class="card-tab" style="background-color:${clubData.bg};">
+                <span class="tier-label"
+                    style="
+                        background-color:${clubData.bg};
+                        color:${clubData.text};
+                        border: 1.5px solid ${clubData.border};
+                        box-shadow: 0 0 20px ${clubData.glow};
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                    ">
+                    ${game.club_entry}
+                </span>
 
-                <div class="card-content">
-                    <div class="image-container">
-                        <img src="${imageUrl}" 
-                            alt="Game art for ${game.title}" 
-                            class="game-image"
-                            onerror="this.onerror=null;this.src='https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING';">
-                    </div>
-
-                    <p class="desc-text">${game.description}</p>
-                    <p class="genres">${genresList}</p>
-
-                    <div class="meta-box">
-                        <p><strong class="meta-label">Developer:</strong> ${game.developer}</p>
-                        <p><strong class="meta-label">Release:</strong> ${game.release_date}</p>
-                        <p><strong class="meta-label">Cost:</strong> 
-                            <span class="${game.free_or_paid === 'Free' ? 'free-cost' : 'paid-cost'}">${game.free_or_paid}</span>
-                        </p>
-                        <div class="platform-wrapper">${platformsList}</div>
-                    </div>
-
-                    <div class="review_panel">
-                        <h3 class="review-title" style="color:${clubData.bg}">File Review [LOG]</h3>
-                        <p class="review-text">"${game.personal_review}"</p>
-                    </div>
-                    
-                    <a href="${game.link_to_game}" target="_blank" class="link-action" style="color:${clubData.bg};">
-                        >> Access Game Link
-                    </a>
-                </div>
+                <h2 class="text-base" style="color:${textColor};">${game.title}</h2>
             </div>
-        `;
+
+            <div class="card-content">
+                <div class="image-container">
+                    <img src="${imageUrl}" 
+                        alt="Game art for ${game.title}" 
+                        class="game-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING';">
+                </div>
+
+                <!-- All <p> elements inside card are now white -->
+                <p class="desc-text" style="color:#FFFFFF;">${game.description}</p>
+                <p class="genres" style="color:#FFFFFF;">${genresList}</p>
+
+                <div class="meta-box">
+                    <p style="color:#FFFFFF;"><strong class="meta-label">Developer:</strong> ${game.developer}</p>
+                    <p style="color:#FFFFFF;"><strong class="meta-label">Release:</strong> ${game.release_date}</p>
+                    <p style="color:#FFFFFF;"><strong class="meta-label">Cost:</strong> 
+                        <span class="${game.free_or_paid === 'Free' ? 'free-cost' : 'paid-cost'}">${game.free_or_paid}</span>
+                    </p>
+                    <div class="platform-wrapper">${platformsList}</div>
+                </div>
+
+                <div class="review_panel">
+                    <h3 class="review-title" style="color:white;">File Review [LOG]</h3>
+                    <p class="review-text" style="color:#FFFFFF;">"${game.personal_review}"</p>
+                </div>
+                
+                <a href="${game.link_to_game}" target="_blank" class="link-action" style="color:white">
+                    >> Access Game Link
+                </a>
+            </div>
+        </div>
+    `;
 
         listElement.innerHTML += cardHTML;
     });
+
 
     const cards = listElement.querySelectorAll('.card');
     cards.forEach(card => {

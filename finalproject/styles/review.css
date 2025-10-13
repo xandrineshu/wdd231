@@ -20,7 +20,8 @@
 }
 
 body {
-    background-color: #12121e;
+    background-color: #12121E;
+    color: #FAFAFC;
 }
 
 
@@ -29,7 +30,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #12121e;
+    color: #F0F0F4;
+    text-shadow: 0 0 5px #B01124;
     padding: 10px 20px;
 }
 
@@ -53,13 +55,6 @@ header h1 {
     text-shadow: 0 0 5px #B01124;
 }
 
-header button {
-    background-color: #12121e;
-    color: #E6E6E9;
-    border: none;
-    font-size: 30px;
-}
-
 
 /*****************     Navigation/Hamburger    *******************/
 
@@ -69,7 +64,7 @@ header button {
     font-weight: 700;
     text-decoration: none;
     padding: 2rem 0.5rem;
-    color: #E6E6E9;
+    color: #F0F0F4;
 }
 
 #menu::before {
@@ -95,14 +90,15 @@ nav {
     padding: 15px;
     text-align: left;
     text-decoration: none;
-    color: #E6E6E9;
+    color: #F0F0F4;
     font-weight: 700;
     transition: 0.5s;
 }
 
-.navigation a:hover, .navigation a:active {
-    color: #12121e;
-    background-color: #E6E6E9;
+.navigation a:hover,
+.navigation a:active {
+    color: #12121E;
+    background-color: #F0F0F4;
 }
 
 .navigation li.current {
@@ -120,6 +116,67 @@ nav {
 }
 
 
+/***************     Light/Dark Mode     *******************/
+
+header button {
+    border: none;
+    font-size: 30px;
+}
+
+#theme-toggle {
+    background: transparent;
+    text-shadow: 0 0 5px #B01124;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: #FF4655;
+    text-shadow: 0 0 10px #FF4655;
+    border-color: #FF4655;
+}
+
+.glitch-flicker {
+    animation: flicker-glitch 0.3s steps(2, start) forwards;
+}
+
+@keyframes flicker-glitch {
+    0% {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    20% {
+        opacity: 0.3;
+        filter: blur(1px);
+        transform: translateX(-1px);
+    }
+
+    40% {
+        opacity: 0.8;
+        filter: contrast(2);
+        transform: translateX(1px);
+    }
+
+    60% {
+        opacity: 0.5;
+        filter: brightness(2);
+        transform: translateY(1px);
+    }
+
+    80% {
+        opacity: 1;
+        filter: none;
+        transform: none;
+    }
+
+    100% {
+        opacity: 1;
+        filter: none;
+    }
+}
+
+
 /***************     Glitch Title     *******************/
 
 @keyframes glitch-anim {
@@ -134,6 +191,7 @@ nav {
     }
 
     16% {
+        color: #ff0000;
         text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
         transform: translate(3px, -3px);
     }
@@ -144,6 +202,7 @@ nav {
     }
 
     20% {
+        color: #ff0000;
         text-shadow: 0 0 0 #ff00ff, 0 0 0 #00ffff;
         transform: translate(0);
     }
@@ -155,7 +214,7 @@ nav {
 }
 
 .glitch-title {
-    color: #ff0000;
+    color: white;
     position: relative;
     animation: glitch-anim 2s infinite alternate steps(1);
 }
@@ -179,7 +238,6 @@ nav {
 
 .glitch-title::after {
     text-shadow: -2px 0 0 #00ffff;
-    /* Cyan shadow */
     clip-path: inset(0 0 100% 0);
     animation: glitch-anim-after 1.5s infinite alternate steps(1);
 }
@@ -231,12 +289,6 @@ nav {
     text-align: center;
 }
 
-.title-style {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
 
 /***************     Review Section     *******************/
 
@@ -283,11 +335,11 @@ nav {
 }
 
 .free-cost {
-    color: #84cc16;
+    color: #00FF19;
 }
 
 .paid-cost {
-    color: #f97316;
+    color: #ffa64d;
 }
 
 .platform-wrapper {
@@ -466,84 +518,6 @@ nav {
 }
 
 
-/***************     Club Tiers     *******************/
-
-/***************     Club Tiers (Solid + Subtle Glow)     *******************/
-
-/* === PURGE - Critical Override === */
-.tier-purge .card-tab {
-    background-color: #B01124;
-    /* Deep red */
-    color: #FFD6D6;
-    /* Soft light text */
-    border-bottom: 2px solid #B01124;
-    box-shadow: 0 0 10px #B0112477;
-    /* Subtle red glow */
-}
-
-/* === VAULT - Secure Archives === */
-.tier-vault .card-tab {
-    background-color: #FFB84C;
-    /* Amber gold */
-    color: #4A3100;
-    /* Dark brown text */
-    border-bottom: 2px solid #FFB84C;
-    box-shadow: 0 0 10px #FFB84C66;
-    /* Warm golden glow */
-}
-
-/* === CONFIG - Classified System === */
-.tier-config .card-tab {
-    background-color: #D2B55B;
-    /* Gold */
-    color: #3C3A2E;
-    /* Olive dark text */
-    border-bottom: 2px solid #D2B55B;
-    box-shadow: 0 0 10px #D2B55B66;
-    /* Gentle gold shimmer */
-}
-
-/* === INDEX - Default / Base Tier === */
-.tier-index .card-tab {
-    background-color: #E6E6E9;
-    /* Soft gray */
-    color: #12121E;
-    /* Dark text */
-    border-bottom: 2px solid #A7A9BA;
-    box-shadow: 0 0 8px #A7A9BA55;
-    /* Faint neutral glow */
-}
-
-/* === Tier Labels (matching subtle glow effect) === */
-.tier-purge .tier-label {
-    background-color: #2A0000;
-    color: #FFD6D6;
-    border: 1px solid #B01124;
-    box-shadow: 0 0 6px #B0112477;
-}
-
-.tier-vault .tier-label {
-    background-color: #4A3100;
-    color: #FFF2CC;
-    border: 1px solid #FFB84C;
-    box-shadow: 0 0 6px #FFB84C77;
-}
-
-.tier-config .tier-label {
-    background-color: #3C3A2E;
-    color: #FFF8DC;
-    border: 1px solid #D2B55B;
-    box-shadow: 0 0 6px #D2B55B77;
-}
-
-.tier-index .tier-label {
-    background-color: #D9D9D9;
-    color: #12121E;
-    border: 1px solid #A7A9BA;
-    box-shadow: 0 0 4px #A7A9BA66;
-}
-
-
 /***************     Platform/Youtubers Cards     *******************/
 
 #allplatforms div, #allyoutubers div {
@@ -644,7 +618,7 @@ nav {
     font-size: 15px;
     justify-content: space-between;
     background-color: #B01124;
-    color: #E6E6E9;
+    color: white;
     padding: 20px 30px;
 }
 
@@ -660,12 +634,24 @@ nav {
     height: 35px;
     border-radius: 35px;
     margin-inline: 5px;
+    background-color: #B01124;
 }
 
 .social img {
     border-radius: 35px;
+    filter: brightness(0) invert(1);
     width: 35px;
     height: 35px;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info a:hover {
+    color: #ffff00;
 }
 
 
