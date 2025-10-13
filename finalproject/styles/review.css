@@ -126,6 +126,7 @@ header button {
 #theme-toggle {
     background: transparent;
     text-shadow: 0 0 5px #B01124;
+    color: white;
     transition: all 0.3s ease;
 }
 
@@ -214,6 +215,7 @@ header button {
 }
 
 .glitch-title {
+    padding-top: 20px;
     color: white;
     position: relative;
     animation: glitch-anim 2s infinite alternate steps(1);
@@ -311,7 +313,7 @@ header button {
 
 .genre-text {
     color: #b0b0b0;
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .desc-text {
@@ -657,38 +659,198 @@ header button {
 
 /*****************     Light Mode     *******************/
 
-
-/* Transition */
-
-body {
-    transition:
-        background-color 0.6s ease,
-        color 0.6s ease,
-        filter 0.4s ease;
+body.light-mode {
+    background-color: #fffefa;
+    color: #000000;
+    transition: background-color 0.6s ease, color 0.6s ease, filter 0.4s ease;
 }
 
-body.theme-switching {
-    animation: glitch-flash 0.4s ease-in-out;
+body.light-mode #theme-toggle {
+    color: white;
 }
 
-@keyframes glitch-flash {
+body.light-mode header {
+    background-color: #12121E;
+}
+
+body.light-mode .subtitle-text,
+body.light-mode .text-box,
+body.light-mode .glitch-title {
+    color: #000000;
+}
+
+body.light-mode .card {
+    background-color: #f4edda;
+    border: 2px solid #74562a;
+    box-shadow: 0 0 10px #896b3d70;
+}
+
+body.light-mode .card:hover {
+    background-color: #f4edda;
+}
+
+body.light-mode .card-tab {
+    border-bottom: 1px solid #74562a;
+}
+
+body.light-mode .card h2 {
+    text-shadow: none;
+}
+
+body.light-mode .desc-text,
+body.light-mode .genres,
+body.light-mode .meta-box p,
+body.light-mode .review-text {
+    color: #000000 !important;
+}
+
+body.light-mode .meta-box {
+    border-top: 1px solid #f4edda;
+}
+
+body.light-mode .genres {
+    border-bottom: 1px solid #74562a;
+}
+
+body.light-mode .genre-text {
+    color: #5a421e;
+    font-weight: 700;
+}
+
+body.light-mode .review_panel {
+    background-color: #fffdf7;
+    border: 1px solid #74562a;
+}
+
+body.light-mode .review-title {
+    color: #5a421e !important;
+}
+
+body.light-mode .meta-label {
+    color: #5a421e;
+}
+
+body.light-mode .platform-tag {
+    background-color: #463316;
+    color: white;
+}
+
+body.light-mode .link-action {
+    color: #69320c !important;
+}
+
+body.light-mode .link-action:hover {
+    color: #B65E2A !important;
+}
+
+body.light-mode .free-cost {
+    color: #064C0D;
+}
+
+body.light-mode .paid-cost {
+    color: #802424;
+}
+
+body.light-mode #allplatforms div,
+body.light-mode #allyoutubers div {
+    background-color: #f4edda;
+    border: 2px solid #74562a;
+    box-shadow: 0 0 10px #896b3d70;
+}
+
+body.light-mode #allplatforms h2,
+body.light-mode #allyoutubers h2 {
+    color: #5a421e;
+    border-bottom: #000000 2px solid;
+}
+
+body.light-mode #allplatforms p,
+body.light-mode #allyoutubers p,
+body.light-mode #allplatforms span,
+body.light-mode #allyoutubers span {
+    color: #000000;
+}
+
+body.light-mode #allplatforms a,
+body.light-mode #allyoutubers a {
+    background-color: #69320c;
+}
+
+body.light-mode #allplatforms a:hover,
+body.light-mode #allyoutubers a:hover {
+    background-color: #B65E2A;
+}
+
+body.light-mode .glitch-title {
+    animation: glitch-anim-light 2s infinite alternate steps(1);
+}
+
+@keyframes glitch-anim-light {
     0% {
-        filter: brightness(0) contrast(1.5);
+        text-shadow: 2px 0 0 #ff00ff, -2px 0 0 #00ffff;
+        transform: translate(0);
+    }
+
+    15% {
+        text-shadow: 2px 0 0 #ff00ff, -2px 0 0 #00ffff;
+        transform: translate(0);
+    }
+
+    16% {
+        color: black;
+        text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+        transform: translate(3px, -3px);
+    }
+
+    18% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+        transform: translate(-3px, 3px);
     }
 
     20% {
-        filter: brightness(3) contrast(1.2);
-    }
-
-    40% {
-        filter: brightness(0.8) contrast(2);
-    }
-
-    60% {
-        filter: brightness(2) contrast(0.8);
+        color: black;
+        text-shadow: 0 0 0 #ff00ff, 0 0 0 #00ffff;
+        transform: translate(0);
     }
 
     100% {
-        filter: brightness(1) contrast(1);
+        text-shadow: 0 0 0 #ff00ff, 0 0 0 #00ffff;
+        transform: translate(0);
+    }
+}
+
+body.light-mode .theme-switching {
+    animation: paper-flicker 0.3s steps(2, start) forwards;
+}
+
+@keyframes paper-flicker {
+    0% {
+        opacity: 1;
+        filter: none;
+    }
+
+    20% {
+        opacity: 0.9;
+        filter: brightness(1.05);
+    }
+
+    40% {
+        opacity: 0.8;
+        filter: brightness(1.1);
+    }
+
+    60% {
+        opacity: 0.95;
+        filter: brightness(1.03);
+    }
+
+    80% {
+        opacity: 1;
+        filter: none;
+    }
+
+    100% {
+        opacity: 1;
+        filter: none;
     }
 }

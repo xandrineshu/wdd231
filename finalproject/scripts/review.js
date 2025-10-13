@@ -67,7 +67,6 @@ function renderReviews() {
 
         const clubEntryClass = `tier-${clubEntry.toLowerCase()}`;
 
-        // Determine proper text color for title/review/link based on background
         let textColor = '#FFFFFF'; // default for dark background
         if (clubEntry !== 'PURGE') {
             textColor = '#000000'; // black for lighter tiers
@@ -112,7 +111,6 @@ function renderReviews() {
                         onerror="this.onerror=null;this.src='https://placehold.co/400x225/1A1A25/E6E6E6?text=IMAGE+MISSING';">
                 </div>
 
-                <!-- All <p> elements inside card are now white -->
                 <p class="desc-text" style="color:#FFFFFF;">${game.description}</p>
                 <p class="genres" style="color:#FFFFFF;">${genresList}</p>
 
