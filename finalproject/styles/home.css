@@ -654,7 +654,7 @@ main p {
 
 /*****************     Spotlights     *******************/
 
-.spotlights h2 {
+#spotlights h2 {
     color: #ffff00;
     text-align: left;
     font-size: 30px;
@@ -760,11 +760,11 @@ main p {
     padding: 20px 30px;
 }
 
-.social {
+#social {
     display: flex;
 }
 
-.social a {
+#social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,20 +775,20 @@ main p {
     background-color: #B01124;
 }
 
-.social img {
+#social img {
     border-radius: 35px;
     filter: brightness(0) invert(1);
     width: 35px;
     height: 35px;
 }
 
-.info a {
+#info a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-.info a:hover {
+#info a:hover {
     color: #ffff00;
 }
 
@@ -812,7 +812,7 @@ body.light-mode .app-container {
     box-shadow: 0 0 10px #896b3d70;
 }
 
-body.light-mode .app-header {
+body.light-mode #app-header {
     background-color: #c6b182;
     color: #000000;
     border-bottom: 1px solid #74562a;
@@ -829,11 +829,11 @@ body.light-mode .section-title {
     color: #5b431f;
 }
 
-body.light-mode .card-title {
+body.light-mode #card-title {
     border-bottom: 1px dashed #74562a;
 }
 
-body.light-mode .log-card-footer {
+body.light-mode #log-card-footer {
     border-top: 1px dashed #74562a;
     border-bottom: 1px dashed #74562a;
 }
@@ -848,8 +848,8 @@ body.light-mode p,
 body.light-mode .subtitle-text,
 body.light-mode .item-desc,
 body.light-mode #weather h3,
-body.light-mode .app-header span,
-body.light-mode .card-title,
+body.light-mode #app-header span,
+body.light-mode #card-title,
 body.light-mode .item-title,
 body.light-mode .action-link {
     color: #000000;
