@@ -38,7 +38,7 @@
 
         <h1> Fear File </h1>
 
-        <button id="theme-toggle">☀️</button>
+        <button id="theme-toggle" class="theme-switching" data-text="🌙">🌙</button>
         <a id="menu"></a>
     </header>
 
@@ -60,23 +60,23 @@
             <div class="join-container">
                 <!-- Left side: Application Form -->
                 <section class="application-form">
-                    <h2> // APPLICATION FORM </h2>
-                    
+                    <h2>// APPLICATION FORM</h2>
+            
                     <form id="clubForm">
                         <label>First Name<span>*</span></label>
-                        <input type="text" id="firstName" required />
-                        
+                        <input type="text" id="firstName" placeholder="…enter first name…" required />
+            
                         <label>Last Name<span>*</span></label>
-                        <input type="text" id="lastName" required />
-                        
+                        <input type="text" id="lastName" placeholder="…enter last name…" required />
+            
                         <label>Nickname</label>
-                        <input type="text" id="nickname" />
+                        <input type="text" id="nickname" placeholder="…if any…" />
             
                         <label>Email<span>*</span></label>
-                        <input type="email" required />
+                        <input type="email" placeholder="…user@domain…" required />
             
                         <label>Phone Number<span>*</span></label>
-                        <input type="tel" required />
+                        <input type="tel" placeholder="…XXX-XXX-XXXX…" required />
             
                         <label>Club Tier Level<span>*</span></label>
                         <select required>
@@ -88,12 +88,12 @@
                         </select>
             
                         <label>Why do you want to join?</label>
-                        <textarea rows="4"></textarea>
+                        <textarea rows="4" placeholder="…state reason…"></textarea>
             
                         <button class="submit" type="submit">Submit Application</button>
                     </form>
                 </section>
-            
+                
                 <!-- Right side: Club Tiers -->
                 <section class="club-tiers">
                     <h2>// Club Tier Benefits</h2>
@@ -134,7 +134,6 @@
                 </dialog>
             </div>
         </div>
-    
     </main>
 
     <footer>

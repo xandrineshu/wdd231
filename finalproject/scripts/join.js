@@ -1,3 +1,28 @@
+// Placeholder effect
+document.querySelectorAll('.application-form input, .application-form textarea').forEach(input => {
+    input.classList.add('glitch-placeholder');
+    const original = input.placeholder;
+
+    let interval;
+
+    input.addEventListener('focus', () => {
+        interval = setInterval(() => {
+            let glitch = original.split('').map(c => {
+                if (Math.random() < 0.03) return '_'; // 3% chance
+                if (Math.random() < 0.02) return String.fromCharCode(33 + Math.floor(Math.random() * 94)); // 2% chance
+                return c;
+            }).join('');
+            input.placeholder = glitch;
+        }, 400);
+    });
+
+    input.addEventListener('blur', () => {
+        clearInterval(interval);
+        input.placeholder = original; // reset placeholder when focus is lost
+    });
+});
+
+
 // Club Tier Details
 const tierDetails = {
     INDEX: `
