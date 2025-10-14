@@ -520,6 +520,7 @@ main p {
     box-shadow: 0 0 10px #B0112433;
 }
 
+
 #weather h2 {
     color: #ffff00;
     text-align: left;
@@ -546,7 +547,7 @@ main p {
     color: #FF4655;
 }
 
-.current-report {
+.weatherContainer {
     border: 1px solid #B01124;
     padding: 15px;
     margin-bottom: 3rem;
@@ -600,12 +601,6 @@ main p {
 
 .forecastContainer {
     margin-bottom: 20px;
-}
-
-.warning p {
-    font-size: 10px;
-    color: #d8d7d7;
-    margin: 0;
 }
 
 @keyframes blink {
