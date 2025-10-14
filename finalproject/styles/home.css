@@ -341,7 +341,7 @@ main p {
     z-index: 10;
 }
 
-.app-header {
+#app-header {
     background-color: #B01124;
     color: white;
     padding: 5px 15px;
@@ -405,14 +405,14 @@ main p {
     z-index: 10;
 }
 
-.log-card-footer {
+#log-card-footer {
     padding-top: 15px;
     border-top: 1px dashed #B01124;
     margin-top: 10px;
     text-align: right;
 }
 
-.card-title {
+#card-title {
     font-size: 25px;
     color: #FF4655;
     border-bottom: 1px dashed #B01124;
