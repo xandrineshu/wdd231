@@ -66,6 +66,10 @@ document.querySelectorAll(".learn-more").forEach((btn) => {
         const tier = btn.closest(".tier-card").dataset.tier;
         dialogTitle.textContent = `${tier} DOSSIER`;
         dialogDetails.innerHTML = tierDetails[tier];
+
+        // ✅ set a data attribute for CSS styling
+        dialog.setAttribute("data-tier", tier);
+
         dialog.showModal();
     });
 });

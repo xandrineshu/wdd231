@@ -45,6 +45,11 @@
         padding: 40px;
     }
 
+    dialog {
+        width: 40%;
+        font-size: 20px;
+    }
+
     .footer-info {
         font-size: 20px;
     }

@@ -365,9 +365,9 @@ input, select, textarea {
 .application-form input::placeholder,
 .application-form textarea::placeholder {
     color: #A7A9BA;
-    opacity: 0.85;
+    opacity: 1;
     font-style: italic;
-    letter-spacing: 0.03em;
+    letter-spacing: 2px;
     transition: color 0.2s, opacity 0.2s;
 }
 
@@ -408,13 +408,28 @@ input, select, textarea {
     }
 }
 
-/* --- TIER DOSSIERS --- */
+
+/***************     Club Tiers     *******************/
+
 .tier-grid {
     display: grid;
     gap: 20px;
 }
 
-/* Glitchy Slide-in */
+.tier-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px transparent;
+    opacity: 0;
+}
+
 @keyframes glitchSlideIn {
     0% {
         opacity: 0;
@@ -461,44 +476,6 @@ input, select, textarea {
     }
 }
 
-.tier-card {
-    background: #ff00000d;
-    border: 1px solid #B01124;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.3s;
-}
-
-.tier-card h3 {
-    font-size: 20px;
-    color: white;
-}
-
-.tier-card p {
-    font-size: 15px;
-    color: white;
-    margin-bottom: 15px;
-}
-
-.tier-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(transparent 0,
-            #ff00001a 2px,
-            transparent 5px);
-    opacity: 0;
-    pointer-events: none;
-}
-
 .tier-card.show {
     animation: glitchSlideIn 1.2s ease forwards;
 }
@@ -507,37 +484,116 @@ input, select, textarea {
     animation: glitchOverlay 0.8s ease-in-out 0.2s;
 }
 
-.tier-card:hover {
-    background: #1a0000;
-    box-shadow: 0 0 15px #ff0000;
+.learn-more {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/* --- DIALOG BOX --- */
+[data-tier="INDEX"] {
+    background: #D9D9D9;
+    color: #0E0E0E;
+    border-color: #545563;
+}
+
+[data-tier="CONFIG"] {
+    background: #D2B55B;
+    color: #1E1B0C;
+    border-color: #5a4c20;
+}
+
+[data-tier="VAULT"] {
+    background: #FFED4C;
+    color: #1A1A1A;
+    border-color: #9e824d;
+}
+
+[data-tier="PURGE"] {
+    background: #9e0000;
+    color: #FFFFFF;
+    border-color: #FF99A1;
+}
+
+[data-tier="INDEX"] .learn-more {
+    background: #545563;
+    color: #FAFAFC;
+}
+
+[data-tier="CONFIG"] .learn-more {
+    background: #645525;
+    color: #fffdf8;
+}
+
+[data-tier="VAULT"] .learn-more {
+    background: #5B530F;
+    color: #fffcef;
+}
+
+[data-tier="PURGE"] .learn-more {
+    background: #ffffff;
+    color: #B01124;
+}
+
+.tier-card:hover {
+    transform: scale(1.02) translateY(-5px);
+    box-shadow: 0 0 25px #ff0000a0;
+}
+
+.tier-card:hover::before {
+    opacity: 1;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in, opacity 0.2s ease;
+}
+
+/*===   DIALOG BOX   ===*/
 dialog {
     border: none;
     background: #0a0000d0;
     color: white;
+    border: 2px solid #ff5555;
     border-radius: 5px;
     margin: auto;
     width: 80%;
     padding: 20px;
-    outline: 2px solid #ff0000;
     text-align: left;
     animation: glitchSlideIn 0.8s ease;
 }
 
 .dialog-content button {
     margin-top: 15px;
-    background: #b01124;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 12px;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.dialog-content button:hover {
-    background: #b01124;
+dialog[data-tier="INDEX"] .dialog-content button {
+    background: #545563;
+}
+
+dialog[data-tier="CONFIG"] .dialog-content button {
+    background: #5a4c20;
+}
+
+dialog[data-tier="VAULT"] .dialog-content button {
+    background: #6c6311;
+}
+
+dialog[data-tier="PURGE"] .dialog-content button {
+    background: #ffffff;
+    color: #B01124;
+}
+
+dialog[data-tier="INDEX"] .dialog-content button:hover,
+dialog[data-tier="CONFIG"] .dialog-content button:hover,
+dialog[data-tier="VAULT"] .dialog-content button:hover,
+dialog[data-tier="PURGE"] .dialog-content button:hover {
+    filter: brightness(1.25);
 }
 
 ::backdrop {
