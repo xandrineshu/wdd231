@@ -2,8 +2,7 @@
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        margin-bottom: -20px;
-        margin-top: -20px;
+        margin-bottom: -8px;
     }
 
     header h1 {
@@ -15,7 +14,7 @@
         font-size: 40px;
         position: absolute;
         right: 3rem;
-        top: 2.5rem;
+        top: 3rem;
     }
 
     .navigation {
