@@ -2,19 +2,24 @@
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        margin-bottom: -20px;
-        margin-top: -20px;
+        border-bottom: #12121E solid 15px;
     }
 
-    header h1 {
+    header h2 {
         font-size: 55px;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
     }
 
+    .logo {
+        margin-top: 20px;
+    }
+    
     header button {
         font-size: 40px;
         position: absolute;
         right: 3rem;
-        top: 2.5rem;
+        top: 3rem;
     }
 
     .navigation {
@@ -36,7 +41,7 @@
     }
 
     .text-box {
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
