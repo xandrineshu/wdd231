@@ -16,6 +16,11 @@
         bottom: 4rem;
         left: 3rem;
     }
+    
+    .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     .spotlight-item {
         margin-inline: 0;

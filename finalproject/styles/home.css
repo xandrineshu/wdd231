@@ -539,8 +539,10 @@ main p {
     color: #F0F0F4;
 }
 
-.loading-message {
+#loading-message h4 {
     color: #B01124;
+    text-align: center;
+    padding: 20px;
     font-size: 1.5rem;
     animation: blink 1s infinite, glitch 0.05s infinite alternate;
     text-shadow: 0 0 5px currentColor;
@@ -567,38 +569,37 @@ main p {
 
 .forecast-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
     gap: 15px;
 }
 
-.forecast-item {
+#forecast-item {
     background-color: #1E1E2A;
     border: 1px solid #B01124;
     color: #F0F0F4;
-    padding: 10px;
+    padding: 20px;
     line-height: 1;
-    font-size: 15px;
     transition: background-color 0.5s;
 }
 
-.forecast-item p {
+#forecast-item p {
     color: #F0F0F4;
     margin: 0px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
-    padding-block: 10px;
+    line-height: 2;
 }
 
-.forecast-item .emoji {
-    font-size: 40px;
+#forecast-item .emoji {
+    font-size: 50px;
     text-align: center;
 }
 
-.forecast-item:hover {
+#forecast-item:hover {
     background-color: #B0112411;
 }
 
-.forecast-item strong {
+#forecast-item strong {
     color: #ffff00;
 }
 

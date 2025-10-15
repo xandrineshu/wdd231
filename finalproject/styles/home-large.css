@@ -2,7 +2,7 @@
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     header h2 {
@@ -11,7 +11,7 @@
     }
 
     .logo {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     header button {
@@ -61,6 +61,11 @@
 
     .app-header h3 span {
         font-size: 20px;
+    }
+
+    .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .spotlight-item {

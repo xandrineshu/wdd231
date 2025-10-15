@@ -15,8 +15,8 @@ async function fetchFearWeather() {
 
     try {
         // Display loading messages to start the glitch animation
-        CURRENT_ELEMENT.innerHTML = '<p class="loading-message">[INITIATING DATA EXCHANGE: CURRENT STATUS...]</p>';
-        FORECAST_ELEMENT.innerHTML = '<p class="loading-message">[FETCHING THREAT PROJECTION FILES...]</p>';
+        CURRENT_ELEMENT.innerHTML = '<section id="loading-message"><h4>[INITIATING DATA EXCHANGE: CURRENT STATUS...]</h4></section>';
+        FORECAST_ELEMENT.innerHTML = '<section id="loading-message"><h4>[FETCHING THREAT PROJECTION FILES...]</h4></section>';
 
         // --- 1. Fetch Current Weather ---
         const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=${UNITS}&appid=${API_KEY}`;
@@ -159,36 +159,39 @@ function generateForecastReport(forecastData) {
                 projection = "UNSETTLING STILLNESS";
                 icon = '👤';
                 break;
+            
             case 'Clouds':
                 projection = "SHADOW ENTITY VISUALS";
                 icon = '☁️';
                 break;
-            case 'Rain':
-            case 'Drizzle':
+            
+            case 'Rain': case 'Drizzle':
                 projection = "DATA CORRUPTION INITIATED";
                 icon = '🌧️';
                 break;
+            
             case 'Thunderstorm':
                 projection = "SYSTEM OVERRIDE INITIATED";
                 icon = '⚡';
                 break;
+            
             case 'Snow':
                 projection = "THERMAL ANOMALY EXTREME";
                 icon = '❄️';
                 break;
-            case 'Mist':
-            case 'Fog':
-            case 'Haze':
+            
+            case 'Mist': case 'Fog': case 'Haze':
                 projection = "OPTICS FAIL: RENDER DISTANCE LOW";
                 icon = '🌫️';
                 break;
+                
             default:
                 projection = "ANOMALOUS UNKNOWN";
                 icon = '❓';
         }
 
         htmlItems.push(`
-                    <div class="forecast-item">
+                    <div id="forecast-item">
                         <p><strong>DAY: ${dayName}</strong> (${key.split('/').slice(0, 2).join('/')})</p>
                         <p class="emoji">${icon}</p>
                         <p><strong>ALERT:</strong> ${projection}</p>
