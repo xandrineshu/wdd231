@@ -23,10 +23,10 @@ function renderSpotlight(containerId, title, items, isError = false) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    let contentHTML = `<h3 class="section-title">${title}</h3><div class="spotlight-list">`;
+    let contentHTML = `<h3 id="section-title">${title}</h3><div class="spotlight-list">`;
 
     if (isError || !items || items.length === 0) {
-        contentHTML += `<p class="item-desc text-red-500">${isError
+        contentHTML += `<p class="item-desc">${isError
                 ? "Error loading data. Please check the console."
                 : "No eligible items found for this spotlight."
             }</p>`;
@@ -72,11 +72,11 @@ function renderSpotlight(containerId, title, items, isError = false) {
                         class="item-image"
                         onerror="this.onerror=null;this.src='https://placehold.co/200x112/252535/FFFFFF?text=IMAGE+MISSING';"
                     >
-                    <div class="content-area">
-                        <h4 class="item-title">${itemTitle} ${tierTag}</h4>
-                        <p class="item-desc">${item.description || "No description available."}</p>
-                        <a href="${itemLink}" target="_blank" class="action-link">>> View Details</a>
-                    </div>
+                    <section id="content-area">
+                        <h4 id="item-title">${itemTitle} ${tierTag}</h4>
+                        <p>${item.description || "No description available."}</p>
+                        <a href="${itemLink}" target="_blank"> >> View Details</a>
+                    </section>
                 </div>
             `;
         });

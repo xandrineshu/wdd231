@@ -657,7 +657,7 @@ main p {
     padding-bottom: 10px;
 }
 
-.section-title {
+#section-title {
     color: #FF4655;
     text-align: center;
     margin-bottom: 1rem;
@@ -704,11 +704,11 @@ main p {
     margin-top: 0.5rem;
 }
 
-.content-area {
+#content-area {
     padding-block: 20px;
 }
 
-.item-title {
+#item-title {
     margin-inline: 30px;
     font-size: 20px;
     color: #F0F0F4;
@@ -719,7 +719,7 @@ main p {
     gap: 0.5rem;
 }
 
-.item-desc {
+#content-area p {
     font-size: 15px;
     margin-inline: 30px;
     color: #C1C3D2;
@@ -727,7 +727,7 @@ main p {
     line-height: 1;
 }
 
-.action-link {
+#content-area a {
     color: #ffff00;
     text-decoration: none;
     font-weight: 600;
@@ -737,7 +737,7 @@ main p {
     justify-content: center;
 }
 
-.action-link:hover {
+#content-area a:hover {
     color: #B01124;
 }
 
@@ -813,16 +813,20 @@ body.light-mode #app-header {
 
 body.light-mode #club-events h2,
 body.light-mode #weather h2,
-body.light-mode .spotlights h2 {
+body.light-mode #spotlights h2 {
     color: #5a421e;
     border-bottom: 2px solid #74562a;
 }
 
-body.light-mode .section-title {
+body.light-mode #section-title {
     color: #5b431f;
 }
 
-body.light-mode #card-title {
+body.light-mode #card-title h3,
+body.light-mode #card-title-2 h3,
+body.light-mode #card-title-3 h3,
+body.light-mode #card-title-4 h3 {
+    color: #74562a;
     border-bottom: 1px dashed #74562a;
 }
 
@@ -837,19 +841,19 @@ body.light-mode .glitch-title {
 }
 
 body.light-mode #welcome-message,
+body.light-mode #forecast-item p,
 body.light-mode p,
 body.light-mode .subtitle-text,
-body.light-mode .item-desc,
+body.light-mode #content-area p,
 body.light-mode #weather h3,
 body.light-mode #app-header span,
 body.light-mode #card-title,
-body.light-mode .item-title,
-body.light-mode .action-link {
+body.light-mode #item-title {
     color: #000000;
 }
 
 body.light-mode .log-card,
-body.light-mode .forecast-item,
+body.light-mode #forecast-item,
 body.light-mode .spotlight-item,
 body.light-mode .text-box {
     background-color: #FFF8E5;
@@ -858,15 +862,15 @@ body.light-mode .text-box {
     box-shadow: 0 0 5px #C8A16533;
 }
 
-body.light-mode .action-link {
+body.light-mode #content-area a {
     color: #69320c;
 }
 
-body.light-mode .action-link:hover {
+body.light-mode #content-area a:hover {
     color: #B65E2A;
 }
 
-body.light-mode .forecast-item strong {
+body.light-mode #forecast-item strong {
     color: #463317;
 }
 
