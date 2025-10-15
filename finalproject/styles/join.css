@@ -642,3 +642,249 @@ dialog[data-tier="PURGE"] .dialog-content button:hover {
 .info a:hover {
     color: #ffff00;
 }
+
+
+/*****************     Light Mode     *******************/
+
+body.light-mode {
+    background-color: #fffefa;
+    color: #000000;
+    transition: background-color 0.6s ease, color 0.6s ease, filter 0.4s ease;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background-color: #12121E;
+    color: #FAFAFC;
+}
+
+body.light-mode #theme-toggle {
+    color: white;
+}
+
+body.light-mode .glitch-title,
+body.light-mode .subtitle-text,
+body.light-mode .text-box, 
+body.light-mode label{
+    color: #000000;
+}
+
+body.light-mode .application-form,
+body.light-mode .club-tiers {
+    box-shadow: 0 0 20px #B65E2A;
+    border: 1px solid #0E0E0E;
+}
+
+body.light-mode .application-form {
+    background-color: #fffdf7;
+    border-right: 2px solid #74562a;
+    
+}
+
+body.light-mode .application-form h2 {
+    color: #5a421e;
+}
+
+body.light-mode .application-form span {
+    color: #5a421e;
+}
+
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea {
+    background-color: #fffdf7;
+    color: #000000;
+    border: 1px solid #74562a;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #5a421e;
+}
+
+body.light-mode .submit {
+    background-color: #69320c;
+    color: #ffffff;
+    border: 1px solid #74562a;
+}
+
+body.light-mode .submit:hover {
+    background-color: #B65E2A;
+}
+
+body.light-mode .club-tiers {
+    background-color: #f4edda;
+    border-left: 2px solid #74562a;
+}
+
+body.light-mode .club-tiers h2 {
+    color: #5a421e;
+}
+
+body.light-mode .tier-card {
+    background-color: #fffdf7;
+    border: 2px solid #74562a;
+    box-shadow: 0 0 10px #896b3d70;
+    color: #000000;
+}
+
+body.light-mode .tier-card h3 {
+    color: #5a421e;
+}
+
+body.light-mode .tier-card p {
+    color: #000000;
+}
+
+body.light-mode .tier-card .learn-more {
+    background-color: #69320c;
+    color: white;
+}
+
+body.light-mode .tier-card .learn-more:hover {
+    background-color: #B65E2A;
+}
+
+body.light-mode dialog {
+    background-color: #fffdf7;
+    color: #000000;
+    border: 2px solid #74562a;
+    box-shadow: 0 0 10px #896b3d70;
+}
+
+body.light-mode .dialog-content h3 {
+    color: #5a421e;
+}
+
+body.light-mode #closeDialog {
+    background-color: #69320c;
+    color: #ffffff;
+    border: 1px solid #74562a;
+}
+
+body.light-mode #closeDialog:hover {
+    background-color: #B65E2A;
+}
+
+body.light-mode footer a {
+    color: #ffffff;
+}
+
+body.light-mode .glitch-title {
+    animation: glitch-anim-light 2s infinite alternate steps(1);
+}
+
+@keyframes glitch-anim-light {
+    0% {
+        text-shadow: 2px 0 0 #ff00ff, -2px 0 0 #00ffff;
+        transform: translate(0);
+    }
+
+    15% {
+        text-shadow: 2px 0 0 #ff00ff, -2px 0 0 #00ffff;
+        transform: translate(0);
+    }
+
+    16% {
+        color: black;
+        text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+        transform: translate(3px, -3px);
+    }
+
+    18% {
+        text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+        transform: translate(-3px, 3px);
+    }
+
+    20% {
+        color: black;
+        text-shadow: 0 0 0 #ff00ff, 0 0 0 #00ffff;
+        transform: translate(0);
+    }
+
+    100% {
+        text-shadow: 0 0 0 #ff00ff, 0 0 0 #00ffff;
+        transform: translate(0);
+    }
+}
+
+body.theme-switching {
+    position: relative;
+    display: block;
+    color: #e0e0e0;
+    animation: error-glitch 0.5s steps(2, start) forwards;
+}
+
+@keyframes error-glitch {
+    0% {
+        opacity: 1;
+        filter: none;
+        text-shadow: none;
+        transform: translateX(0);
+    }
+
+    10% {
+        opacity: 0.6;
+        filter: brightness(1.2);
+        text-shadow: 1px 0 #ff5555, -1px 0 #55ffff;
+        transform: translateX(-2px);
+    }
+
+    20% {
+        opacity: 0.8;
+        filter: brightness(1.1);
+        text-shadow: 0 1px #ff5555, 0 -1px #55ffff;
+        transform: translateX(2px);
+    }
+
+    30% {
+        opacity: 0.5;
+        filter: brightness(1.3);
+        text-shadow: 2px 0 #ff5555, -2px 0 #55ffff;
+        transform: translateX(-3px);
+    }
+
+    40% {
+        opacity: 0.9;
+        filter: brightness(1);
+        text-shadow: none;
+        transform: translateX(1px);
+    }
+
+    50% {
+        opacity: 0.4;
+        filter: contrast(1.2);
+        text-shadow: 1px 1px #ff5555, -1px -1px #55ffff;
+        transform: translateX(-1px);
+    }
+
+    60% {
+        opacity: 0.85;
+        filter: brightness(1.05);
+        text-shadow: none;
+        transform: translateX(2px);
+    }
+
+    70% {
+        opacity: 0.6;
+        filter: brightness(1.15);
+        text-shadow: 0 0 2px #ff5555, 0 0 2px #55ffff;
+        transform: translateX(-2px);
+    }
+
+    80% {
+        opacity: 1;
+        filter: none;
+        text-shadow: none;
+        transform: translateX(1px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: none;
+        text-shadow: none;
+        transform: translateX(0);
+    }
+}
+
+
