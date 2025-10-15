@@ -412,7 +412,7 @@ main p {
     text-align: right;
 }
 
-#card-title h3, #card-title-2 h3, #card-title-3 h3, #card-title-4 h3 {
+.card-title, .card-title-2, .card-title-3, .card-title-4 {
     font-size: 25px;
     font-weight: 400;
     color: #FF4655;
@@ -527,7 +527,7 @@ main p {
     color: #F0F0F4;
 }
 
-#loading-message {
+#loading-message, #loading-message-2 {
     color: #B01124;
     text-align: center;
     padding: 20px;
@@ -784,10 +784,10 @@ body.light-mode #section-title {
     color: #5b431f;
 }
 
-body.light-mode #card-title h3,
-body.light-mode #card-title-2 h3,
-body.light-mode #card-title-3 h3,
-body.light-mode #card-title-4 h3 {
+body.light-mode .card-title,
+body.light-mode .card-title-2,
+body.light-mode .card-title-3,
+body.light-mode .card-title-4 {
     color: #74562a;
     border-bottom: 1px dashed #74562a;
 }
