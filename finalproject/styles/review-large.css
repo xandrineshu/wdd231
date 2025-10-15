@@ -2,12 +2,17 @@
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        margin-bottom: -8px;
+        border-bottom: #12121E solid 15px;
     }
 
-    header h1 {
+    header h2 {
         font-size: 55px;
         letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin-top: 20px;
     }
     
     header button {

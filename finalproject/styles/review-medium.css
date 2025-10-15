@@ -1,10 +1,15 @@
 @media only screen and (min-width: 35rem) {
+    .hero-image img {
+        width: 100%;
+        height: 25em;
+    }
+
     header {
         padding: 0 20px;
     }
 
-    header h1 {
-        letter-spacing: 5px;
+    header h2 {
+        letter-spacing: 10px;
     }
 
     #cta {

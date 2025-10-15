@@ -2,7 +2,7 @@
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        border-bottom: #12121E solid 15px;;
+        border-bottom: #12121E solid 15px;
     }
 
     header h2 {
