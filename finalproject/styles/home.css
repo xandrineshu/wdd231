@@ -527,7 +527,7 @@ main p {
     color: #F0F0F4;
 }
 
-#loading-message-1 h5, #loading-message-2 h5 {
+#loading-message {
     color: #B01124;
     text-align: center;
     padding: 20px;
