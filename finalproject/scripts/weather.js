@@ -110,16 +110,16 @@ function generateCurrentWeatherReport(weatherData) {
 
     // --- Final Report Assembly ---
     return `
-<p>// LOCATION: ${weatherData.name.toUpperCase()}</p>
-<p>// TIME STAMP: ${new Date().toLocaleTimeString()}</p>
+    <p>// LOCATION: ${weatherData.name.toUpperCase()}</p>
+    <p>// TIME STAMP: ${new Date().toLocaleTimeString()}</p>
 
-<p>[FILE STATUS]: ${statusMessage}</p>
+    <p>[FILE STATUS]: ${statusMessage}</p>
 
-<p>[AMBIENT TEMP]: ${tempWarning}</p>
+    <p>[AMBIENT TEMP]: ${tempWarning}</p>
 
-<p>[THREAT VECTOR]: ${windWarning}</p>
+    <p>[THREAT VECTOR]: ${windWarning}</p>
 
-<p>// ACTION REQUIRED: MAINTAIN CIPHER KEYS (HIGH SECURITY PROTOCOL).</p>
+    <p>// ACTION REQUIRED: MAINTAIN CIPHER KEYS (HIGH SECURITY PROTOCOL).</p>
 `;
 }
 
