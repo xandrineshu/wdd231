@@ -1,5 +1,3 @@
-import { youtubers } from "../data/youtubers.mjs";
-
 function getRandomItems(arr, count = 5) {
     if (!arr || arr.length === 0) return [];
     const numToSelect = Math.min(count, arr.length);
@@ -18,7 +16,6 @@ const tierColors = {
     PURGE: "#ff5e71ff"
 };
 
-
 function renderSpotlight(containerId, title, items, isError = false) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -30,9 +27,7 @@ function renderSpotlight(containerId, title, items, isError = false) {
                 ? "Error loading data. Please check the console."
                 : "No eligible items found for this spotlight."
             }</p>`;
-    } 
-    
-    else {
+    } else {
         items.forEach((item) => {
             // Ensure all images are read from "images/" folder
             let imageUrl = item.image_url
@@ -42,15 +37,15 @@ function renderSpotlight(containerId, title, items, isError = false) {
                 : "https://placehold.co/200x112/252535/FFFFFF?text=IMAGE+MISSING";
 
             const itemTitle = item.title || item.name || "Untitled";
-            const itemLink = item.link || item.channel_link || "#";
+            const itemLink = item.link || "#";
 
             // Tier color logic
             let tierTag = "";
             if (item.club_entry) {
                 const tier = item.club_entry.toUpperCase();
                 const color = tierColors[tier] || "#999";
-                tierTag = `<span class="tier-tag" 
-                              style="
+                tierTag = `<span class="tier-tag"
+                                style="
                                     padding: 2px 5px;
                                     border-radius: 5px;
                                     font-size: 1rem;
@@ -60,8 +55,8 @@ function renderSpotlight(containerId, title, items, isError = false) {
                                     background-color:${color};
                                     color: black;
                                     margin-left: 5px;">
-                              ${tier}
-                           </span>`;
+                                ${tier}
+                            </span>`;
             }
 
             contentHTML += `
@@ -94,12 +89,9 @@ async function animate() {
         if (!response.ok)
             throw new Error(`HTTP error! status: ${response.status}`);
         gamesData = await response.json();
-    } 
-    
-    catch (error) {
+    } catch (error) {
         console.error("Could not load games data from games.json:", error);
-        renderSpotlight("game-spotlight", "Top Horror Games", [], true);
-        
+        renderSpotlight("game-spotlight", "> Top 5 Horror Games", [], true);
         return;
     }
 
@@ -108,10 +100,8 @@ async function animate() {
     );
 
     const spotlightGames = getRandomItems(filteredGames, 5);
-    const spotlightYoutubers = getRandomItems(youtubers, 5);
 
     renderSpotlight("game-spotlight", "> Top 5 Horror Games", spotlightGames);
-    renderSpotlight("youtuber-spotlight", "> Top 5 Horror Gamers", spotlightYoutubers);
 }
 
 document.addEventListener("DOMContentLoaded", animate);
