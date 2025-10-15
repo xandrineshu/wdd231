@@ -369,7 +369,8 @@ main p {
     padding-bottom: 20px;
 }
 
-.card-base {
+.log-card {
+    position: relative;
     background-color: #1C1C28;
     color: #C1C3D2;
     border: 1px solid #B01124;
@@ -380,7 +381,8 @@ main p {
     box-shadow: 0 0 10px #B0112433;
     transition: all 0.2s ease-in-out;
 }
-.card-base:hover {
+
+.log-card:hover, .spotlight-item:hover, #forecast-item:hover {
     border-color: #FF4655;
     box-shadow: 0 0 15px #FF465566;
 }
@@ -409,7 +411,7 @@ main p {
     text-align: right;
 }
 
-.card-title h3 {
+#card-title h3, #card-title-2 h3, #card-title-3 h3, #card-title-4 h3 {
     font-size: 25px;
     font-weight: 400;
     color: #FF4655;
@@ -538,6 +540,8 @@ main p {
 }
 
 .weatherContainer {
+    border: 1px solid #B01124;
+    padding: 15px;
     margin-bottom: 3rem;
 }
 
@@ -554,7 +558,16 @@ main p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
+}
+
+#forecast-item {
+    background-color: #1E1E2A;
+    border: 1px solid #B01124;
+    color: #F0F0F4;
+    padding: 20px;
+    line-height: 1;
+    transition: background-color 0.5s;
 }
 
 #forecast-item .emoji {
@@ -634,6 +647,14 @@ main p {
 .spotlight-item {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: #1E1E2A;
+    color: #C1C3D2;
+    border: 1px solid #B01124;
+    box-shadow: 0 0 10px #B0112433;
+    margin-inline: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item-image {
