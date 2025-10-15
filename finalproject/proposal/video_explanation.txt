@@ -1,0 +1,131 @@
+Video///
+
+Good day everyone! My name is Jelina Alexandrine Concha
+I’m going to present my JavaScript that demonstrates 
+three key requirements:
+
+1️. Using an API or local JSON data,
+2️. Showing asynchronous functionality with a try block, and
+3️. Implementing ES Module use.
+
+These features are demonstrated across my three JavaScript files:
+home.js, spotlights.js, and youtubers.js.
+
+(Show your folder structure briefly: js/home.js, js/spotlights.js,
+ js/youtubers.js, and data/ folder with JSON files.)
+
+====================================================================
+
+“Let’s start with how my project uses local JSON data.
+In my file called spotlights.js, I use the fetch() method 
+to load data from a JSON file named games.json inside the data folder.”
+
+(Zoom in on the part of the code while you talk: 
+const response = await fetch("data/games.json");
+gamesData = await response.json();)
+
+“This function retrieves game information: such as the title, 
+description, and tier from the JSON file.
+
+The code then displays the top five random horror games
+on my webpage, complete with images, descriptions, 
+and a color-coded tier tag.”
+
+(Switch to browser preview — show your spotlight section output 
+with the 5 horror games displayed.)
+
+“What you’re seeing now is the actual output of that JSON data 
+being displayed dynamically on the screen.”
+
+====================================================================
+
+“Next, I’ll demonstrate how my project uses asynchronous 
+functionality with a try block.
+
+Still in the same file, spotlights.js, my animate() 
+function uses async and await keywords, 
+combined with a try–catch block for error handling.”
+
+(show this try {
+    const response = await fetch("data/games.json");
+    if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
+    gamesData = await response.json();
+} catch (error) {
+    console.error("Could not load games data:", error);
+    renderSpotlight("game-spotlight", "> Top 5 Horror Games", [], true);
+})
+
+“Here, the code runs asynchronously. 
+It waits for the JSON file to load but if anything goes wrong, 
+such as a missing file or a fetch failure,
+the catch block handles it gracefully by showing 
+an error message both in the console and on the page.”
+
+(Show browser view with a simulated failed load
+ maybe rename games.json temporarily or 
+explain how it looks when the file is missing.)
+
+“This demonstrates asynchronous JavaScript with 
+proper error handling, keeping the website stable 
+even when something fails.”
+
+=================================================================
+
+“The third requirement is ES Module usage,
+and that’s handled in my youtubers.js file.
+
+At the very top, I use this line:
+(Highlight the import line.)
+
+(show: import { youtubers } from '../data/youtubers.mjs';)
+
+
+“This imports a dataset from another file, a separate module
+called youtubers.mjs. Inside that module, the YouTubers’ data 
+is exported as an array of objects.”
+
+(Show a quick peek at youtubers.mjs file content.)
+
+“Then, my script loops through this imported data to 
+display dynamic cards for each YouTuber.
+Each card includes their name, photo, description, 
+and channel link.”
+
+(Show the live site section where YouTubers appear 
+with their info and images.)
+
+“This demonstrates modular JavaScript, 
+where the data and logic are organized in separate files 
+and connected using ES module imports.”
+
+====================================================================
+
+“Finally, I also have home.js, which handles other interactive 
+and animated elements on my website.
+
+For example, it updates the live clock, and 
+animates a glitchy ‘WELCOME’ message that turns into ‘!! ERROR !!’
+when hovered.”
+(Show hover animation effect in your browser — demonstrate quickly.)
+
+“These small touches make the project more interactive 
+and demonstrate the use of JavaScript for user engagement.”
+
+=================================================================
+
+To summarize, my project successfully demonstrates 
+all three key JavaScript requirements:
+
+| Requirement               | Demonstrated In | Example                                             | Output                         |
+| ------------------------- | --------------- | --------------------------------------------------- | ------------------------------ |
+| **(1) Local JSON Data**   | `spotlights.js` | `fetch("data/games.json")`                          | Displays Top 5 Horror Games    |
+| **(2) Async + Try Block** | `spotlights.js` | `try...catch`                                       | Graceful Error Handling        |
+| **(3) ES Module**         | `youtubers.js`  | `import { youtubers } from '../data/youtubers.mjs'` | Displays YouTubers Dynamically |
+
+
+“Together, these files show how I used data loading, 
+asynchronous JavaScript, and modular structure to 
+create a dynamic and well-organized project.
+
+Thank you very much for listening!”
