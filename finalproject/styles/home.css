@@ -364,9 +364,9 @@ main p {
     margin: -20px -20px 20px -20px;
 }
 
-.app-header span {
+.app-header h3 span {
     color: white;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 
@@ -416,15 +416,16 @@ main p {
     z-index: 10;
 }
 
-#log-card-footer {
+.log-card-footer {
     padding-top: 15px;
     border-top: 1px dashed #B01124;
     margin-top: 10px;
     text-align: right;
 }
 
-#card-title {
+#card-title h3 {
     font-size: 25px;
+    font-weight: 400;
     color: #FF4655;
     border-bottom: 1px dashed #B01124;
     padding-bottom: 5px;
@@ -760,11 +761,11 @@ main p {
     padding: 20px 30px;
 }
 
-#social {
+.social {
     display: flex;
 }
 
-#social a {
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -775,20 +776,20 @@ main p {
     background-color: #B01124;
 }
 
-#social img {
+.social img {
     border-radius: 35px;
     filter: brightness(0) invert(1);
     width: 35px;
     height: 35px;
 }
 
-#info a {
+.info a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-#info a:hover {
+.info a:hover {
     color: #ffff00;
 }
 
