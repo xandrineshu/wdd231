@@ -41,7 +41,6 @@ header {
 }
 
 .logo img {
-    display: block;
     width: 90px;
     height: 90px;
 }
@@ -363,11 +362,10 @@ main p {
 
 /*****************      CLub Events      *****************/
 
-#club-events h2 {
+#club-events h2, #weather h2, #spotlights h2 {
     color: #ffff00;
     text-align: left;
     font-size: 30px;
-    margin-bottom: 50px;
     border-bottom: 2px solid #B01124;
     padding-bottom: 10px;
 }
@@ -385,7 +383,7 @@ main p {
     transition: all 0.2s ease-in-out;
 }
 
-.log-card:hover {
+.log-card:hover, .spotlight-item:hover, #forecast-item:hover {
     border-color: #FF4655;
     box-shadow: 0 0 15px #FF465566;
 }
@@ -423,11 +421,11 @@ main p {
     margin-bottom: 10px;
 }
 
-.log-card p {
+.log-card p, #forecast-item p {
+    color: #F0F0F4;
+    margin: 0px;
     font-size: 20px;
     text-align: left;
-    padding-bottom: 10px;
-    margin: 0;
 }
 
 /* INDEX - Base Level Access */
@@ -582,21 +580,11 @@ main p {
     transition: background-color 0.5s;
 }
 
-#forecast-item p {
-    color: #F0F0F4;
-    margin: 0px;
-    font-size: 20px;
-    text-align: left;
-    line-height: 2;
-}
 
 #forecast-item .emoji {
     font-size: 50px;
     text-align: center;
-}
-
-#forecast-item:hover {
-    background-color: #B0112411;
+    padding: 20px;
 }
 
 #forecast-item strong {
@@ -688,11 +676,6 @@ main p {
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.spotlight-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px #ff1e1e;
 }
 
 .item-image {
