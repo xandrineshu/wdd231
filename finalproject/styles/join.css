@@ -29,8 +29,8 @@ header {
     justify-content: space-between;
     color: #F0F0F4;
     text-shadow: 0 0 5px #B01124;
-    padding: 0 10px;
-    border-bottom: 3px solid #B01124;
+    padding: 0 20px;
+    margin-bottom: -10px;
 }
 
 .logo {
@@ -39,19 +39,20 @@ header {
 }
 
 .logo img {
-    display: block;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
-header h1 {
+header h2 {
     padding-inline: 10px;
-    font-size: 45px;
+    margin-top: 35px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
     color: #E6E6E9;
     text-shadow: 0 0 5px #B01124;
     letter-spacing: 3px;
+
 }
 
 
@@ -118,6 +119,7 @@ nav {
 /***************     Light/Dark Mode     *******************/
 
 header button {
+    color: #E6E6E9;
     border: none;
     font-size: 30px;
     cursor: pointer;
@@ -126,7 +128,6 @@ header button {
 #theme-toggle {
     background: transparent;
     text-shadow: 0 0 5px #B01124;
-    color: white;
     transition: all 0.3s ease;
 }
 
@@ -301,7 +302,7 @@ header button {
     padding: 40px;
 }
 
-h2 {
+.application-form h2, .club-tiers h2 {
     color: #ffff00;
     text-transform: uppercase;
     font-size: 30px;
